@@ -4,10 +4,12 @@
 		"title": "21. SEPTEMBER 2023 | BERN, SWITZERLAND"
 	},
 	"venue": {
-		"nav_item": "Location"
+		"nav_item": "Location",
+		"title": "Location"
 	},
 	"sponsors": {
-		"nav_item": "Sponsor*innen"
+		"nav_item": "Sponsor*innen",
+		"title": "Sponsor*innen"
 	},
 	"2021": {
 		"nav_item": "2021"

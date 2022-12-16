@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Home from './Home.svelte';
+	import Sponsors from './Sponsors.svelte';
+	import Venue from './Venue.svelte';
 </script>
 
 <svelte:head>
@@ -11,3 +13,7 @@
 </svelte:head>
 
 <Home />
+
+<Venue />
+
+<Sponsors />
