@@ -34,6 +34,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"svelte-carousel": "^1.0.20",
 		"svelte-i18n": "^3.6.0"
 	}
 }
