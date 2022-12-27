@@ -1,3 +1,4 @@
+declare module 'svelte-carousel';
 declare module '@beyonk/gdpr-cookie-consent-banner';
 declare module '@beyonk/svelte-google-analytics';
 // See https://kit.svelte.dev/docs/types#app
