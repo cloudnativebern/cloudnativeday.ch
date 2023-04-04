@@ -1,19 +1,23 @@
 <script lang="ts">
-	import Home from './Home.svelte';
+	import Hero from './Hero.svelte';
+	import Description from './Description.svelte';
+	import CallForSpeakers from './CallForSpeakers.svelte';
+	import Tickets from './Tickets.svelte';
+	import Perks from './Perks.svelte';
+	import Speakers from './Speakers.svelte';
 	import Sponsors from './Sponsors.svelte';
-	import Venue from './Venue.svelte';
 </script>
 
-<svelte:head>
-	<title>Swiss Cloud Native Day</title>
-	<meta
-		name="description"
-		content="From engineers, for engineers—the first Swiss Cloud Native Community Day. Organized by the Swiss nonprofit association bernerit.rocks."
-	/>
-</svelte:head>
+<Hero />
 
-<Home />
+<Description />
 
-<Venue />
+<CallForSpeakers />
+
+<Tickets />
+
+<Perks />
+
+<Speakers />
 
 <Sponsors />
