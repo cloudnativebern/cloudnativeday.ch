@@ -1,28 +1,26 @@
 <script lang="ts">
-	import 'bulma/css/bulma.css';
-	import { addMessages, init, getLocaleFromQueryString } from 'svelte-i18n';
-	import en from '$lib/locales/en.json';
-	import de from '$lib/locales/de.json';
-	import Navigation from './Navigation.svelte';
-	import Footer from './Footer.svelte';
-	import Analytics from './Analytics.svelte';
-	import './styles.css';
-
-	addMessages('en-US', en);
-	addMessages('de-DE', de);
-
-	init({
-		fallbackLocale: 'en-US',
-		initialLocale: getLocaleFromQueryString('lang')
-	});
+	import '../theme.postcss';
+	import '@skeletonlabs/skeleton/styles/all.css';
+	import '../app.postcss';
+	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import mountain from '$lib/images/mountain.svg';
 </script>
 
-<Navigation />
-
-<main>
+<AppShell>
+	<svelte:fragment slot="header">
+		<AppBar>
+			<svelte:fragment slot="lead">
+				<a href="/">
+					<img src={mountain} alt="Mountain" />
+				</a>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<a class="btn variant-ghost-primary" href="#cfp">Call for Speakers</a>
+				<a class="btn variant-ghost-primary" href="#tickets">Tickets</a>
+				<a class="btn variant-ghost-primary" href="#speakers">Speaker*innen</a>
+				<a class="btn variant-ghost-primary" href="#sponsors">Sponsor*innen</a>
+			</svelte:fragment>
+		</AppBar>
+	</svelte:fragment>
 	<slot />
-</main>
-
-<Footer />
-
-<Analytics />
+</AppShell>
