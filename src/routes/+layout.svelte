@@ -17,6 +17,7 @@
 			<svelte:fragment slot="trail">
 				<a class="btn variant-ghost-primary" href="#cfp">Call for Speakers</a>
 				<a class="btn variant-ghost-primary" href="#tickets">Tickets</a>
+				<a class="btn variant-ghost-primary" href="#location">Location</a>
 				<a class="btn variant-ghost-primary" href="#speakers">Speaker*innen</a>
 				<a class="btn variant-ghost-primary" href="#sponsors">Sponsor*innen</a>
 			</svelte:fragment>

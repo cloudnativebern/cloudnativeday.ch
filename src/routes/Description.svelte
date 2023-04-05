@@ -1,4 +1,4 @@
-<div class="bg-slate-100 w-full p-28">
+<div class="bg-slate-100 w-full px-8 py-28">
 	<div id="tickets" class="container mx-auto flex flex-col items-center text-center max-w-5xl">
 		<h2 class="mb-8">Chum ufe Gurte!</h2>
 
