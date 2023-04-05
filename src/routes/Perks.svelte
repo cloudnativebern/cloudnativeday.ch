@@ -1,10 +1,10 @@
 <script lang="ts">
-	interface Perks {
+	interface Perk {
 		title: string;
 		text: string;
 	}
 
-	const perks: Perks[] = [
+	const perks: Perk[] = [
 		{
 			title: 'Community',
 			text: 'Von Engineers für Engineers, der dritte Schweizer Cloud Native Community Day. Hinter dem Anlass steht der Non-Profit Verein «bernerit.rocks».'
