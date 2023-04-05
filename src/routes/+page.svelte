@@ -4,6 +4,7 @@
 	import CallForSpeakers from './CallForSpeakers.svelte';
 	import Tickets from './Tickets.svelte';
 	import Perks from './Perks.svelte';
+	import Location from './Location.svelte';
 	import Speakers from './Speakers.svelte';
 	import Sponsors from './Sponsors.svelte';
 </script>
@@ -17,6 +18,8 @@
 <Tickets />
 
 <Perks />
+
+<Location />
 
 <Speakers />
 
