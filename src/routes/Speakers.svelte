@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
-	import anaisUlrichs from '$lib/images/anais-ulrichs.png';
-	import margaManterola from '$lib/images/marga-manterola.jpeg';
-	import naomiBrockwell from '$lib/images/naomi-brockwell.webp';
+	import anaisUlrichs from '$lib/images/speakers/anais-ulrichs.png';
+	import margaManterola from '$lib/images/speakers/marga-manterola.jpeg';
+	import naomiBrockwell from '$lib/images/speakers/naomi-brockwell.webp';
 
 	interface Speaker {
 		name: string;
