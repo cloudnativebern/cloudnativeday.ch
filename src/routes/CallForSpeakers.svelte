@@ -1,4 +1,4 @@
-<div class="w-full p-28">
+<div class="w-full px-8 py-28">
 	<div id="cfp" class="container mx-auto flex flex-col items-center max-w-5xl">
 		<h2 class="mb-8">Wir Suchen Dich</h2>
 

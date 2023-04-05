@@ -8,7 +8,7 @@
 			<div class="img-bg" />
 			<img src={logo} alt="Logo" />
 		</figure>
-		<h1 class="font-bold">21. September | Bern, Switzerland</h1>
+		<h1 class="font-bold">20. - 21. September | Bern, Switzerland</h1>
 	</div>
 </div>
 

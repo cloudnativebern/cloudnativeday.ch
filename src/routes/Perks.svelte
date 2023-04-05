@@ -20,12 +20,12 @@
 	];
 </script>
 
-<div class="card p-4">
+<div class="w-full px-8 pt-28 pb-0">
 	<div id="perks" class="container mx-auto flex flex-col items-center text-left max-w-5xl">
-		<div class="grid grid-cols-3 gap-16">
+		<div class="grid md:grid-cols-3 gap-16">
 			{#each perks as perks (perks.title)}
 				<div class="flex flex-col">
-					<h4>{perks.title}</h4>
+					<h4 class="mb-4">{perks.title}</h4>
 					<p>{perks.text}</p>
 				</div>
 			{/each}

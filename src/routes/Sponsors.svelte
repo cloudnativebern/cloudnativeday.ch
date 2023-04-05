@@ -1,6 +1,6 @@
 <script lang="ts">
 	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
-	import amanox from '$lib/images/sponsors/amanox.png';
+	import amanox from '$lib/images/sponsors/amanox.svg';
 	import avega from '$lib/images/sponsors/avega.png';
 	import peakScale from '$lib/images/sponsors/peakscale.svg';
 	import bespinian from '$lib/images/sponsors/bespinian.svg';
@@ -137,7 +137,7 @@
 	const afterPartySponsors = sponsors.filter((s) => s.tier === SponsorTier.AfterParty);
 </script>
 
-<div class="w-full p-28">
+<div class="w-full px-8 py-28">
 	<div id="sponsors" class="container mx-auto flex flex-col items-center text-center max-w-5xl">
 		<h2 class="mb-8">Sponsor*innen</h2>
 
@@ -155,8 +155,34 @@
 
 		{#if goldSponsors.length > 0}
 			<h3 class="mt-24 w-full text-left">Gold</h3>
-			<div class="grid grid-cols-3 items-center">
+			<div class="grid md:grid-cols-3 items-center">
 				{#each goldSponsors as sponsor (sponsor.name)}
+					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
+						<div class="block p-4 w-full">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
+						</div>
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		{#if speakerEventSponsors.length > 0}
+			<h3 class="mt-24 w-full text-left">Speaker Event</h3>
+			<div class="grid md:grid-cols-3 items-center">
+				{#each speakerEventSponsors as sponsor (sponsor.name)}
+					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
+						<div class="block p-4 w-full">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
+						</div>
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		{#if afterPartySponsors.length > 0}
+			<h3 class="mt-24 w-full text-left">After Party</h3>
+			<div class="grid md:grid-cols-3 items-center">
+				{#each afterPartySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
@@ -168,7 +194,7 @@
 
 		{#if silverSponsors.length > 0}
 			<h3 class="mt-24 w-full text-left">Silver</h3>
-			<div class="grid grid-cols-4 items-center">
+			<div class="grid md:grid-cols-4 items-center">
 				{#each silverSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
@@ -181,34 +207,8 @@
 
 		{#if bronzeSponsors.length > 0}
 			<h3 class="mt-24 w-full text-left">Bronze</h3>
-			<div class="grid grid-cols-6 items-center">
+			<div class="grid md:grid-cols-6 items-center">
 				{#each bronzeSponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
-					</a>
-				{/each}
-			</div>
-		{/if}
-
-		{#if speakerEventSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">Speaker Event</h3>
-			<div class="grid grid-cols-3 items-center">
-				{#each speakerEventSponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
-					</a>
-				{/each}
-			</div>
-		{/if}
-
-		{#if afterPartySponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">Speaker Event</h3>
-			<div class="grid grid-cols-3 items-center">
-				{#each afterPartySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
