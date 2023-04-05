@@ -1,7 +1,20 @@
 <script lang="ts">
-	import diemobiliar from '$lib/images/diemobiliar.svg';
-	import postfinance from '$lib/images/postfinance.svg';
-	import swisscom from '$lib/images/swisscom.svg';
+	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
+	import amanox from '$lib/images/sponsors/amanox.png';
+	import avega from '$lib/images/sponsors/avega.png';
+	import peakScale from '$lib/images/sponsors/peakscale.svg';
+	import bespinian from '$lib/images/sponsors/bespinian.svg';
+	import puzzle from '$lib/images/sponsors/puzzle.svg';
+	import postfinance from '$lib/images/sponsors/postfinance.svg';
+	import swisscom from '$lib/images/sponsors/swisscom.svg';
+	import diePost from '$lib/images/sponsors/diepost.webp';
+	import aws from '$lib/images/sponsors/aws.png';
+	import adnovum from '$lib/images/sponsors/adnovum.png';
+	import sbb from '$lib/images/sponsors/sbb.png';
+	import ipt from '$lib/images/sponsors/ipt.svg';
+	import campToCamp from '$lib/images/sponsors/camp-to-camp.png';
+	import bedag from '$lib/images/sponsors/bedag.svg';
+	import vshn from '$lib/images/sponsors/vshn.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -20,10 +33,64 @@
 
 	const sponsors: Sponsor[] = [
 		{
-			name: 'dieMobiliar',
-			imgSrc: diemobiliar,
+			name: 'Amanox',
+			imgSrc: amanox,
+			link: 'https://www.amanox.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Avega',
+			imgSrc: avega,
+			link: 'https://www.avega.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'bespinian',
+			imgSrc: bespinian,
+			link: 'https://bespinian.io/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'PeakScale',
+			imgSrc: peakScale,
+			link: 'https://peakscale.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Puzzle',
+			imgSrc: puzzle,
+			link: 'https://www.puzzle.ch/',
+			tier: SponsorTier.AfterParty
+		},
+		{
+			name: 'Adnovum',
+			imgSrc: adnovum,
+			link: 'https://www.adnovum.com/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Camp to Camp',
+			imgSrc: campToCamp,
+			link: 'https://www.camptocamp.com/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'VSHN',
+			imgSrc: vshn,
+			link: 'https://www.vshn.ch/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'dieobiliar',
+			imgSrc: dieMobiliar,
 			link: 'https://www.mobiliar.ch/',
 			tier: SponsorTier.Gold
+		},
+		{
+			name: 'SBB',
+			imgSrc: sbb,
+			link: 'https://www.sbb.ch/',
+			tier: SponsorTier.Silver
 		},
 		{
 			name: 'PostFinance',
@@ -36,11 +103,38 @@
 			imgSrc: swisscom,
 			link: 'https://www.swisscom.ch/en/residential.html',
 			tier: SponsorTier.Gold
+		},
+		{
+			name: 'AWS Schweiz',
+			imgSrc: aws,
+			link: 'https://aws.amazon.com/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Die Post',
+			imgSrc: diePost,
+			link: 'https://www.post.ch/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'IPT',
+			imgSrc: ipt,
+			link: 'https://ipt.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Bedag',
+			imgSrc: bedag,
+			link: 'https://www.bedag.ch/',
+			tier: SponsorTier.SpeakerEvent
 		}
 	];
 
 	const goldSponsors = sponsors.filter((s) => s.tier === SponsorTier.Gold);
 	const silverSponsors = sponsors.filter((s) => s.tier === SponsorTier.Silver);
+	const bronzeSponsors = sponsors.filter((s) => s.tier === SponsorTier.Bronze);
+	const speakerEventSponsors = sponsors.filter((s) => s.tier === SponsorTier.SpeakerEvent);
+	const afterPartySponsors = sponsors.filter((s) => s.tier === SponsorTier.AfterParty);
 </script>
 
 <div class="w-full p-28">
@@ -61,11 +155,11 @@
 
 		{#if goldSponsors.length > 0}
 			<h3 class="mt-24 w-full text-left">Gold</h3>
-			<div class="grid grid-cols-3">
+			<div class="grid grid-cols-3 items-center">
 				{#each goldSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="h-24" />
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
 				{/each}
@@ -74,11 +168,50 @@
 
 		{#if silverSponsors.length > 0}
 			<h3 class="mt-24 w-full text-left">Silver</h3>
-			<div class="grid grid-cols-3">
+			<div class="grid grid-cols-4 items-center">
 				{#each silverSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block card card-hover p-4 w-full">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="h-24" />
+						<div class="block p-4 w-full">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
+						</div>
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		{#if bronzeSponsors.length > 0}
+			<h3 class="mt-24 w-full text-left">Bronze</h3>
+			<div class="grid grid-cols-6 items-center">
+				{#each bronzeSponsors as sponsor (sponsor.name)}
+					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
+						<div class="block p-4 w-full">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
+						</div>
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		{#if speakerEventSponsors.length > 0}
+			<h3 class="mt-24 w-full text-left">Speaker Event</h3>
+			<div class="grid grid-cols-3 items-center">
+				{#each speakerEventSponsors as sponsor (sponsor.name)}
+					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
+						<div class="block p-4 w-full">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
+						</div>
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		{#if afterPartySponsors.length > 0}
+			<h3 class="mt-24 w-full text-left">Speaker Event</h3>
+			<div class="grid grid-cols-3 items-center">
+				{#each afterPartySponsors as sponsor (sponsor.name)}
+					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
+						<div class="block p-4 w-full">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
 				{/each}
