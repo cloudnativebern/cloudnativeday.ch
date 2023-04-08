@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 	interface Perk {
 		title: string;
 		text: string;
@@ -6,16 +7,16 @@
 
 	const perks: Perk[] = [
 		{
-			title: 'Community',
-			text: 'Von Engineers für Engineers, der dritte Schweizer Cloud Native Community Day. Hinter dem Anlass steht der Non-Profit Verein «bernerit.rocks».'
+			title: $_('perks.community.title'),
+			text: $_('perks.community.text')
 		},
 		{
-			title: 'Get your Hands Dirty!',
-			text: 'Erfahrung aus der Praxis, Know-how von Hands-On Spezialist*innen und die Möglichkeit mittels Workshops selber Hand anzulegen.'
+			title: $_('perks.handsOn.title'),
+			text: $_('perks.handsOn.text')
 		},
 		{
-			title: 'Gurten',
-			text: 'Ein Tag, 250 Teilnehmende, auf dem einmaligen Berner Hausberg. Aus der Region für die Region.'
+			title: $_('perks.gurten.title'),
+			text: $_('perks.gurten.text')
 		}
 	];
 </script>
