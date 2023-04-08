@@ -1,0 +1,64 @@
+{
+	"navigation": {
+		"altMountain": "Mountain",
+		"callForSpeakers": "Call for Speakers",
+		"tickets": "Tickets",
+		"location": "Location",
+		"speakers": "Speakers",
+		"sponsors": "Sponsors"
+	},
+	"callForSpeakers": {
+		"title": "We are Looking for You",
+		"body": "We are looking for captivating talks and interesting speakers. Do you have a topic of interest to the community? Then please get in touch and submit your proposal by <strong>April 30</strong>",
+		"apply": "Apply as a Speaker"
+	},
+	"description": {
+		"title": "See you on the Gurten!",
+		"body": "In 2023, the local Cloud Native community will organize the third edition of the Swiss Cloud Native Day on Mount Gurten. As organizers, we are convinced that the CNCF is providing the most important answers for the future of IT. Our event will bring newcomers and experts together and be an inspirational place where different perspectives and experiences meet."
+	},
+	"hero": {
+		"altLogo": "Logo",
+		"title": "September 20 - 21 | Bern, Switzerland"
+	},
+	"location": {
+		"altPavillon": "Gurten Pavillon",
+		"title": "Venue",
+		"body": "The Cloud Native Day takes place on Mount Gurten close to the City of Bern. Easy access via public transport.",
+		"directions": {
+			"tram": "Starting from Bern main station, take tram no. 9 (direction Wabern) until station “Wabern Gurtenbahn”. Travel time is about 15 minutes",
+			"walk": "Walk 5 minutes to the lower terminal of the Gurtenbahn funicular railway.",
+			"ticket": "Show your conference ticket and enjoy a free ride on the funicular."
+		}
+	},
+	"perks": {
+		"community": {
+			"title": "Community",
+			"text": "From engineers, for engineers—the first Swiss Cloud Native Community Day. Organized by the Swiss nonprofit association “bernerit.rocks”."
+		},
+		"handsOn": {
+			"title": "Get your Hands Dirty!",
+			"text": "Practical expertise from seasoned, hands-on specialists who will share their knowledge in three-hour workshops."
+		},
+		"gurten": {
+			"title": "Mount Gurten",
+			"text": "One day, 250 participants, atop Bern‘s lovely Mount Gurten."
+		}
+	},
+	"speakers": {
+		"title": "Speakers"
+	},
+	"sponsors": {
+		"title": "Sponsors",
+		"body": "The nonprofit association “bernerit.rocks” organizes this event for Cloud Native practitioners with the help of lots of voluntary work and of course sponsors. With a sponsorship, you can present yourself prominently in front of this extremely fast growing Swiss Cloud Native Community. Become a sponsor and get in contact with the Cloud Native specialists at the first Swiss Cloud Native Day! Please contact <a href=\"mailto:sponsoring@cloudnativeday.ch\">sponsoring@cloudnativeday.ch</a>.",
+		"tiers": {
+			"gold": "Gold",
+			"speakerEvent": "Speaker Event",
+			"afterParty": "After Party",
+			"silver": "Silver",
+			"bronze": "Bronze"
+		}
+	},
+	"tickets": {
+		"title": "Get your ticket now"
+	}
+}

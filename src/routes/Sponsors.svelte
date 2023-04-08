@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
 	import amanox from '$lib/images/sponsors/amanox.svg';
 	import avega from '$lib/images/sponsors/avega.png';
@@ -139,22 +140,16 @@
 
 <div class="w-full px-8 py-28">
 	<div id="sponsors" class="container mx-auto flex flex-col items-center text-center max-w-5xl">
-		<h2 class="mb-8">Sponsor*innen</h2>
+		<h2 class="mb-8">{$_('sponsors.title')}</h2>
 
 		<div class="prose text-2xl text-left">
 			<p>
-				Der Non-Profit Verein «bernerit.rocks» organisiert den Anlass für Cloud Native
-				Praktiker*innen und setzt dabei auf Sponsor*innen. Durch Ihre Unterstützung präsentieren Sie
-				sich an vorderster Front der extrem stark wachsenden Cloud Native Community der Schweiz.
-				Werden Sie Sponsor*in und knüpfen Sie Kontakte mit den anwesenden Spezialist*innen am Cloud
-				Native Day! Bitte nehmen Sie via
-				<a href="mailto:sponsoring@cloudnativeday.ch">sponsoring@cloudnativeday.ch</a>
-				Kontakt mit uns auf.
+				{@html $_('sponsors.body')}
 			</p>
 		</div>
 
 		{#if goldSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">Gold</h3>
+			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.gold')}</h3>
 			<div class="grid md:grid-cols-3 items-center">
 				{#each goldSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -167,7 +162,7 @@
 		{/if}
 
 		{#if speakerEventSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">Speaker Event</h3>
+			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.speakerEvent')}</h3>
 			<div class="grid md:grid-cols-3 items-center">
 				{#each speakerEventSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -180,7 +175,7 @@
 		{/if}
 
 		{#if afterPartySponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">After Party</h3>
+			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.afterParty')}</h3>
 			<div class="grid md:grid-cols-3 items-center">
 				{#each afterPartySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -193,7 +188,7 @@
 		{/if}
 
 		{#if silverSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">Silver</h3>
+			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.silver')}</h3>
 			<div class="grid md:grid-cols-4 items-center">
 				{#each silverSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -206,7 +201,7 @@
 		{/if}
 
 		{#if bronzeSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">Bronze</h3>
+			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.bronze')}</h3>
 			<div class="grid md:grid-cols-6 items-center">
 				{#each bronzeSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import pavillon from '$lib/images/gurten-pavillon.jpg';
+	import { _ } from 'svelte-i18n';
 </script>
 
 <div class="w-full px-8 py-28">
@@ -9,24 +10,20 @@
 	>
 		<div class="card">
 			<header>
-				<img src={pavillon} alt="Gurten Pavillon" />
+				<img src={pavillon} alt={$_('location.altPavillon')} />
 			</header>
 			<section class="p-8">
-				<h2 class="text-lg mb-8">Location</h2>
+				<h2 class="text-lg mb-8">{$_('location.title')}</h2>
 				<div class="prose text-lg text-left">
 					<p>
-						Der Cloud Native Day findet auf dem Berner Hausberg, dem Gurten statt. Am einfachsten
-						erreichst Du die Konferenz mit den öffentlichen Verkehrsmitteln.
+						{$_('location.body')}
 					</p>
 
 					<br />
 					<ul class="list-disc list-inside">
-						<li>
-							Vom Berner HB, mit dem 9ni-Tram (Richtung Wabern) benötigst Du ca. 15 min zur Station
-							«Wabern Gurtenbahn»
-						</li>
-						<li>Von dort ist es ein 5 min Spaziergang zur Gurtenbahn.</li>
-						<li>Das Gurtenbahn-Ticket ist im Konferenzticket enthalten.</li>
+						<li>{$_('location.directions.tram')}</li>
+						<li>{$_('location.directions.walk')}</li>
+						<li>{$_('location.directions.ticket')}</li>
 					</ul>
 				</div>
 			</section>

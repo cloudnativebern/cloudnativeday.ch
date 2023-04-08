@@ -1,14 +1,15 @@
 <script lang="ts">
 	import logo from '$lib/images/logo.svg';
+	import { _ } from 'svelte-i18n';
 </script>
 
 <div class="container h-screen mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center">
 		<figure>
 			<div class="img-bg" />
-			<img src={logo} alt="Logo" />
+			<img src={logo} alt={$_('hero.altLogo')} />
 		</figure>
-		<h1 class="font-bold">20. - 21. September | Bern, Switzerland</h1>
+		<h1 class="font-bold">{$_('hero.title')}</h1>
 	</div>
 </div>
 
