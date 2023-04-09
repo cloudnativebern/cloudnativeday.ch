@@ -2,6 +2,11 @@
 	import '../theme.postcss';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
+
+	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
+	import { storePopup } from '@skeletonlabs/skeleton';
+	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import mountain from '$lib/images/mountain.svg';
 	import { addMessages, init, getLocaleFromQueryString, _ } from 'svelte-i18n';
@@ -15,6 +20,16 @@
 		fallbackLocale: 'en-US',
 		initialLocale: getLocaleFromQueryString('lang')
 	});
+	import SmallNavigation from '$lib/SmallNavigation.svelte';
+	import type { NavigationItem } from '../types/NavigationItem';
+
+	const navigationItems: NavigationItem[] = [
+		{ title: $_('navigation.callForSpeakers'), href: '#cfp' },
+		{ title: $_('navigation.tickets'), href: '#tickets' },
+		{ title: $_('navigation.location'), href: '#location' },
+		{ title: $_('navigation.speakers'), href: '#speakers' },
+		{ title: $_('navigation.sponsors'), href: '#sponsors' }
+	];
 </script>
 
 <AppShell>
@@ -26,11 +41,14 @@
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a class="btn variant-ghost-primary" href="#cfp">{$_('navigation.callForSpeakers')}</a>
-				<a class="btn variant-ghost-primary" href="#tickets">{$_('navigation.tickets')}</a>
-				<a class="btn variant-ghost-primary" href="#location">{$_('navigation.location')}</a>
-				<a class="btn variant-ghost-primary" href="#speakers">{$_('navigation.speakers')}</a>
-				<a class="btn variant-ghost-primary" href="#sponsors">{$_('navigation.sponsors')}</a>
+				{#each navigationItems as navigationItem (navigationItem.title)}
+					<a class="btn variant-ghost-primary hidden md:block" href={navigationItem.href}
+						>{navigationItem.title}</a
+					>
+				{/each}
+				<div class="md:hidden">
+					<SmallNavigation {navigationItems} />
+				</div>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
