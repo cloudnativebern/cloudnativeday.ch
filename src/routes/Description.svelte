@@ -3,7 +3,7 @@
 </script>
 
 <div class="bg-slate-100 w-full px-8 py-28">
-	<div id="tickets" class="container mx-auto flex flex-col items-center text-center max-w-5xl">
+	<div class="container mx-auto flex flex-col items-center text-center max-w-5xl">
 		<h2 class="mb-8">{$_('description.title')}</h2>
 
 		<div class="prose text-2xl text-left">
