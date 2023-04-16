@@ -12,6 +12,7 @@
 	import en from '$lib/locales/en.json';
 	import de from '$lib/locales/de.json';
 	import Header from './Header.svelte';
+	import Footer from './Footer.svelte';
 	addMessages('en-US', en);
 	addMessages('de-CH', de);
 
@@ -26,4 +27,7 @@
 		<Header />
 	</svelte:fragment>
 	<slot />
+	<svelte:fragment slot="pageFooter">
+		<Footer />
+	</svelte:fragment>
 </AppShell>
