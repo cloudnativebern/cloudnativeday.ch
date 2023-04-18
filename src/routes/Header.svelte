@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Fa from 'svelte-fa';
 	import { AppBar, popup } from '@skeletonlabs/skeleton';
-	import { _ } from 'svelte-i18n';
+	import { _, locale } from 'svelte-i18n';
 	import { faBars } from '@fortawesome/free-solid-svg-icons';
 	import mountain from '$lib/images/mountain.png';
 
@@ -17,6 +17,13 @@
 		{ title: $_('navigation.speakers'), href: '/#speakers' },
 		{ title: $_('navigation.sponsors'), href: '/#sponsors' }
 	];
+	function toggleLang() {
+		if ($locale && $locale.includes('de')) {
+			locale.set('en-US');
+			return;
+		}
+		locale.set('de-CH');
+	}
 </script>
 
 <AppBar shadow="shadow-md">
@@ -32,6 +39,11 @@
 				{navigationItem.title}
 			</a>
 		{/each}
+		<button class="btn variant-ghost-secondary hidden lg:block" on:click={toggleLang}>
+			{$locale && $locale.includes('de')
+				? $_('navigation.language.english')
+				: $_('navigation.language.german')}
+		</button>
 
 		<div class="lg:hidden">
 			<button
@@ -54,6 +66,13 @@
 								</a>
 							</li>
 						{/each}
+						<li class="small-navigation-item">
+							<button class="btn variant-soft-primary" on:click={toggleLang}>
+								{$locale && $locale.includes('de')
+									? $_('navigation.language.english')
+									: $_('navigation.language.german')}
+							</button>
+						</li>
 					</ul>
 				</nav>
 			</div>
