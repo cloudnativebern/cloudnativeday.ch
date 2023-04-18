@@ -16,6 +16,7 @@
 	import campToCamp from '$lib/images/sponsors/camp-to-camp.png';
 	import bedag from '$lib/images/sponsors/bedag.svg';
 	import vshn from '$lib/images/sponsors/vshn.svg';
+	import adfinis from '$lib/images/sponsors/adfinis.png';
 
 	enum SponsorTier {
 		Gold,
@@ -128,6 +129,12 @@
 			imgSrc: bedag,
 			link: 'https://www.bedag.ch/',
 			tier: SponsorTier.SpeakerEvent
+		},
+		{
+			name: 'Adfinis',
+			imgSrc: adfinis,
+			link: 'https://adfinis.com/',
+			tier: SponsorTier.Bronze
 		}
 	];
 
