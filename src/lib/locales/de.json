@@ -5,7 +5,11 @@
 		"tickets": "Tickets",
 		"location": "Location",
 		"speakers": "Speaker*innen",
-		"sponsors": "Sponsor*innen"
+		"sponsors": "Sponsor*innen",
+		"language": {
+			"english": "English",
+			"german": "Deutsch"
+		}
 	},
 	"callForSpeakers": {
 		"title": "Wir Suchen Dich",
