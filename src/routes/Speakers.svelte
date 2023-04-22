@@ -9,23 +9,27 @@
 		name: string;
 		company: string;
 		imgSrc: string;
+		detailsUrl: string;
 	}
 
 	const speakers: Speaker[] = [
 		{
 			name: 'Anais Urlichs',
 			company: 'Aqua Security',
-			imgSrc: anaisUrlichs
+			imgSrc: anaisUrlichs,
+			detailsUrl: '/speakers/anais-urlichs'
 		},
 		{
 			name: 'Marga Manterola',
 			company: 'Isovalent',
-			imgSrc: margaManterola
+			imgSrc: margaManterola,
+			detailsUrl: '/speakers/marga-manterola'
 		},
 		{
 			name: 'Naomi Brockwell',
 			company: 'NBTV',
-			imgSrc: naomiBrockwell
+			imgSrc: naomiBrockwell,
+			detailsUrl: '/speakers/naomi-brockwell'
 		}
 	];
 </script>
@@ -37,7 +41,9 @@
 		<div class="grid md:grid-cols-4 gap-16">
 			{#each speakers as speaker (speaker.name)}
 				<div class="flex flex-col">
-					<Avatar src={speaker.imgSrc} width="w-48" height="h-48" class="mb-4" />
+					<a href={speaker.detailsUrl}>
+						<Avatar src={speaker.imgSrc} width="w-48" height="h-48" class="mb-4" />
+					</a>
 					<h4>{speaker.name}</h4>
 					<p>{speaker.company}</p>
 				</div>
