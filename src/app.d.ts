@@ -3,7 +3,9 @@
 // and what to do when importing types
 declare namespace App {
 	// interface Locals {}
-	// interface PageData {}
+	interface PageData {
+		speaker?: import('$lib/speakers/Speaker').Speaker;
+	}
 	// interface Error {}
 	// interface Platform {}
 }
