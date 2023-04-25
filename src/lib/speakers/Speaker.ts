@@ -13,9 +13,9 @@ export interface Link {
 }
 
 export enum LinkType {
-	TWITTER,
-	GITHUB,
-	HOMEPAGE,
-	BLOG,
-	LINKEDIN
+	Twitter,
+	GitHub,
+	Homepage,
+	Blog,
+	LinkedIn
 }
