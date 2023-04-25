@@ -6,6 +6,7 @@
 	import lena from '$lib/images/team/lena.jpeg';
 	import mathias from '$lib/images/team/mathias.jpeg';
 	import mathis from '$lib/images/team/mathis.jpeg';
+
 	interface TeamMember {
 		name: string;
 		tagline: string;
@@ -53,19 +54,24 @@
 	];
 </script>
 
-<section class="p-6"><h1>{$_('team.title')}</h1></section>
-<div class="w-full text-token grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
-	{#each team as member (member.name)}
-		<div class="card bg-transparent variant-soft">
-			<header class="card-header">
-				<img class="w-full rounded-lg" src={member.imgSrc} alt={member.name} />
-			</header>
+<div class="w-full px-8 py-24">
+	<section class="container mx-auto max-w-5xl">
+		<h1 class="mb-16 text-center">{$_('team.title')}</h1>
 
-			<section class="p-6">
-				<h3>{member.name}</h3>
-				<h5>{member.tagline}</h5>
-				{@html member.bio}
-			</section>
+		<div class="grid lg:grid-cols-3 gap-8">
+			{#each team as member (member.name)}
+				<div class="card bg-transparent variant-soft">
+					<header class="card-header">
+						<img class="w-full rounded-lg" src={member.imgSrc} alt={member.name} />
+					</header>
+
+					<section class="p-6">
+						<h3>{member.name}</h3>
+						<h5 class="mb-6">{member.tagline}</h5>
+						{@html member.bio}
+					</section>
+				</div>
+			{/each}
 		</div>
-	{/each}
+	</section>
 </div>

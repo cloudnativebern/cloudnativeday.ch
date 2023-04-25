@@ -5,12 +5,12 @@
 	import { faBars } from '@fortawesome/free-solid-svg-icons';
 	import mountain from '$lib/images/mountain.png';
 
-	interface NavigationItem {
+	interface NavItem {
 		title: string;
 		href: string;
 	}
 
-	const navigationItems: NavigationItem[] = [
+	const navItems: NavItem[] = [
 		{ title: $_('navigation.callForSpeakers'), href: '/#cfp' },
 		{ title: $_('navigation.tickets'), href: '/#tickets' },
 		{ title: $_('navigation.location'), href: '/#location' },
@@ -34,9 +34,9 @@
 	</svelte:fragment>
 
 	<svelte:fragment slot="trail">
-		{#each navigationItems as navigationItem (navigationItem.title)}
-			<a class="btn variant-ghost-primary hidden lg:block" href={navigationItem.href}>
-				{navigationItem.title}
+		{#each navItems as navItem (navItem.title)}
+			<a class="btn variant-ghost-primary hidden lg:block" href={navItem.href}>
+				{navItem.title}
 			</a>
 		{/each}
 		<button class="btn variant-ghost-secondary hidden lg:block" on:click={toggleLang}>
@@ -59,7 +59,7 @@
 			<div class="card p-4 w-60 shadow-xl" data-popup="small-navigation">
 				<nav class="list-nav">
 					<ul>
-						{#each navigationItems as navigationItem (navigationItem.title)}
+						{#each navItems as navigationItem (navigationItem.title)}
 							<li class="small-navigation-item">
 								<a href={navigationItem.href}>
 									{navigationItem.title}
