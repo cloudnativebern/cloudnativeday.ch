@@ -1,42 +1,40 @@
 <script lang="ts">
-	import { LinkType } from '$lib/speakers/Speaker';
 	import Fa from 'svelte-fa';
-	import type { PageData } from './$types';
 	import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 	import { faGlobe, faPencil } from '@fortawesome/free-solid-svg-icons';
+	import { LinkType } from '$lib/speakers/Speaker';
+	import type { PageData } from './$types';
 
 	export let data: PageData;
 
+	const speaker = data.speaker;
+
 	const linkTypeIcon = (linkType: LinkType) => {
 		switch (linkType) {
-			case LinkType.TWITTER:
+			case LinkType.Twitter:
 				return faTwitter;
-			case LinkType.GITHUB:
+			case LinkType.GitHub:
 				return faGithub;
-			case LinkType.HOMEPAGE:
+			case LinkType.Homepage:
 				return faGlobe;
-			case LinkType.BLOG:
+			case LinkType.Blog:
 				return faPencil;
-			case LinkType.LINKEDIN:
+			case LinkType.LinkedIn:
 				return faLinkedin;
 		}
 	};
-
-	$: speaker = data.speaker;
 </script>
 
-<div class="w-full text-token grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4">
-	{#if speaker}
-		<div class="p-4">
+<div class="w-full px-8 py-16">
+	<section class="container mx-auto max-w-5xl grid md:grid-cols-3 gap-24">
+		{#if speaker}
 			<img class="rounded-lg" src={speaker.imgSrc} alt={speaker.name} />
-		</div>
-		<div class="md:col-span-2 lg:col-span-2">
-			<section class="p-4">
-				<h1 class="p-4">{speaker.name}</h1>
-				<h4 class="p-4">{speaker.tagline}</h4>
-				<p class="p-4">{speaker.bio}</p>
+			<div class="md:col-span-2">
+				<h1>{speaker.name}</h1>
+				<h4 class="mt-4">{speaker.tagline}</h4>
+				<p class="my-12">{speaker.bio}</p>
 				{#if speaker.links}
-					<ul class="list p-4">
+					<ul class="list">
 						{#each speaker.links as link (link.text)}
 							<li>
 								<Fa icon={linkTypeIcon(link.type)} />
@@ -45,7 +43,7 @@
 						{/each}
 					</ul>
 				{/if}
-			</section>
-		</div>
-	{/if}
+			</div>
+		{/if}
+	</section>
 </div>

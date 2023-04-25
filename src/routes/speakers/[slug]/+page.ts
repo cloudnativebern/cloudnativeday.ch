@@ -18,13 +18,13 @@ export const load: PageLoad = ({ params }) => {
 						{
 							text: '@urlichsanais',
 							url: 'https://twitter.com/urlichsanais',
-							type: LinkType.TWITTER
+							type: LinkType.Twitter
 						},
-						{ text: 'anaisurl.com', url: 'https://anaisurl.com/', type: LinkType.BLOG },
+						{ text: 'anaisurl.com', url: 'https://anaisurl.com/', type: LinkType.Blog },
 						{
 							text: 'linkedin.com/in/urlichsanais/',
 							url: 'https://www.linkedin.com/in/urlichsanais/',
-							type: LinkType.LINKEDIN
+							type: LinkType.LinkedIn
 						}
 					]
 				}
@@ -51,13 +51,13 @@ export const load: PageLoad = ({ params }) => {
 						{
 							text: '@marga_manterola',
 							url: 'https://twitter.com/marga_manterola',
-							type: LinkType.TWITTER
+							type: LinkType.Twitter
 						},
-						{ text: 'isovalent.com', url: 'https://www.isovalent.com/', type: LinkType.HOMEPAGE },
+						{ text: 'isovalent.com', url: 'https://www.isovalent.com/', type: LinkType.Homepage },
 						{
 							text: 'linkedin.com/in/margamanterola/',
 							url: 'https://www.linkedin.com/in/margamanterola/',
-							type: LinkType.LINKEDIN
+							type: LinkType.LinkedIn
 						}
 					]
 				}
