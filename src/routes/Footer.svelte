@@ -11,7 +11,7 @@
 			<a class="logo-item" href="https://twitter.com/cloudnativebern">
 				<Fa icon={faTwitter} size="2x" />
 			</a>
-			<a class="logo-item" href="https://www.youtube.com/channel/UCkBYwOSHo1AbRBdQz1W5YQg">
+			<a class="logo-item" href="https://www.youtube.com/@cloudnativebern/">
 				<Fa icon={faYoutube} size="2x" />
 			</a>
 		</div>
