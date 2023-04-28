@@ -17,13 +17,15 @@
 	import bedag from '$lib/images/sponsors/bedag.svg';
 	import vshn from '$lib/images/sponsors/vshn.svg';
 	import adfinis from '$lib/images/sponsors/adfinis.png';
+	import acend from '$lib/images/sponsors/acend.webp';
 
 	enum SponsorTier {
 		Gold,
 		Silver,
 		Bronze,
 		SpeakerEvent,
-		AfterParty
+		AfterParty,
+		Workshop
 	}
 
 	interface Sponsor {
@@ -135,6 +137,12 @@
 			imgSrc: adfinis,
 			link: 'https://adfinis.com/',
 			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'acend',
+			imgSrc: acend,
+			link: 'https://acend.ch/',
+			tier: SponsorTier.Workshop
 		}
 	];
 
@@ -143,6 +151,7 @@
 	const bronzeSponsors = sponsors.filter((s) => s.tier === SponsorTier.Bronze);
 	const speakerEventSponsors = sponsors.filter((s) => s.tier === SponsorTier.SpeakerEvent);
 	const afterPartySponsors = sponsors.filter((s) => s.tier === SponsorTier.AfterParty);
+	const workshopSponsors = sponsors.filter((s) => s.tier === SponsorTier.Workshop);
 </script>
 
 <div class="w-full px-8 py-28">
@@ -185,6 +194,19 @@
 			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.afterParty')}</h3>
 			<div class="grid md:grid-cols-3 items-center">
 				{#each afterPartySponsors as sponsor (sponsor.name)}
+					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
+						<div class="block p-4 w-full">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
+						</div>
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		{#if workshopSponsors.length > 0}
+			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.workshop')}</h3>
+			<div class="grid md:grid-cols-4 items-center">
+				{#each workshopSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
