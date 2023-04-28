@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<script src="https://js.tito.io/v2" async></script>
+	<script src="https://js.tito.io/v2"></script>
 </svelte:head>
 
 <div class="bg-slate-100 w-full px-8 py-28">
