@@ -179,7 +179,7 @@
 
 		{#if speakerEventSponsors.length > 0}
 			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.speakerEvent')}</h3>
-			<div class="grid md:grid-cols-3 items-center">
+			<div class="grid md:grid-cols-4 items-center">
 				{#each speakerEventSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
