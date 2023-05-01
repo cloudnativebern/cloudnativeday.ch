@@ -33,8 +33,8 @@ export const load: PageLoad = ({ params }) => {
 			return {
 				speaker: {
 					name: 'Naomi Brockwell',
-					bio: '',
-					tagline: '',
+					bio: 'Naomi Brockwell is a tech journalist, and creator of "NBTV.media". NBTV is a tech channel, with 700k subscribers across platforms, that teaches people how to reclaim control of their lives in the digital age. The channel gives people the tools they need to take back their privacy, money, and free online expression.<br /><br /> From 2013 - 2015 she worked as a policy associate at the New York Bitcoin Center.From 2015 - 2021 she has worked as a producer for 19 - times Emmy- Award - Winning Journalist John Stossel.From 2021 to 2022 she hosted the CoinDesk series "Break it Down", and the CoinDesk daily show "The Hash".<br /><br /> Naomi was a producer for the 2015 feature documentary Bitcoin: The End of Money as We Know It (Best International Documentary, Anthem Film Festival; Winner of Special Jury Prize, Amsterdam Film Festival), and producer of the 2018 award - winning documentary about the housing crash The Bubble.<br /><br /> Naomi is the co- founder of The Soho Forum, a NY debate series.She is on the Advisory Council at the Mannkal Economic Education Foundation, and is author of "Beginner\'s Introduction To Privacy", and the children\'s book "Billy\'s Bitcoin".',
+					tagline: 'Tech Journalist and Creator of NBTV',
 					imgSrc: naomiBrockwell,
 					links: []
 				}

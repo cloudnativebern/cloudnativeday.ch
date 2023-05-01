@@ -32,7 +32,7 @@
 			<div class="md:col-span-2">
 				<h1>{speaker.name}</h1>
 				<h4 class="mt-4">{speaker.tagline}</h4>
-				<p class="my-12">{speaker.bio}</p>
+				<p class="my-12">{@html speaker.bio}</p>
 				{#if speaker.links}
 					<ul class="list">
 						{#each speaker.links as link (link.text)}
