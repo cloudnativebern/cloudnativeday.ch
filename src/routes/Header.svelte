@@ -11,7 +11,6 @@
 	}
 
 	const navItems: NavItem[] = [
-		{ title: $_('navigation.callForSpeakers'), href: '/#cfp' },
 		{ title: $_('navigation.tickets'), href: '/#tickets' },
 		{ title: $_('navigation.location'), href: '/#location' },
 		{ title: $_('navigation.speakers'), href: '/#speakers' },
