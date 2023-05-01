@@ -35,9 +35,8 @@
 </script>
 
 <div class="bg-slate-100 w-full px-8 py-28">
-	<div id="speakers" class="container mx-auto flex flex-col items-center text-center max-w-5xl">
+	<div id="speakers" class="container mx-auto items-center text-center max-w-5xl">
 		<h2 class="mb-16">{$_('speakers.title')}</h2>
-
 		<div class="grid md:grid-cols-4 gap-16">
 			{#each speakers as speaker (speaker.name)}
 				<div class="flex flex-col">
