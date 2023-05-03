@@ -18,6 +18,7 @@
 	import vshn from '$lib/images/sponsors/vshn.svg';
 	import adfinis from '$lib/images/sponsors/adfinis.png';
 	import acend from '$lib/images/sponsors/acend.webp';
+	import prodyna from '$lib/images/sponsors/prodyna.png';
 
 	enum SponsorTier {
 		Gold,
@@ -143,6 +144,12 @@
 			imgSrc: acend,
 			link: 'https://acend.ch/',
 			tier: SponsorTier.Workshop
+		},
+		{
+			name: 'PRODYNA',
+			imgSrc: prodyna,
+			link: 'https://www.prodyna.com/',
+			tier: SponsorTier.Silver
 		}
 	];
 
