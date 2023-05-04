@@ -2,7 +2,7 @@
 	import '../theme.postcss';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
-	import { AppShell, tableInteraction } from '@skeletonlabs/skeleton';
+	import { AppShell } from '@skeletonlabs/skeleton';
 
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
@@ -13,7 +13,6 @@
 	import de from '$lib/locales/de.json';
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
-	import { action_destroyer } from 'svelte/internal';
 	addMessages('en-US', en);
 	addMessages('de-CH', de);
 
