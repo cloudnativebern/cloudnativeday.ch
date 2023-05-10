@@ -68,6 +68,7 @@
 					<section class="p-6">
 						<h3>{member.name}</h3>
 						<h5 class="mb-6">{member.tagline}</h5>
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html member.bio}
 					</section>
 				</div>

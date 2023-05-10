@@ -7,9 +7,8 @@
 		<h2 class="mb-8">{$_('callForSpeakers.title')}</h2>
 
 		<div class="prose text-2xl">
-			<p>
-				{@html $_('callForSpeakers.body')}
-			</p>
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			<p>{@html $_('callForSpeakers.body')}</p>
 		</div>
 	</div>
 </div>

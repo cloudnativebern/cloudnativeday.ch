@@ -8,7 +8,7 @@
 	import puzzle from '$lib/images/sponsors/puzzle.svg';
 	import postfinance from '$lib/images/sponsors/postfinance.svg';
 	import swisscom from '$lib/images/sponsors/swisscom.svg';
-	import diePost from '$lib/images/sponsors/diepost.webp';
+	import diePost from '$lib/images/sponsors/diepost.svg';
 	import aws from '$lib/images/sponsors/aws.png';
 	import adnovum from '$lib/images/sponsors/adnovum.png';
 	import sbb from '$lib/images/sponsors/sbb.png';
@@ -19,6 +19,9 @@
 	import adfinis from '$lib/images/sponsors/adfinis.png';
 	import acend from '$lib/images/sponsors/acend.webp';
 	import prodyna from '$lib/images/sponsors/prodyna.png';
+	import vmware from '$lib/images/sponsors/vmware.svg';
+	import netcloud from '$lib/images/sponsors/netcloud.png';
+	import scigility from '$lib/images/sponsors/scigility.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -150,6 +153,24 @@
 			imgSrc: prodyna,
 			link: 'https://www.prodyna.com/',
 			tier: SponsorTier.Silver
+		},
+		{
+			name: 'VMware',
+			imgSrc: vmware,
+			link: 'https://www.vmware.com/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Netcloud',
+			imgSrc: netcloud,
+			link: 'https://www.netcloud.ch/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Scigility',
+			imgSrc: scigility,
+			link: 'https://scigility.com/',
+			tier: SponsorTier.Bronze
 		}
 	];
 
@@ -166,9 +187,8 @@
 		<h2 class="mb-8">{$_('sponsors.title')}</h2>
 
 		<div class="prose text-2xl text-left">
-			<p>
-				{@html $_('sponsors.body')}
-			</p>
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			<p>{@html $_('sponsors.body')}</p>
 		</div>
 
 		{#if goldSponsors.length > 0}
@@ -229,7 +249,7 @@
 				{#each silverSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
+							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-24" />
 						</div>
 					</a>
 				{/each}

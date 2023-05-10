@@ -32,6 +32,7 @@
 			<div class="md:col-span-2">
 				<h1>{speaker.name}</h1>
 				<h4 class="mt-4">{speaker.tagline}</h4>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				<p class="my-12">{@html speaker.bio}</p>
 				{#if speaker.links}
 					<ul class="list">
