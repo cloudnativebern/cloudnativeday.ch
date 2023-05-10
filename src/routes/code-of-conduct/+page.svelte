@@ -16,13 +16,17 @@
 
 		<div>
 			<h2 class="mb-4">{$_('coc.lessQuickVersion.title')}</h2>
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			<p>{@html $_('coc.lessQuickVersion.text')}</p>
 		</div>
 
 		<p>
 			<i>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html $_('coc.source')}<br />
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html $_('coc.pleaseHelp')}<br />
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html $_('coc.license')}
 			</i>
 		</p>
