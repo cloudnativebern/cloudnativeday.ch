@@ -6,6 +6,7 @@
 	import lena from '$lib/images/team/lena.jpeg';
 	import mathias from '$lib/images/team/mathias.jpeg';
 	import mathis from '$lib/images/team/mathis.jpeg';
+	import { Avatar } from '@skeletonlabs/skeleton';
 
 	interface TeamMember {
 		name: string;
@@ -58,16 +59,16 @@
 	<section class="container mx-auto max-w-5xl">
 		<h1 class="mb-16 text-center">{$_('team.title')}</h1>
 
-		<div class="grid lg:grid-cols-3 gap-8">
+		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 			{#each team as member (member.name)}
 				<div class="card bg-transparent variant-soft">
 					<header class="card-header">
-						<img class="w-full rounded-lg" src={member.imgSrc} alt={member.name} />
+						<Avatar src={member.imgSrc} width="w-48" height="h-48" class="mb-4" />
 					</header>
 
-					<section class="p-6">
+					<section class="p-2">
 						<h3>{member.name}</h3>
-						<h5 class="mb-6">{member.tagline}</h5>
+						<h5 class="mb-4">{member.tagline}</h5>
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html member.bio}
 					</section>
