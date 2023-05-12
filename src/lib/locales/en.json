@@ -6,6 +6,7 @@
 		"location": "Location",
 		"speakers": "Speakers",
 		"sponsors": "Sponsors",
+		"team": "Team",
 		"language": {
 			"english": "English",
 			"german": "Deutsch"
@@ -68,7 +69,6 @@
 	"footer": {
 		"aboutUs": {
 			"title": "About us",
-			"team": "Team",
 			"coc": "Code of Conduct",
 			"imprint": "Imprint & Data Privacy",
 			"contact": "Contact"
