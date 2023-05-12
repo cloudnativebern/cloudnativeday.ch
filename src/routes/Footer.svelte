@@ -23,7 +23,6 @@
 	<svelte:fragment slot="trail">
 		<section class="w-full p-4">
 			<h5>{$_('footer.aboutUs.title')}</h5>
-			<p><a href="/team">{$_('footer.aboutUs.team')}</a></p>
 			<p><a href="/code-of-conduct">{$_('footer.aboutUs.coc')}</a></p>
 			<p><a href="/imprint">{$_('footer.aboutUs.imprint')}</a></p>
 			<p><a href="mailto:info@cloudnativeday.ch">{$_('footer.aboutUs.contact')}</a></p>

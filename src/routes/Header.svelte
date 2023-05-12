@@ -14,7 +14,8 @@
 		{ title: $_('navigation.tickets'), href: '/#tickets' },
 		{ title: $_('navigation.location'), href: '/#location' },
 		{ title: $_('navigation.speakers'), href: '/#speakers' },
-		{ title: $_('navigation.sponsors'), href: '/#sponsors' }
+		{ title: $_('navigation.sponsors'), href: '/#sponsors' },
+		{ title: $_('navigation.team'), href: '/team' }
 	];
 	function toggleLang() {
 		if ($locale && $locale.includes('de')) {
