@@ -6,6 +6,7 @@
 	import lena from '$lib/images/team/lena.jpeg';
 	import mathias from '$lib/images/team/mathias.jpeg';
 	import mathis from '$lib/images/team/mathis.jpeg';
+	import marc from '$lib/images/team/marc.jpeg';
 	import { Avatar } from '@skeletonlabs/skeleton';
 
 	interface TeamMember {
@@ -51,6 +52,13 @@
 			tagline: $_('team.mathis.tagline'),
 			imgSrc: mathis,
 			bio: $_('team.mathis.bio')
+		}
+		,
+		{
+			name: $_('team.marc.name'),
+			tagline: $_('team.marc.tagline'),
+			imgSrc: marc,
+			bio: $_('team.marc.bio')
 		}
 	];
 </script>

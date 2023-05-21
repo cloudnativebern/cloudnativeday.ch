@@ -105,6 +105,11 @@
 			"name": "Mathis Kretz",
 			"tagline": "Keeper of Simple",
 			"bio": "Mathis is a cloud native software architect and engineer. Together with Lena Fuhrimann he founded bespinian in 2019 where he is helping customers become successful in building new applications in public and private clouds or in migrating existing ones into such environments. His main focus is on microservices, Infrastructure as Code and DevOps. Mathis has experience in implementing these principles in serverless as well as Kubernetes- or even classical VM-based platforms.<br/><br/>He is also frequently trying to keep two kids amused."
+		},
+		"marc": {
+			"name": "Marc Merzinger",
+			"tagline": "Cloud Native Travel Guide",
+			"bio": "Marc is an architect and engineer at ti&m. He helps companies adopt cloud native technology, whether by building architectures or implementing them. For him, it is important to share knowledge within teams to create sustainable solutions. Technology is a vehicle to create solutions for humans. <br/><br/> In his spare time, he enjoys exploring open source projects - and sometimes real life things like how to make good coffee."
 		}
 	},
 	"coc": {
