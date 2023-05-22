@@ -110,6 +110,11 @@
 			"name": "Marc Merzinger",
 			"tagline": "Cloud Native Travel Guide",
 			"bio": "Marc is an architect and engineer at ti&m. He helps companies adopt cloud native technology, whether by building architectures or implementing them. For him, it is important to share knowledge within teams to create sustainable solutions. Technology is a vehicle to create solutions for humans. <br/><br/> In his spare time, he enjoys exploring open source projects - and sometimes real life things like how to make good coffee."
+		},
+		"luana": {
+			"name": "Luana Cusseddu",
+			"tagline": "Cloud Native System Engineer",
+			"bio": "Luana is a System Engineer who has built up her skills in different infrastructure environments and is working with PostFinance as the Product Owner of the Kubernetes Team. She believes that inclusiveness is the key to developing an excellent product and she embraces diverse perspectives with open ears and a judgment-free mindest. <br/><br/> Her personal quest: never to get stuck in the comfort zone."
 		}
 	},
 	"coc": {
