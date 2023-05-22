@@ -52,8 +52,7 @@
 			tagline: $_('team.mathis.tagline'),
 			imgSrc: mathis,
 			bio: $_('team.mathis.bio')
-		}
-		,
+		},
 		{
 			name: $_('team.marc.name'),
 			tagline: $_('team.marc.tagline'),
