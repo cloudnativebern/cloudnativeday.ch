@@ -3,6 +3,7 @@
 	import anaisUrlichs from '$lib/images/speakers/anais-urlichs.png';
 	import margaManterola from '$lib/images/speakers/marga-manterola.jpeg';
 	import naomiBrockwell from '$lib/images/speakers/naomi-brockwell.webp';
+	import gregorHohpe from '$lib/images/speakers/gregor-hohpe.jpg';
 	import { _ } from 'svelte-i18n';
 
 	interface Speaker {
@@ -30,6 +31,12 @@
 			company: 'NBTV',
 			imgSrc: naomiBrockwell,
 			slug: 'naomi-brockwell'
+		},
+		{
+			name: 'Gregor Hohpe',
+			company: 'AWS',
+			imgSrc: gregorHohpe,
+			slug: 'gregor-hohpe'
 		}
 	];
 </script>
