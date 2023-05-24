@@ -11,7 +11,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@floating-ui/dom": "^1.2.7",
+		"@floating-ui/dom": "^1.2.8",
 		"@fortawesome/free-brands-svg-icons": "^6.4.0",
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
 		"@skeletonlabs/skeleton": "~1.2.5",
