@@ -3,6 +3,7 @@ import type { PageLoad } from './$types';
 import anaisUrlichs from '$lib/images/speakers/anais-urlichs.png';
 import margaManterola from '$lib/images/speakers/marga-manterola.jpeg';
 import naomiBrockwell from '$lib/images/speakers/naomi-brockwell.webp';
+import gregorHohpe from '$lib/images/speakers/gregor-hohpe.jpg';
 import { LinkType } from '$lib/speakers/Speaker';
 
 export const load: PageLoad = ({ params }) => {
@@ -57,6 +58,29 @@ export const load: PageLoad = ({ params }) => {
 						{
 							text: 'linkedin.com/in/margamanterola/',
 							url: 'https://www.linkedin.com/in/margamanterola/',
+							type: LinkType.LinkedIn
+						}
+					]
+				}
+			};
+
+		case 'gregor-hohpe':
+			return {
+				speaker: {
+					name: 'Gregor Hohpe',
+					bio: 'As Director of Enterprise Strategy at AWS, Gregor helps technology leaders transform both their organization and their technology platform. You’ll find him riding the Architect Elevator from the engine room to the penthouse, perhaps automating serverless solutions in the morning and preparing board presentations in the afternoon. His favorite pastime is dissecting buzzwords and replacing them with meaningful decisions and architectural trade-offs.<br /><br />Gregor is known as co-author of the seminal book Enterprise Integration Patterns, which provided the reference vocabulary for all modern ESBs. His book The Software Architect Elevator tells stories from the trenches of IT transformation while his articles have been featured in Best Software Writing by Joel Spolsky and 97 Things Every Software Architect Should Know. He is an active member of the IEEE Software advisory board.',
+					tagline: 'Enterprise Strategist at AWS',
+					imgSrc: gregorHohpe,
+					links: [
+						{
+							text: '@ghohpe',
+							url: 'https://twitter.com/ghohpe',
+							type: LinkType.Twitter
+						},
+						{ text: 'aws.amazon.com', url: 'https://aws.amazon.com/', type: LinkType.Homepage },
+						{
+							text: 'linkedin.com/in/ghohpe/',
+							url: 'https://www.linkedin.com/in/ghohpe/',
 							type: LinkType.LinkedIn
 						}
 					]
