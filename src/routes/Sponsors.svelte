@@ -22,6 +22,7 @@
 	import vmware from '$lib/images/sponsors/vmware.svg';
 	import netcloud from '$lib/images/sponsors/netcloud.png';
 	import scigility from '$lib/images/sponsors/scigility.svg';
+	import veeam from '$lib/images/sponsors/veeam.png';
 
 	enum SponsorTier {
 		Gold,
@@ -165,6 +166,12 @@
 			imgSrc: netcloud,
 			link: 'https://www.netcloud.ch/',
 			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Veeam',
+			imgSrc: veeam,
+			link: 'https://www.veeam.com/',
+			tier: SponsorTier.Bronze
 		},
 		{
 			name: 'Scigility',
