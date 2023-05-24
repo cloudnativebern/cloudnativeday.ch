@@ -4,6 +4,8 @@
 	import '../app.postcss';
 	import { AppShell } from '@skeletonlabs/skeleton';
 
+	import { dev } from '$app/environment';
+
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
@@ -48,6 +50,11 @@
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={imageUrl} />
+
+	<!-- Analytics -->
+	{#if !dev}
+		<script defer data-domain="cloudnativeday.ch" src="https://plausible.io/js/script.js"></script>
+	{/if}
 </svelte:head>
 
 <AppShell>
