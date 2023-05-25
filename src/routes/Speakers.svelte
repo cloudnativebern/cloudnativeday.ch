@@ -1,57 +1,22 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
-	import anaisUrlichs from '$lib/images/speakers/anais-urlichs.png';
-	import margaManterola from '$lib/images/speakers/marga-manterola.jpeg';
-	import naomiBrockwell from '$lib/images/speakers/naomi-brockwell.webp';
-	import gregorHohpe from '$lib/images/speakers/gregor-hohpe.jpg';
 	import { _ } from 'svelte-i18n';
+	import type Speaker from '$lib/Speaker';
 
-	interface Speaker {
-		name: string;
-		company: string;
-		imgSrc: string;
-		slug: string;
-	}
-
-	const speakers: Speaker[] = [
-		{
-			name: 'Anais Urlichs',
-			company: 'Aqua Security',
-			imgSrc: anaisUrlichs,
-			slug: 'anais-urlichs'
-		},
-		{
-			name: 'Marga Manterola',
-			company: 'Isovalent',
-			imgSrc: margaManterola,
-			slug: 'marga-manterola'
-		},
-		{
-			name: 'Naomi Brockwell',
-			company: 'NBTV',
-			imgSrc: naomiBrockwell,
-			slug: 'naomi-brockwell'
-		},
-		{
-			name: 'Gregor Hohpe',
-			company: 'AWS',
-			imgSrc: gregorHohpe,
-			slug: 'gregor-hohpe'
-		}
-	];
+	export let speakers: Speaker[];
 </script>
 
 <div class="bg-slate-100 w-full px-8 py-28">
 	<div id="speakers" class="container mx-auto items-center text-center max-w-5xl">
 		<h2 class="mb-16">{$_('speakers.title')}</h2>
 		<div class="grid md:grid-cols-3 lg:grid-cols-4 gap-16">
-			{#each speakers as speaker (speaker.name)}
+			{#each speakers as speaker (speaker.id)}
 				<div class="flex flex-col items-center">
-					<a href="/speakers/{speaker.slug}">
-						<Avatar src={speaker.imgSrc} width="w-48" height="h-48" class="mb-4" />
+					<a href="/speakers/{speaker.id}">
+						<Avatar src={speaker.profilePicture} width="w-48" height="h-48" class="mb-4" />
 					</a>
-					<h4>{speaker.name}</h4>
-					<p>{speaker.company}</p>
+					<h4>{speaker.fullName}</h4>
+					<p>{speaker.tagLine}</p>
 				</div>
 			{/each}
 		</div>

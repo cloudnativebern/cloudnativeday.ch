@@ -4,7 +4,8 @@
 declare namespace App {
 	// interface Locals {}
 	interface PageData {
-		speaker?: import('$lib/speakers/Speaker').Speaker;
+		speakers?: Promise<import('$lib/Speaker').Speaker[]>;
+		speaker?: Promise<import('$lib/Speaker').Speaker>;
 	}
 	// interface Error {}
 	// interface Platform {}
