@@ -25,7 +25,7 @@
 		<div class="md:col-span-2">
 			<h1>{data.speaker.fullName}</h1>
 			<h4 class="mt-4">{data.speaker.tagLine}</h4>
-			<p class="my-12">{data.speaker.bio}</p>
+			<p class="my-12 whitespace-pre-wrap">{data.speaker.bio}</p>
 			{#if data.speaker.links}
 				<ul class="list">
 					{#each data.speaker.links as link (link.linkType)}
