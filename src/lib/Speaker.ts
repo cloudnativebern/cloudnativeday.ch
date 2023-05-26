@@ -4,7 +4,7 @@ export enum LinkType {
 	Twitter = 'Twitter'
 }
 
-interface Speaker {
+export interface Speaker {
 	id: string;
 	firstName: string;
 	lastName: string;
@@ -26,4 +26,17 @@ interface Speaker {
 	categories: string;
 }
 
-export default Speaker;
+export interface SpeakerDetails extends Speaker {
+	bio: string;
+	sessions: {
+		id: string;
+		name: string;
+	}[];
+	links: {
+		title: string;
+		url: string;
+		linkType: LinkType;
+	}[];
+	questionAnswers: string;
+	categories: string;
+}

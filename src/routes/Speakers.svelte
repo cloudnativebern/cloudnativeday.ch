@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import { _ } from 'svelte-i18n';
-	import type Speaker from '$lib/Speaker';
+	import type { Speaker } from '$lib/Speaker';
 
 	export let speakers: Speaker[];
 </script>
