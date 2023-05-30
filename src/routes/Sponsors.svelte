@@ -193,7 +193,7 @@
 	<div id="sponsors" class="container mx-auto items-center text-center max-w-5xl">
 		<h2 class="mb-8">{$_('sponsors.title')}</h2>
 
-		<div class="prose text-2xl text-left">
+		<div class="text-2xl text-left">
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			<p>{@html $_('sponsors.body')}</p>
 		</div>
