@@ -23,6 +23,7 @@
 	import netcloud from '$lib/images/sponsors/netcloud.png';
 	import scigility from '$lib/images/sponsors/scigility.svg';
 	import veeam from '$lib/images/sponsors/veeam.png';
+	import cncf from '$lib/images/sponsors/cncf.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -30,7 +31,8 @@
 		Bronze,
 		SpeakerEvent,
 		AfterParty,
-		Workshop
+		Workshop,
+		Community
 	}
 
 	interface Sponsor {
@@ -178,6 +180,12 @@
 			imgSrc: scigility,
 			link: 'https://scigility.com/',
 			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'CNCF',
+			imgSrc: cncf,
+			link: 'https://www.cncf.io/',
+			tier: SponsorTier.Community
 		}
 	];
 
@@ -187,6 +195,7 @@
 	const speakerEventSponsors = sponsors.filter((s) => s.tier === SponsorTier.SpeakerEvent);
 	const afterPartySponsors = sponsors.filter((s) => s.tier === SponsorTier.AfterParty);
 	const workshopSponsors = sponsors.filter((s) => s.tier === SponsorTier.Workshop);
+	const communitySponsors = sponsors.filter((s) => s.tier === SponsorTier.Community);
 </script>
 
 <div class="w-full px-8 py-28">
@@ -267,6 +276,19 @@
 			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.bronze')}</h3>
 			<div class="w-full grid md:grid-cols-6 items-center">
 				{#each bronzeSponsors as sponsor (sponsor.name)}
+					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
+						<div class="block p-4 w-full">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
+						</div>
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		{#if communitySponsors.length > 0}
+			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.community')}</h3>
+			<div class="w-full grid md:grid-cols-4 items-center">
+				{#each communitySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
