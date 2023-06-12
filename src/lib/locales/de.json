@@ -60,7 +60,8 @@
 			"afterParty": "After Party",
 			"silver": "Silver",
 			"bronze": "Bronze",
-			"workshop": "Workshops"
+			"workshop": "Workshops",
+			"community": "Community"
 		}
 	},
 	"tickets": {
