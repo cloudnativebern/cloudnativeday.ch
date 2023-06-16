@@ -49,7 +49,7 @@
 			<button
 				class="btn hover:variant-ghost-primary"
 				use:popup={{
-					event: 'focus-click',
+					event: 'click',
 					target: 'small-navigation',
 					closeQuery: '.small-navigation-item'
 				}}
