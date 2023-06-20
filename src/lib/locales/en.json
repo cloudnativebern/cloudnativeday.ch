@@ -5,6 +5,7 @@
 		"tickets": "Tickets",
 		"location": "Location",
 		"speakers": "Speakers",
+		"workshops": "Workshops",
 		"sponsors": "Sponsors",
 		"team": "Team",
 		"language": {
@@ -47,6 +48,9 @@
 			"title": "Mount Gurten",
 			"text": "One day, 250 participants, atop Bern‘s lovely Mount Gurten."
 		}
+	},
+	"workshops": {
+		"title": "Workshops"
 	},
 	"speakers": {
 		"title": "Speakers"
