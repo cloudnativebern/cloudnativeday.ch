@@ -6,6 +6,8 @@ declare namespace App {
 	interface PageData {
 		speakers?: Promise<import('$lib/Speaker').Speaker[]>;
 		speaker?: Promise<import('$lib/Speaker').Speaker>;
+		sessions?: Promise<import('$lib/Session').GroupedSession>;
+		session?: Promise<import('$lib/Session').Session>;
 	}
 	// interface Error {}
 	// interface Platform {}
