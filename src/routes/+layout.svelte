@@ -25,7 +25,7 @@
 
 	const title = 'Swiss Cloud Native Day 2023';
 	const description =
-		'On September 20 & 21, 2023, the local Cloud Native community will organize the third edition of the Swiss Cloud Native Day on Mount Gurten, Bern, Switzerland.';
+		'On September 20 & 21, 2023, our local Cloud Native community will organize the third edition of the Swiss Cloud Native Day on Mount Gurten, Bern, Switzerland.';
 	const domain = 'cloudnativeday.ch';
 	const url = 'https://' + domain;
 	const imageUrl = url + '/logo.webp';
