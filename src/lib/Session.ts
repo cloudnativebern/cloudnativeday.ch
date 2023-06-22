@@ -1,3 +1,6 @@
+import kubernetes from '$lib/images/technologies/kubernetes.svg';
+import argoCD from '$lib/images/technologies/argo-cd.svg';
+
 export enum SessionStatus {
 	Accepted = 'Accepted'
 }
@@ -43,4 +46,19 @@ interface SessionCategory {
 		id: string;
 		name: string;
 	}[];
+}
+
+export function sessionLogo(session: Session) {
+	for (const c of session.categories) {
+		if (c.name === 'Logo') {
+			for (const i of c.categoryItems) {
+				switch (i.name) {
+					case 'Kubernetes':
+						return kubernetes;
+					case 'Argo CD':
+						return argoCD;
+				}
+			}
+		}
+	}
 }
