@@ -2,7 +2,9 @@
 	import { PUBLIC_CFP_END_DATE } from '$env/static/public';
 	import { _ } from 'svelte-i18n';
 
-	const isOpen = new Date(PUBLIC_CFP_END_DATE).getDate() >= new Date().getDate();
+	const cfpEndDate = new Date(PUBLIC_CFP_END_DATE);
+	const today = new Date(new Date().toDateString());
+	const isOpen = cfpEndDate >= today;
 </script>
 
 {#if isOpen}
