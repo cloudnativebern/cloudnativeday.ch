@@ -1,5 +1,6 @@
 import kubernetes from '$lib/images/technologies/kubernetes.svg';
 import argoCD from '$lib/images/technologies/argo-cd.svg';
+import backstage from '$lib/images/technologies/backstage.svg';
 
 export enum SessionStatus {
 	Accepted = 'Accepted'
@@ -57,6 +58,8 @@ export function sessionLogo(session: Session) {
 						return kubernetes;
 					case 'Argo CD':
 						return argoCD;
+					case 'Backstage':
+						return backstage;
 				}
 			}
 		}
