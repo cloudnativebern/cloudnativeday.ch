@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+env:
+  PUBLIC_CFP_END_DATE: 2023-04-30
+  PUBLIC_SESSIONIZE_JSON_CLIENT_ID: ci31vfb4
+  PUBLIC_SESSIONIZE_HTML_CLIENT_ID: rkc8fbjq
+
 jobs:
   lint:
     name: Lint
@@ -25,10 +30,6 @@ jobs:
     name: Build
     needs: lint
     runs-on: ubuntu-latest
-    env:
-      PUBLIC_CFP_END_DATE: 2023-04-30
-      PUBLIC_SESSIONIZE_JSON_CLIENT_ID: ci31vfb4
-      PUBLIC_SESSIONIZE_HTML_CLIENT_ID: rkc8fbjq
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v3
