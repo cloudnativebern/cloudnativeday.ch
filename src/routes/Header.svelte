@@ -4,6 +4,8 @@
 	import { _, locale } from 'svelte-i18n';
 	import { faBars } from '@fortawesome/free-solid-svg-icons';
 	import mountain from '$lib/images/mountain.png';
+	import { PUBLIC_SCHEDULE_PUBLISHED } from '$env/static/public';
+	const schedulePublished = PUBLIC_SCHEDULE_PUBLISHED;
 
 	interface NavItem {
 		title: string;
@@ -18,6 +20,11 @@
 		{ title: $_('navigation.sponsors'), href: '/#sponsors' },
 		{ title: $_('navigation.team'), href: '/team' }
 	];
+
+	if (schedulePublished) {
+		navItems.splice(3, 0, { title: $_('navigation.schedule'), href: '/#schedule' });
+	}
+
 	function toggleLang() {
 		if ($locale && $locale.includes('de')) {
 			locale.set('en-US');
