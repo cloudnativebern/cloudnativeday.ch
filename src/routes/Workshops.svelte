@@ -8,7 +8,8 @@
 
 <div class="bg-slate-100 w-full px-8 py-28">
 	<div id="workshops" class="container mx-auto items-center text-center max-w-5xl">
-		<h2 class="mb-16">{$_('workshops.title')}</h2>
+		<h2 class="mb-8">{$_('workshops.title')}</h2>
+		<p class="mb-16 text-left">{$_('workshops.description')}</p>
 		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-16">
 			{#each workshops as workshop (workshop.id)}
 				<a href="/sessions/{workshop.id}" style="text-decoration:none;">

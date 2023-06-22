@@ -50,7 +50,8 @@
 		}
 	},
 	"workshops": {
-		"title": "Workshops"
+		"title": "Workshops",
+		"description": "Get your hands dirty and check out our great selection of hands-on workshops this year. The trainers offer a unique perspective and highlight certain topics to allow you to get practical experience with the following topics:"
 	},
 	"speakers": {
 		"title": "Speakers"
