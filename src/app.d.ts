@@ -8,6 +8,7 @@ declare namespace App {
 		speaker?: Promise<import('$lib/Speaker').Speaker>;
 		sessions?: Promise<import('$lib/Session').GroupedSession>;
 		session?: Promise<import('$lib/Session').Session>;
+		schedule?: Promise<import('$lib/Schedule').Schedule>;
 	}
 	// interface Error {}
 	// interface Platform {}

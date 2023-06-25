@@ -56,6 +56,9 @@
 	"speakers": {
 		"title": "Speakers"
 	},
+	"schedule": {
+		"dates": ["Wednesday, September 20", "Thursday, September 21"]
+	},
 	"sponsors": {
 		"title": "Sponsors",
 		"body": "The nonprofit association “bernerit.rocks” organizes this event for Cloud Native practitioners with the help of lots of voluntary work and of course sponsors. With a sponsorship, you can present yourself prominently in front of this extremely fast growing Swiss Cloud Native Community. Become a sponsor and get in contact with the Cloud Native specialists at the first Swiss Cloud Native Day! Please contact <a href=\"mailto:sponsoring@cloudnativeday.ch\">sponsoring@cloudnativeday.ch</a>.",

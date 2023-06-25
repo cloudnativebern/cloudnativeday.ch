@@ -52,6 +52,9 @@
 	"speakers": {
 		"title": "Speaker:innen"
 	},
+	"schedule": {
+		"dates": ["Mittwoch, 20. September", "Donnerstag, 21. September"]
+	},
 	"workshops": {
 		"title": "Workshops",
 		"description": "Greif in die Tasten und schau dir unsere tolle Auswahl an hands-on Workshops dieses Jahr an. Die Trainer:innen geben uns einzigartige Einblicke und helfen uns dabei, praktische Erfahrung in den folgenden Themengebieten zu sammeln:"

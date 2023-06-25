@@ -3,6 +3,7 @@ import { error } from '@sveltejs/kit';
 import { SessionGroupName } from '$lib/Session';
 import type { Session, SessionGroup, GroupedSessions } from '$lib/Session';
 import type { Speaker, SpeakerDetails } from '$lib/Speaker';
+import type { Schedule, ScheduleDate } from '$lib/Schedule';
 
 const API_BASE_URL = `https://sessionize.com/api/v2/${PUBLIC_SESSIONIZE_JSON_CLIENT_ID}/view`;
 
@@ -56,6 +57,14 @@ export async function getSpeaker(fetchFn: typeof fetch, id: string): Promise<Spe
 	}
 
 	return speaker;
+}
+
+export async function getSchedule(fetchFn: typeof fetch): Promise<Schedule> {
+	const url = `${API_BASE_URL}/GridSmart`;
+	const dates = (await get(fetchFn, url)) as ScheduleDate[];
+	return {
+		dates: dates
+	};
 }
 
 async function get(fetchFn: typeof fetch, url: string) {
