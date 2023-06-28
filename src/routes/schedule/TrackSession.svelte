@@ -22,13 +22,13 @@
 		</h4>
 	</header>
 	{#if room.session.speakers.length > 0}
-		<section class="p-2 flex justify-center">
+		<section class="flex justify-center">
 			<a href="/speakers/{room.session.speakers[0].id}" style="text-decoration: none;"
 				>{room.session.speakers[0].name}</a
 			>
 		</section>
 	{/if}
-	<section class="p-2 flex justify-center">
+	<section class="flex justify-center">
 		{#if startTime != '' && endTime != ''}
 			{extractTime(startTime)} - {extractTime(endTime)}
 		{/if}
