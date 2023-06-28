@@ -1,9 +1,12 @@
 <script lang="ts">
 	import type { TimeSlotRoom } from '$lib/Schedule';
+	import type { Session } from '$lib/Session';
 
 	export let room: TimeSlotRoom;
 	export let totalRoomNumber: number;
 	export let getSessionHeight: (session: Session) => string;
+	const startTime = room.session.startsAt || '';
+	const endTime = room.session.endsAt || '';
 	const extractTime = (dateString: string) =>
 		new Date(dateString).toLocaleTimeString('de-CH', { hour: 'numeric', minute: 'numeric' });
 </script>
@@ -26,7 +29,9 @@
 		</section>
 	{/if}
 	<section class="p-2 flex justify-center">
-		{extractTime(room.session.startsAt)} - {extractTime(room.session.endsAt)}
+		{#if startTime != '' && endTime != ''}
+			{extractTime(startTime)} - {extractTime(endTime)}
+		{/if}
 		{room.name}
 	</section>
 </div>
