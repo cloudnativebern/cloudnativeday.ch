@@ -54,9 +54,12 @@
 		"title": "Speaker:innen"
 	},
 	"schedule": {
-		"dates": ["Mittwoch, 20. September", "Donnerstag, 21. September"],
+		"dates": [
+			"Mittwoch, 20. September",
+			"Donnerstag, 21. September"
+		],
 		"title": "Programm",
-		"description": "Auch dieses Jahr haben wir wieder ein spannendes Programm für die Cloud Native Community vorbereitet, randvoll mit spannenden Workshops und Sessions!"
+		"description": "Auch dieses Jahr haben wir wieder ein spannendes Programm für die Cloud Native Community vorbereitet, randvoll mit packenden Workshops und Sessions!"
 	},
 	"workshops": {
 		"title": "Workshops",
