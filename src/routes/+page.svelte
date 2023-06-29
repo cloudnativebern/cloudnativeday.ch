@@ -11,6 +11,7 @@
 	import Speakers from './Speakers.svelte';
 	import Sponsors from './Sponsors.svelte';
 	import { SessionGroupName } from '$lib/Session';
+	import Schedule from './Schedule.svelte';
 
 	export let data: PageData;
 </script>
@@ -30,6 +31,8 @@
 <Location />
 
 <Speakers speakers={data.speakers} />
+
+<Schedule />
 
 <Workshops workshops={data.sessions[SessionGroupName.Workshop]} />
 

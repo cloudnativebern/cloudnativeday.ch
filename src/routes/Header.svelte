@@ -13,6 +13,7 @@
 	const navItems: NavItem[] = [
 		{ title: $_('navigation.tickets'), href: '/#tickets' },
 		{ title: $_('navigation.location'), href: '/#location' },
+		{ title: $_('navigation.schedule'), href: '/schedule' },
 		{ title: $_('navigation.speakers'), href: '/#speakers' },
 		{ title: $_('navigation.workshops'), href: '/#workshops' },
 		{ title: $_('navigation.sponsors'), href: '/#sponsors' },
