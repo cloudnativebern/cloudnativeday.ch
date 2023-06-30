@@ -21,13 +21,11 @@
 			<a href="/sessions/{room.session.id}" style="text-decoration: none;">{room.session.title}</a>
 		</h4>
 	</header>
-	{#if room.session.speakers.length > 0}
+	{#each room.session.speakers as speaker (speaker.id)}
 		<section class="flex justify-center">
-			<a href="/speakers/{room.session.speakers[0].id}" style="text-decoration: none;"
-				>{room.session.speakers[0].name}</a
-			>
+			<a href="/speakers/{speaker.id}" style="text-decoration: none;">{speaker.name}</a>
 		</section>
-	{/if}
+	{/each}
 	<section class="flex justify-center">
 		{#if startTime != '' && endTime != ''}
 			{extractTime(startTime)} - {extractTime(endTime)}
