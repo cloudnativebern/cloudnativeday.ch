@@ -4,21 +4,27 @@
 	import { _, locale } from 'svelte-i18n';
 	import { faBars } from '@fortawesome/free-solid-svg-icons';
 	import mountain from '$lib/images/mountain.png';
+	import { beforeUpdate } from 'svelte';
 
 	interface NavItem {
 		title: string;
 		href: string;
 	}
 
-	const navItems: NavItem[] = [
-		{ title: $_('navigation.tickets'), href: '/#tickets' },
-		{ title: $_('navigation.location'), href: '/#location' },
-		{ title: $_('navigation.schedule'), href: '/schedule' },
-		{ title: $_('navigation.speakers'), href: '/#speakers' },
-		{ title: $_('navigation.workshops'), href: '/#workshops' },
-		{ title: $_('navigation.sponsors'), href: '/#sponsors' },
-		{ title: $_('navigation.team'), href: '/team' }
-	];
+	let navItems: NavItem[] = [];
+
+	beforeUpdate(() => {
+		navItems = [
+			{ title: $_('navigation.tickets'), href: '/#tickets' },
+			{ title: $_('navigation.location'), href: '/#location' },
+			{ title: $_('navigation.schedule'), href: '/schedule' },
+			{ title: $_('navigation.speakers'), href: '/#speakers' },
+			{ title: $_('navigation.workshops'), href: '/#workshops' },
+			{ title: $_('navigation.sponsors'), href: '/#sponsors' },
+			{ title: $_('navigation.team'), href: '/team' }
+		];
+	});
+
 	function toggleLang() {
 		if ($locale && $locale.includes('de')) {
 			locale.set('en-US');
