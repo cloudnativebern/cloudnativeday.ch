@@ -24,6 +24,7 @@
 	import scigility from '$lib/images/sponsors/scigility.svg';
 	import veeam from '$lib/images/sponsors/veeam.png';
 	import cncf from '$lib/images/sponsors/cncf.svg';
+	import dynatrace from '$lib/images/sponsors/dynatrace.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -186,6 +187,12 @@
 			imgSrc: cncf,
 			link: 'https://www.cncf.io/',
 			tier: SponsorTier.Community
+		},
+		{
+			name: 'Dynatrace',
+			imgSrc: dynatrace,
+			link: 'https://www.dynatrace.com/',
+			tier: SponsorTier.Silver
 		}
 	];
 
