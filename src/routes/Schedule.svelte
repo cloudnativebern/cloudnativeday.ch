@@ -6,7 +6,7 @@
 	<div id="schedule" class="container mx-auto items-center text-center max-w-5xl">
 		<h2 class="mb-8">{$_('schedule.title')}</h2>
 		<p class="mb-12 text-left">{$_('schedule.description')}</p>
-		<a class="btn variant-ghost-primary" href="/schedule">
+		<a class="btn btn-xl variant-ghost-primary" href="/schedule">
 			{$_('schedule.title')}
 		</a>
 	</div>
