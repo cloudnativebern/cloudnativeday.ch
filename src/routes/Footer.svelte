@@ -29,3 +29,9 @@
 		</section>
 	</svelte:fragment>
 </AppBar>
+
+<style>
+	.logo-item {
+		box-shadow: none;
+	}
+</style>

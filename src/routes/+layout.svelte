@@ -2,7 +2,7 @@
 	import '../theme.postcss';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
-	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppShell, Modal } from '@skeletonlabs/skeleton';
 
 	import { dev } from '$app/environment';
 
@@ -66,3 +66,5 @@
 		<Footer />
 	</svelte:fragment>
 </AppShell>
+
+<Modal />

@@ -21,7 +21,8 @@
 			{ title: $_('navigation.speakers'), href: '/#speakers' },
 			{ title: $_('navigation.workshops'), href: '/#workshops' },
 			{ title: $_('navigation.sponsors'), href: '/#sponsors' },
-			{ title: $_('navigation.team'), href: '/team' }
+			{ title: $_('navigation.team'), href: '/team' },
+			{ title: $_('navigation.impressions'), href: '/impressions' }
 		];
 	});
 
