@@ -13,6 +13,10 @@ export enum SessionGroupName {
 
 export type GroupedSessions = Record<SessionGroupName, Session[]>;
 
+export interface Event {
+	sessions: Session[];
+}
+
 export interface SessionGroup {
 	groupId: string;
 	groupName: SessionGroupName;
@@ -50,18 +54,24 @@ interface SessionCategory {
 }
 
 export function sessionLogo(session: Session) {
-	for (const c of session.categories) {
-		if (c.name === 'Logo') {
-			for (const i of c.categoryItems) {
-				switch (i.name) {
-					case 'Kubernetes':
-						return kubernetes;
-					case 'Argo CD':
-						return argoCD;
-					case 'Backstage':
-						return backstage;
+	if (session.categories) {
+		for (const c of session.categories) {
+			if (c.name === 'Logo') {
+				for (const i of c.categoryItems) {
+					switch (i.name) {
+						case 'Kubernetes':
+							return kubernetes;
+						case 'Argo CD':
+							return argoCD;
+						case 'Backstage':
+							return backstage;
+					}
 				}
 			}
 		}
 	}
+}
+
+export function isExternalSession(session: Session) {
+	return session.isServiceSession && session.title.indexOf('hosted by') >= 0;
 }

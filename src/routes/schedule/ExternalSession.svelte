@@ -3,8 +3,8 @@
 	import type { Session } from '$lib/Session';
 
 	export let room: TimeSlotRoom;
-	export let getSessionWidth: (session: Session) => string;
 	export let getSessionHeight: (session: Session) => string;
+	export let getSessionWidth: (session: Session) => string;
 	const startTime = room.session.startsAt || '';
 	const endTime = room.session.endsAt || '';
 	const extractTime = (dateString: string) =>
@@ -12,22 +12,16 @@
 </script>
 
 <div
-	class="card variant-soft-primary {getSessionWidth(room.session)} p-2 mb-2 {getSessionHeight(room.session)}"
+	class="card variant-soft-secondary {getSessionWidth(room.session)} mb-2 {getSessionHeight(room.session)}"
 >
 	<header class="card-header flex justify-center">
 		<h4>
 			<a href="/sessions/{room.session.id}" style="text-decoration: none;">{room.session.title}</a>
 		</h4>
 	</header>
-	{#each room.session.speakers as speaker (speaker.id)}
-		<section class="flex justify-center">
-			<a href="/speakers/{speaker.id}" style="text-decoration: none;">{speaker.name}</a>
-		</section>
-	{/each}
 	<section class="flex justify-center">
 		{#if startTime != '' && endTime != ''}
 			{extractTime(startTime)} - {extractTime(endTime)}
 		{/if}
-		{room.name}
 	</section>
 </div>
