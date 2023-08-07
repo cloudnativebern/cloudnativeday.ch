@@ -3,7 +3,7 @@
 	import type { Session } from '$lib/Session';
 
 	export let room: TimeSlotRoom;
-	export let totalRoomNumber: number;
+	export let getSessionWidth: (session: Session) => string;
 	export let getSessionHeight: (session: Session) => string;
 	const startTime = room.session.startsAt || '';
 	const endTime = room.session.endsAt || '';
@@ -14,9 +14,7 @@
 </script>
 
 <div
-	class="card variant-soft-secondary md:col-span-{room.session.isPlenumSession
-		? totalRoomNumber
-		: 1} mb-2 {getSessionHeight(room.session)}"
+	class="card variant-soft-secondary {getSessionWidth(room.session)} mb-2 {getSessionHeight(room.session)}"
 >
 	<header class="card-header flex justify-center">
 		<h4>{room.session.title}</h4>
