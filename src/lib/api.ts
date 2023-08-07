@@ -1,7 +1,7 @@
 import { PUBLIC_SESSIONIZE_JSON_CLIENT_ID } from '$env/static/public';
 import { error } from '@sveltejs/kit';
 import { SessionGroupName } from '$lib/Session';
-import type { Session, SessionGroup, GroupedSessions } from '$lib/Session';
+import type { Session, SessionGroup, GroupedSessions, Event } from '$lib/Session';
 import type { Speaker, SpeakerDetails } from '$lib/Speaker';
 import type { Schedule, ScheduleDate } from '$lib/Schedule';
 
@@ -23,8 +23,9 @@ export async function getSessions(fetchFn: typeof fetch): Promise<GroupedSession
 }
 
 export async function getSession(fetchFn: typeof fetch, id: string): Promise<Session> {
-	const url = `${API_BASE_URL}/Sessions`;
-	const groups: SessionGroup[] = await get(fetchFn, url);
+	// look in the detailed session list (for normal sessions)
+	const sessionsUrl = `${API_BASE_URL}/Sessions`;
+	const groups: SessionGroup[] = await get(fetchFn, sessionsUrl);
 
 	let session: Session | undefined = undefined;
 	for (const g of groups) {
@@ -35,6 +36,19 @@ export async function getSession(fetchFn: typeof fetch, id: string): Promise<Ses
 			}
 		}
 	}
+
+	// look in the overview session list for service sessions
+	if (!session) {
+		const allUrl = `${API_BASE_URL}/All`;
+		const all: Event = await get(fetchFn, allUrl);
+		for (const s of all.sessions) {
+			if (s.id === id) {
+				session = s;
+				break;
+			}
+		}
+	}
+
 	if (!session) {
 		throw error(404, `session ${id} not found`);
 	}

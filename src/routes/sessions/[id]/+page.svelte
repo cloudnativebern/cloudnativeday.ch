@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import { sessionLogo } from '$lib/Session';
+	import { isExternalSession, sessionLogo } from '$lib/Session';
+	import SvelteMarkdown from 'svelte-markdown';
 
 	export let data: PageData;
 
@@ -15,7 +16,11 @@
 			{/if}
 			<h1>{data.session.title}</h1>
 			<h4 class="mt-4">{data.session.speakers.map((s) => s.name).join(', ')}</h4>
-			<p class="my-12 whitespace-pre-wrap">{data.session.description}</p>
+			{#if isExternalSession(data.session)}
+				<p class="my-12 whitespace-pre-wrap"><SvelteMarkdown source={data.session.description || ""} /></p>
+			{:else}
+				<p class="my-12 whitespace-pre-wrap">{data.session.description}</p>
+			{/if}
 		</div>
 	</section>
 </div>
