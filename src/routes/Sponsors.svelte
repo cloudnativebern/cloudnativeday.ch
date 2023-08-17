@@ -25,6 +25,7 @@
 	import veeam from '$lib/images/sponsors/veeam.png';
 	import cncf from '$lib/images/sponsors/cncf.svg';
 	import dynatrace from '$lib/images/sponsors/dynatrace.svg';
+	import aquasec from '$lib/images/sponsors/aquasec.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -53,6 +54,12 @@
 		{
 			name: 'Avega',
 			imgSrc: avega,
+			link: 'https://www.avega.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Aqua Security',
+			imgSrc: aquasec,
 			link: 'https://www.avega.ch/',
 			tier: SponsorTier.Bronze
 		},
@@ -192,6 +199,12 @@
 			name: 'Dynatrace',
 			imgSrc: dynatrace,
 			link: 'https://www.dynatrace.com/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Aqua Security',
+			imgSrc: aquasec,
+			link: 'https://www.aquasec.com/',
 			tier: SponsorTier.Silver
 		}
 	];
