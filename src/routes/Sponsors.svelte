@@ -58,12 +58,6 @@
 			tier: SponsorTier.Bronze
 		},
 		{
-			name: 'Aqua Security',
-			imgSrc: aquasec,
-			link: 'https://www.avega.ch/',
-			tier: SponsorTier.Bronze
-		},
-		{
 			name: 'bespinian',
 			imgSrc: bespinian,
 			link: 'https://bespinian.io/',
