@@ -45,23 +45,56 @@
 	}
 
 	const sponsors: Sponsor[] = [
+		{ name: 'acend', imgSrc: acend, link: 'https://acend.ch/', tier: SponsorTier.Workshop },
+		{ name: 'Adfinis', imgSrc: adfinis, link: 'https://adfinis.com/', tier: SponsorTier.Bronze },
 		{
-			name: 'Amanox',
-			imgSrc: amanox,
-			link: 'https://www.amanox.ch/',
-			tier: SponsorTier.Bronze
+			name: 'Adnovum',
+			imgSrc: adnovum,
+			link: 'https://www.adnovum.com/',
+			tier: SponsorTier.Silver
 		},
+		{ name: 'Amanox', imgSrc: amanox, link: 'https://www.amanox.ch/', tier: SponsorTier.Bronze },
 		{
-			name: 'Avega',
-			imgSrc: avega,
-			link: 'https://www.avega.ch/',
-			tier: SponsorTier.Bronze
+			name: 'Aqua Security',
+			imgSrc: aquasec,
+			link: 'https://www.aquasec.com/',
+			tier: SponsorTier.Silver
 		},
+		{ name: 'Avega', imgSrc: avega, link: 'https://www.avega.ch/', tier: SponsorTier.Bronze },
+		{ name: 'AWS Schweiz', imgSrc: aws, link: 'https://aws.amazon.com/', tier: SponsorTier.Silver },
+		{ name: 'Bedag', imgSrc: bedag, link: 'https://www.bedag.ch/', tier: SponsorTier.SpeakerEvent },
 		{
 			name: 'bespinian',
 			imgSrc: bespinian,
 			link: 'https://bespinian.io/',
 			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Camp to Camp',
+			imgSrc: campToCamp,
+			link: 'https://www.camptocamp.com/',
+			tier: SponsorTier.Bronze
+		},
+		{ name: 'CNCF', imgSrc: cncf, link: 'https://www.cncf.io/', tier: SponsorTier.Community },
+		{
+			name: 'Die Mobiliar',
+			imgSrc: dieMobiliar,
+			link: 'https://www.mobiliar.ch/',
+			tier: SponsorTier.Gold
+		},
+		{ name: 'Die Post', imgSrc: diePost, link: 'https://www.post.ch/', tier: SponsorTier.Silver },
+		{
+			name: 'Dynatrace',
+			imgSrc: dynatrace,
+			link: 'https://www.dynatrace.com/',
+			tier: SponsorTier.Silver
+		},
+		{ name: 'IPT', imgSrc: ipt, link: 'https://ipt.ch/', tier: SponsorTier.Bronze },
+		{
+			name: 'Netcloud',
+			imgSrc: netcloud,
+			link: 'https://www.netcloud.ch/',
+			tier: SponsorTier.Silver
 		},
 		{
 			name: 'PeakScale',
@@ -70,88 +103,10 @@
 			tier: SponsorTier.Bronze
 		},
 		{
-			name: 'Puzzle',
-			imgSrc: puzzle,
-			link: 'https://www.puzzle.ch/',
-			tier: SponsorTier.AfterParty
-		},
-		{
-			name: 'Adnovum',
-			imgSrc: adnovum,
-			link: 'https://www.adnovum.com/',
-			tier: SponsorTier.Silver
-		},
-		{
-			name: 'Camp to Camp',
-			imgSrc: campToCamp,
-			link: 'https://www.camptocamp.com/',
-			tier: SponsorTier.Bronze
-		},
-		{
-			name: 'VSHN',
-			imgSrc: vshn,
-			link: 'https://www.vshn.ch/',
-			tier: SponsorTier.Silver
-		},
-		{
-			name: 'dieobiliar',
-			imgSrc: dieMobiliar,
-			link: 'https://www.mobiliar.ch/',
-			tier: SponsorTier.Gold
-		},
-		{
-			name: 'SBB',
-			imgSrc: sbb,
-			link: 'https://www.sbb.ch/',
-			tier: SponsorTier.Silver
-		},
-		{
 			name: 'PostFinance',
 			imgSrc: postfinance,
 			link: 'https://www.postfinance.ch/en/private.html',
 			tier: SponsorTier.Gold
-		},
-		{
-			name: 'Swisscom',
-			imgSrc: swisscom,
-			link: 'https://www.swisscom.ch/en/residential.html',
-			tier: SponsorTier.Gold
-		},
-		{
-			name: 'AWS Schweiz',
-			imgSrc: aws,
-			link: 'https://aws.amazon.com/',
-			tier: SponsorTier.Silver
-		},
-		{
-			name: 'Die Post',
-			imgSrc: diePost,
-			link: 'https://www.post.ch/',
-			tier: SponsorTier.Silver
-		},
-		{
-			name: 'IPT',
-			imgSrc: ipt,
-			link: 'https://ipt.ch/',
-			tier: SponsorTier.Bronze
-		},
-		{
-			name: 'Bedag',
-			imgSrc: bedag,
-			link: 'https://www.bedag.ch/',
-			tier: SponsorTier.SpeakerEvent
-		},
-		{
-			name: 'Adfinis',
-			imgSrc: adfinis,
-			link: 'https://adfinis.com/',
-			tier: SponsorTier.Bronze
-		},
-		{
-			name: 'acend',
-			imgSrc: acend,
-			link: 'https://acend.ch/',
-			tier: SponsorTier.Workshop
 		},
 		{
 			name: 'PRODYNA',
@@ -160,23 +115,12 @@
 			tier: SponsorTier.Silver
 		},
 		{
-			name: 'VMware',
-			imgSrc: vmware,
-			link: 'https://www.vmware.com/',
-			tier: SponsorTier.Silver
+			name: 'Puzzle',
+			imgSrc: puzzle,
+			link: 'https://www.puzzle.ch/',
+			tier: SponsorTier.AfterParty
 		},
-		{
-			name: 'Netcloud',
-			imgSrc: netcloud,
-			link: 'https://www.netcloud.ch/',
-			tier: SponsorTier.Silver
-		},
-		{
-			name: 'Veeam',
-			imgSrc: veeam,
-			link: 'https://www.veeam.com/',
-			tier: SponsorTier.Bronze
-		},
+		{ name: 'SBB', imgSrc: sbb, link: 'https://www.sbb.ch/', tier: SponsorTier.Silver },
 		{
 			name: 'Scigility',
 			imgSrc: scigility,
@@ -184,23 +128,14 @@
 			tier: SponsorTier.Bronze
 		},
 		{
-			name: 'CNCF',
-			imgSrc: cncf,
-			link: 'https://www.cncf.io/',
-			tier: SponsorTier.Community
+			name: 'Swisscom',
+			imgSrc: swisscom,
+			link: 'https://www.swisscom.ch/en/residential.html',
+			tier: SponsorTier.Gold
 		},
-		{
-			name: 'Dynatrace',
-			imgSrc: dynatrace,
-			link: 'https://www.dynatrace.com/',
-			tier: SponsorTier.Silver
-		},
-		{
-			name: 'Aqua Security',
-			imgSrc: aquasec,
-			link: 'https://www.aquasec.com/',
-			tier: SponsorTier.Silver
-		}
+		{ name: 'Veeam', imgSrc: veeam, link: 'https://www.veeam.com/', tier: SponsorTier.Bronze },
+		{ name: 'VMware', imgSrc: vmware, link: 'https://www.vmware.com/', tier: SponsorTier.Silver },
+		{ name: 'VSHN', imgSrc: vshn, link: 'https://www.vshn.ch/', tier: SponsorTier.Silver }
 	];
 
 	const goldSponsors = sponsors.filter((s) => s.tier === SponsorTier.Gold);
