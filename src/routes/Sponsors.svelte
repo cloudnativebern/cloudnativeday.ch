@@ -149,7 +149,7 @@
 
 <div class="w-full px-8 py-28">
 	<div id="sponsors" class="container mx-auto items-center text-center max-w-5xl">
-		<h2 class="mb-8">{$_('sponsors.title')}</h2>
+		<h2 class="h2 mb-8">{$_('sponsors.title')}</h2>
 
 		<div class="text-2xl text-left">
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
@@ -157,7 +157,7 @@
 		</div>
 
 		{#if goldSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.gold')}</h3>
+			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.gold')}</h3>
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each goldSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -170,7 +170,7 @@
 		{/if}
 
 		{#if speakerEventSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.speakerEvent')}</h3>
+			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.speakerEvent')}</h3>
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each speakerEventSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -183,7 +183,7 @@
 		{/if}
 
 		{#if afterPartySponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.afterParty')}</h3>
+			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.afterParty')}</h3>
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each afterPartySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -196,7 +196,7 @@
 		{/if}
 
 		{#if workshopSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.workshop')}</h3>
+			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.workshop')}</h3>
 			<div class="w-full grid md:grid-cols-4 items-center">
 				{#each workshopSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -209,7 +209,7 @@
 		{/if}
 
 		{#if silverSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.silver')}</h3>
+			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.silver')}</h3>
 			<div class="w-full grid md:grid-cols-4 items-center">
 				{#each silverSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -222,7 +222,7 @@
 		{/if}
 
 		{#if bronzeSponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.bronze')}</h3>
+			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.bronze')}</h3>
 			<div class="w-full grid md:grid-cols-6 items-center">
 				{#each bronzeSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
@@ -235,7 +235,7 @@
 		{/if}
 
 		{#if communitySponsors.length > 0}
-			<h3 class="mt-24 w-full text-left">{$_('sponsors.tiers.community')}</h3>
+			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.community')}</h3>
 			<div class="w-full grid md:grid-cols-4 items-center">
 				{#each communitySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">

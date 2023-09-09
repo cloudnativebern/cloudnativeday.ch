@@ -12,10 +12,12 @@
 </script>
 
 <div
-	class="card variant-soft-secondary {getSessionWidth(room.session)} mb-2 {getSessionHeight(room.session)}"
+	class="card variant-soft-secondary {getSessionWidth(room.session)} mb-2 {getSessionHeight(
+		room.session
+	)}"
 >
 	<header class="card-header flex justify-center">
-		<h4>
+		<h4 class="h4">
 			<a href="/sessions/{room.session.id}" style="text-decoration: none;">{room.session.title}</a>
 		</h4>
 	</header>

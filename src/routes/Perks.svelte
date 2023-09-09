@@ -27,7 +27,7 @@
 		<div class="grid md:grid-cols-3 gap-16">
 			{#each perks as perks (perks.title)}
 				<div class="flex flex-col">
-					<h4 class="mb-4">{perks.title}</h4>
+					<h4 class="h4 mb-4">{perks.title}</h4>
 					<p>{perks.text}</p>
 				</div>
 			{/each}

@@ -1,4 +1,35 @@
-/*place global styles here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+	font-family: 'Weissenhof Grotesk Regular';
+	src:
+		url('$lib/fonts/WeissenhofGrotesk-Regular.woff2') format('woff2'),
+		url('$lib/fonts/WeissenhofGrotesk-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Weissenhof Grotesk Medium';
+	src:
+		url('$lib/fonts/WeissenhofGrotesk-Medium.woff2') format('woff2'),
+		url('$lib/fonts/WeissenhofGrotesk-Medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Weissenhof Grotesk Bold';
+	src:
+		url('$lib/fonts/WeissenhofGrotesk-Bold.woff2') format('woff2'),
+		url('$lib/fonts/WeissenhofGrotesk-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html,
 body {
 	@apply h-full overflow-hidden;

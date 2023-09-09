@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { modalStore } from '@skeletonlabs/skeleton';
+	import { getModalStore } from '@skeletonlabs/skeleton';
 	import { _ } from 'svelte-i18n';
 	import Youtube from './Youtube.svelte';
 	const photos = Object.values(
@@ -8,6 +8,8 @@
 			as: 'url'
 		})
 	);
+
+	const modalStore = getModalStore();
 
 	interface Event {
 		year: string;
@@ -33,7 +35,7 @@
 
 <div class="bg-slate-100 w-full px-8 py-28">
 	<div class="container mx-auto flex flex-col items-center text-center max-w-5xl">
-		<h1 class="mb-8">{$_('impressions.title')}</h1>
+		<h1 class="h1 mb-8">{$_('impressions.title')}</h1>
 		<p class="mb-4">{$_('impressions.body')}</p>
 		<p class="mb-8">
 			{$_('impressions.recordings')}
@@ -42,7 +44,7 @@
 
 		{#each events as event (event.year)}
 			<section class="mt-24 w-full">
-				<h2 class="mb-8">Swiss Cloud Native Day {event.year}</h2>
+				<h2 class="h2 mb-8">Swiss Cloud Native Day {event.year}</h2>
 				<Youtube id={event.videoID} />
 				{#if event.photos}
 					<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-8 gap-8">
