@@ -1,20 +1,18 @@
 <script lang="ts">
-	import '../theme.postcss';
-	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
-	import { AppShell, Modal } from '@skeletonlabs/skeleton';
-
-	import { dev } from '$app/environment';
-
+	import { AppShell, Modal, storePopup, initializeStores } from '@skeletonlabs/skeleton';
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { storePopup } from '@skeletonlabs/skeleton';
-	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
-
+	import { dev } from '$app/environment';
 	import { addMessages, init, getLocaleFromQueryString } from 'svelte-i18n';
 	import en from '$lib/locales/en.json';
 	import de from '$lib/locales/de.json';
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
+
+	initializeStores();
+
+	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
 	addMessages('en-US', en);
 	addMessages('de-CH', de);
 

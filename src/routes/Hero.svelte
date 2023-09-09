@@ -9,7 +9,7 @@
 			<div class="img-bg" />
 			<img src={logo} alt={$_('hero.altLogo')} />
 		</figure>
-		<h1 class="font-bold">{$_('hero.title')}</h1>
+		<h1 class="h1 font-bold">{$_('hero.title')}</h1>
 	</div>
 </div>
 
@@ -22,7 +22,9 @@
 	}
 	.img-bg {
 		@apply absolute z-[-1] rounded-full blur-[50px] transition-all;
-		animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite, glow 5s linear infinite;
+		animation:
+			pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite,
+			glow 5s linear infinite;
 	}
 	@keyframes glow {
 		0% {

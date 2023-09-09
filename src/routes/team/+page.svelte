@@ -71,7 +71,7 @@
 
 <div class="w-full px-8 py-24">
 	<section class="container mx-auto max-w-5xl">
-		<h1 class="mb-16 text-center">{$_('team.title')}</h1>
+		<h1 class="h1 mb-16 text-center">{$_('team.title')}</h1>
 
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 			{#each team as member (member.name)}
@@ -81,8 +81,8 @@
 					</header>
 
 					<section class="p-2">
-						<h3>{member.name}</h3>
-						<h5 class="mb-4">{member.tagline}</h5>
+						<h3 class="h3">{member.name}</h3>
+						<h5 class="h5 mb-4">{member.tagline}</h5>
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html member.bio}
 					</section>

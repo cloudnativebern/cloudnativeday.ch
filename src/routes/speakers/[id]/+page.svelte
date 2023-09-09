@@ -23,8 +23,8 @@
 	<section class="container mx-auto max-w-5xl grid md:grid-cols-3 gap-24">
 		<img class="rounded-lg" src={data.speaker.profilePicture} alt={data.speaker.fullName} />
 		<div class="md:col-span-2">
-			<h1>{data.speaker.fullName}</h1>
-			<h4 class="mt-4">{data.speaker.tagLine}</h4>
+			<h1 class="h1">{data.speaker.fullName}</h1>
+			<h4 class="h4 mt-4">{data.speaker.tagLine}</h4>
 			<p class="my-12 whitespace-pre-wrap">{data.speaker.bio}</p>
 			{#if data.speaker.links}
 				<ul class="list">

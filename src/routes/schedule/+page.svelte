@@ -18,8 +18,7 @@
 		const durationMinutes = Math.round(durationMillis / 60000);
 		if (isExternalSession(session)) {
 			return 'h-28';
-		}
-		else if (durationMinutes <= 15) {
+		} else if (durationMinutes <= 15) {
 			return 'h-20';
 		} else if (15 < durationMinutes && durationMinutes <= 30) {
 			return 'h-28';
@@ -43,11 +42,10 @@
 	const getSessionWidth = (session: Session) => {
 		if (session.isPlenumSession) {
 			return 'md:col-span-full';
-		}
-		else {
+		} else {
 			return 'md:col-span-1';
 		}
-	}
+	};
 
 	/**
 	 * Returns the appropriate md:grid-cols- class for the number of tracks in a day of the schedule.
@@ -73,8 +71,7 @@
 			default:
 				return 'md:grid-cols-1';
 		}
-	}
-
+	};
 
 	const getDateString = (
 		json: (id: string, locale?: string | undefined) => unknown,
@@ -83,28 +80,19 @@
 		let dateStrings = json('schedule.dates') as string[];
 		return dateStrings[index];
 	};
-
 </script>
 
 <div class="bg-slate-100 w-full px-8 py-8">
 	{#each schedule.dates as scheduleDate, index (scheduleDate.date)}
 		<section class="container mx-auto items-center text-center max-w-5xl">
-			<h2 class="m-8">{getDateString($json, index)}</h2>
+			<h2 class="h2 m-8">{getDateString($json, index)}</h2>
 			{#each scheduleDate.timeSlots as timeSlot (timeSlot.slotStart)}
 				<div class="grid {getNumberOfTracks(scheduleDate)} gap-2">
 					{#each timeSlot.rooms as room (room.id)}
 						{#if isExternalSession(room.session)}
-							<ExternalSession
-								{room}
-								{getSessionWidth}
-								{getSessionHeight}
-							/>
+							<ExternalSession {room} {getSessionWidth} {getSessionHeight} />
 						{:else if room.session.isServiceSession}
-							<ServiceSession
-								{room}
-								{getSessionWidth}
-								{getSessionHeight}
-							/>
+							<ServiceSession {room} {getSessionWidth} {getSessionHeight} />
 						{:else}
 							<TrackSession {room} {getSessionWidth} {getSessionHeight} />
 						{/if}

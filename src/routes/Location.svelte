@@ -13,7 +13,7 @@
 				<img src={pavillon} alt={$_('location.altPavillon')} />
 			</header>
 			<section class="p-8">
-				<h2 class="text-lg mb-8">{$_('location.title')}</h2>
+				<h2 class="h2 mb-8">{$_('location.title')}</h2>
 				<div class="text-lg text-left">
 					<p>
 						{$_('location.body')}
