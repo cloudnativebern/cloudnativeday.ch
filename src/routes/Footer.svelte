@@ -25,6 +25,7 @@
 			<h5 class="h5">{$_('footer.aboutUs.title')}</h5>
 			<p><a href="/code-of-conduct">{$_('footer.aboutUs.coc')}</a></p>
 			<p><a href="/imprint">{$_('footer.aboutUs.imprint')}</a></p>
+			<p><a href="/terms-and-conditions">{$_('footer.aboutUs.terms')}</a></p>
 			<p><a href="mailto:info@cloudnativeday.ch">{$_('footer.aboutUs.contact')}</a></p>
 		</section>
 	</svelte:fragment>
