@@ -55,7 +55,10 @@
 		"title": "Speaker:innen"
 	},
 	"schedule": {
-		"dates": ["Mittwoch, 20. September", "Donnerstag, 21. September"],
+		"dates": [
+			"Mittwoch, 20. September",
+			"Donnerstag, 21. September"
+		],
 		"title": "Programm",
 		"description": "Auch dieses Jahr haben wir wieder ein spannendes Programm für die Cloud Native Community vorbereitet, randvoll mit packenden Workshops und Sessions!"
 	},
@@ -84,7 +87,8 @@
 			"title": "Über uns",
 			"coc": "Code of Conduct",
 			"imprint": "Impressum & Datenschutz",
-			"contact": "Kontakt"
+			"contact": "Kontakt",
+			"terms": "Allgemeine Geschäftsbedingungen"
 		}
 	},
 	"team": {
@@ -144,6 +148,64 @@
 		"source": "Original und Quelle: <a href='http://2012.jsconf.us/#/about'>http://2012.jsconf.us/#/about</a> & <a href='http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy'>The Ada Initiative</a>",
 		"pleaseHelp": "Bitte helft beim Übersetzen und Verbessern dieser Regeln: auf <a href='https://github.com/confcodeofconduct/confcodeofconduct.com'>github.com</a>",
 		"license": "Dieses Werk steht unter der <a href='http://creativecommons.org/licenses/by/3.0/deed.en_US'>Creative Commons Namensnennung 3.0 Unported Lizenz</a>"
+	},
+	"terms": {
+		"title": "Allgemeine Geschäftsbedingungen",
+		"revision": "Stand 20.02.2020",
+		"scope": {
+			"title": "Allgemeines / Geltungsbereich",
+			"article1": "Der Verein bernerit.rocks, 3000 Bern (nachfolgend „Veranstalter“ genannt) ist Veranstalter des Swiss Cloud Native Day (nachfolgend „Veranstaltung“ genannt). Der Verein verfolgt das Ziel, öffentliche, IT-bezogene, technisch motivierte Events im Raum Bern zu organisieren und durchzuführen. Der Verein verfolgt ideelle und keine kommerziellen Zwecke und erstrebt keinen Gewinn. Die Organe sind ehrenamtlich tätig. Webseite des Vereins: <a href='https://bernerit.rocks' target='_blank' rel='noopener'>bernerit.rocks</a>",
+			"article2": "Die nachstehenden Allgemeinen Geschäftsbedingungen (nachfolgend „AGB“ genannt) gelten für Teilnehmer der Konferenz und für alle übrigen Vertragspartner des Veranstalters.",
+			"article3": "Der Kauf von Tickets für die Teilnahme an der besagten Veranstaltung erfolgt ausschließlich auf Grundlage dieser AGB.",
+			"article4": "Mit dem Kauf eines Tickets über die Plattform <a href='https://cloudnativeday.ch' target='_blank' rel='noopener'>cloudnativeday.ch</a> akzeptieren Sie („Teilnehmer“) die nachfolgenden AGB.",
+			"article5": "Die Buchung von Tickets und die Teilnahme an der Veranstaltung ist nur volljährigen und unbeschränkt geschäftsfähigen natürlichen und/oder juristischen Personen gestattet."
+		},
+		"content": {
+			"title": "Inhalt und Leistungen / Vertragsschluss",
+			"article1": "Die Veranstaltungsbeschreibung auf der Internetseite der Veranstaltung <a href='https://cloudnativeday.ch' target='_blank' rel='noopener'>cloudnativeday.ch</a> dient zur Abgabe eines Ticketkaufangebotes. Mit dem Ausfüllen des Formulars für den Ticketkauf geben Sie ein verbindliches Kaufangebot ab.",
+			"article2": "Sie erhalten unverzüglich nach Abgabe Ihrer Bestellung eine Zugangsbestätigung per E-Mail.",
+			"article3": "Soweit wir zum Zwecke der Buchungsabwicklung einen Ticketdienstleister beauftragen, gelten auch dessen Allgemeine Geschäftsbedingungen ergänzend zu diesen AGB.",
+			"article4": "Naturgemäß kann es zu einzelnen Programmänderungen kommen. Programmänderungen – insbesondere Änderungen im Programmablauf – berechtigen den Teilnehmer nicht zum Rücktritt oder zur Anfechtung seines Kauf-/Buchungsangebots, soweit sich dadurch nicht das Wesen der Veranstaltung (vgl. Ziff. 1.1.) insgesamt verändert.",
+			"article5": "Der Veranstalter ist berechtigt, eine Bestellung des Teilnehmers zu stornieren (einseitiges Rücktrittsrecht), wenn der Teilnehmer gegen eine vom Veranstalter aufgestellte spezifische Bedingung verstößt, auf die im Rahmen des Vorverkaufs ausdrücklich hingewiesen wurde, oder eine solche zu umgehen versucht.",
+			"article6": "Die Tickets sind personengebunden."
+		},
+		"price": {
+			"title": "Kaufpreis, Rabatte und Zahlung",
+			"article1": "Bei den angegebenen Ticketpreisen handelt es sich um Festpreise inklusive MWST. Zusätzliche Preisbestandteile – wie z.B. Service- und Versandkosten, die je nach Veranstaltung variieren können – werden dem Teilnehmer vor Abschluss des Ticketkaufs in gesetzlicher Weise ausdrücklich mitgeteilt. Darüber hinaus entstehen keine weiteren nicht ausgewiesenen Kosten. Technische Änderungen, Irrtümer und Druckfehler bleiben vorbehalten. Der Veranstalter behält sich vor, jederzeit Preisanpassungen vorzunehmen.",
+			"article2": "Bei Buchung über einen vom Veranstalter beauftragten Ticketdienstleister kann der Gesamtkaufpreis für ein Ticket den ausgewiesenen Ticketpreis ggf. übersteigen. In diesem Fall werden ggf. Gebühren für die Abwicklung des Ticketkaufs auf den Ticketpreis aufgeschlagen und vor der Bestellung im Ticketshop des Ticketdienstleisters separat angezeigt.",
+			"article3": "Falls bei Zahlungen aus dem Ausland Gebühren oder Währungsdifferenzen anfallen, sind diese vom Teilnehmer selbst zu tragen.",
+			"article4": "Der Gesamtkaufpreis ist beim Kauf sofort zur Zahlung fällig.",
+			"article5": "Soweit der Veranstalter auf die Ticketpreise einen Rabatt gewährt, steht es ihm frei, vor Einräumung dieses Rabatts einen angemessenen Nachweis über das Vorliegen der zum Rabatt berechtigenden Voraussetzungen (z.B. Studienbescheinigung) zu fordern.",
+			"article6": "Der Veranstalter ist berechtigt, die Voraussetzungen für einen Rabatt nach freiem Ermessen festzulegen sowie das Kontingent für rabattierte Tickets zu beschränken. Es besteht kein Anspruch auf Einräumung eines Rabatts."
+		},
+		"shipment": {
+			"title": "Versand, Verlust und Reklamation der Tickets",
+			"article1": "Soweit nichts anderes vereinbart wurde, versendet entweder der Veranstalter selbst oder ein von ihm mit der Kaufabwicklung beauftragter Ticketdienstleister unmittelbar nach Zahlungseingang die bestellte Anzahl von Veranstaltungstickets an die vom Teilnehmer bei der Bestellung angegebene elektronische Adresse (E- Mail).",
+			"article2": "Nach Erhalt des Tickets hat der Teilnehmer selbst die Richtigkeit des Tickets zu überprüfen, um ggf. rechtzeitig vor Veranstaltungsbeginn eine Ersatzlieferung vom Veranstalter zu veranlassen."
+		},
+		"return": {
+			"title": "Rückgabe von Tickets, Erstattung des Kaufpreises",
+			"article1": "Für sämtliche Reservationen, Anmeldungen gelten die folgenden Rücktritts- und Annullierungsbestimmungen: Rücktritt bis drei Monate vor Beginn der Veranstaltung: Volle Rückerstattung abzüglich CHF 50.00 Bearbeitungsgebühr. Rücktritt bis ein Monat vor Beginn der Veranstaltung: Rückerstattung von 50% der Gesamtkosten, wobei eine Bearbeitungsgebühr von CHF 50.00 entfällt. Rücktritt weniger als ein Monat vor Beginn der Veranstaltung: Keine Rückerstattung.",
+			"article2": "Bei mehrtätigen Veranstaltungen gilt der erste Tag der Veranstaltung als Beginn der Veranstaltung.",
+			"article3": "Diese Rücktritts- und Annullierungsbestimmungen gelten auch bei Verhinderung durch Krankheit, Unfall oder ähnliche Verhinderungsgründe. Die Rücktrittserklärung hat in schriftlicher Form per E-Mail oder Post zu erfolgen. Der Rückerstattungsanspruch ergibt sich aus dem Eingangsdatum der schriftlichen Rücktrittserklärung. Für Samstage, Sonn- und Feiertage gilt der darauffolgende Werktag."
+		},
+		"photo": {
+			"title": "Foto- und Videoaufnahmen",
+			"article1": "Im Rahmen der Veranstaltung kann es zu Foto- und Videoaufzeichnungen durch den Veranstalter bzw. von diesem beauftrage Dritte kommen. Diese Aufzeichnungen werden vom Veranstalter u.a. zu eigenen Marketingzwecken verwendet und werden sowohl im Internet (z.B. auf den Internetseiten des Veranstalters und in sozialen Netzwerken), als auch auf Veranstaltungen des Veranstalters verwendet.",
+			"article2": "Der Teilnehmer erklärt sich mit Abgabe seines Kaufangebotes damit einverstanden, dass ihn die in Ziffer 6.1 hiervor erwähnten Aufnahmen abbilden und für oben genannte Zwecke entschädigungslos genutzt und archiviert werden dürfen.",
+			"article3": "Der Teilnehmer erklärt sich damit einverstanden, dass im Rahmen der Veranstaltung Bild- und Videoaufnahmen gemacht werden und diese veröffentlicht werden können. Sollten sie auf diesen Aufnahmen nicht erscheinen wollen, müssen sie uns dies bis zwei Wochen vor der Konferenz schriftlich an <a href=\"mailto:info@cloudnativeday.ch\">infog@cloudnativeday.ch</a> mitteilen."
+		},
+		"liability": {
+			"title": "Haftung des Veranstalters",
+			"article1": "Schadenersatzansprüche aus Unmöglichkeit der Leistung, aus Vertragsverletzung, aus Verschulden bei Vertragsschuss und aus unerlaubter Handlung sind, soweit nicht vorsätzliches oder grobfahrlässiges Handeln vorliegt, gegen den Veranstalter und gegen die Erfüllungs- bzw. Verrichtungsgehilfen des Veranstalters gänzlich ausgeschlossen. Die Haftung für indirekte Schäden und Folgeschäden ist ebenfalls ausgeschlossen. Versicherung ist Sache der Teilnehmenden."
+		},
+		"provisions": {
+			"title": "Schlussbestimmungen",
+			"article1": "Sollten einzelne Bestimmungen dieser Allgemeinen Geschäftsbedingungen ganz oder in Teilen unwirksam sein oder werden, bleibt die Gültigkeit der übrigen Bestimmungen davon unberührt.",
+			"article2": "Änderungen und Ergänzungen dieser Allgemeinen Geschäftsbedingungen bedürfen zu Ihrer Wirksamkeit der Schriftform. Dies gilt auch für die Aufhebung dieser Schriftformklausel.",
+			"article3": "Gerichtsstand für alle Streitigkeiten aus diesem Vertragsverhältnis ist der Unternehmenssitz des Veranstalters. Das Verhältnis zwischen Vertragspartner und Veranstalter basiert ausschliesslich auf schweizerischem Recht.",
+			"article4": "Es ist Teilnehmern nicht gestattet, am Veranstaltungsort Werbung für Unternehmen auszulegen oder auszugeben. Die Zuwiderhandlung wird mit dem Ausschluss von der Konferenz geahndet."
+		}
 	},
 	"impressions": {
 		"title": "Impressionen",
