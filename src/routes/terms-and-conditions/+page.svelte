@@ -17,6 +17,10 @@
 				articles: 5
 			},
 			{
+				keyPrefix: "terms.content",
+				articles: 6
+			},
+			{
 				keyPrefix: "terms.price",
 				articles: 5
 			},
