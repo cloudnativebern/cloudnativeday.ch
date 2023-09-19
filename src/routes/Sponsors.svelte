@@ -26,6 +26,8 @@
 	import cncf from '$lib/images/sponsors/cncf.svg';
 	import dynatrace from '$lib/images/sponsors/dynatrace.svg';
 	import aquasec from '$lib/images/sponsors/aquasec.svg';
+	import beLikeGrace from '$lib/images/sponsors/be-like-grace.png';
+	import powercoders from '$lib/images/sponsors/powercoders.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -135,7 +137,19 @@
 		},
 		{ name: 'Veeam', imgSrc: veeam, link: 'https://www.veeam.com/', tier: SponsorTier.Bronze },
 		{ name: 'VMware', imgSrc: vmware, link: 'https://www.vmware.com/', tier: SponsorTier.Silver },
-		{ name: 'VSHN', imgSrc: vshn, link: 'https://www.vshn.ch/', tier: SponsorTier.Silver }
+		{ name: 'VSHN', imgSrc: vshn, link: 'https://www.vshn.ch/', tier: SponsorTier.Silver },
+		{
+			name: 'Be Like Grace',
+			imgSrc: beLikeGrace,
+			link: 'https://www.belikegrace.ch/',
+			tier: SponsorTier.Community
+		},
+		{
+			name: 'Powercoders',
+			imgSrc: powercoders,
+			link: 'https://powercoders.org/',
+			tier: SponsorTier.Community
+		}
 	];
 
 	const goldSponsors = sponsors.filter((s) => s.tier === SponsorTier.Gold);
