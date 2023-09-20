@@ -15,7 +15,6 @@
 
 	beforeUpdate(() => {
 		navItems = [
-			{ title: $_('navigation.tickets'), href: '/#tickets' },
 			{ title: $_('navigation.location'), href: '/#location' },
 			{ title: $_('navigation.schedule'), href: '/schedule' },
 			{ title: $_('navigation.speakers'), href: '/#speakers' },
