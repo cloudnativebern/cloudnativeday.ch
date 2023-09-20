@@ -24,8 +24,6 @@
 
 <Background />
 
-<Tickets />
-
 <Perks />
 
 <Location />
