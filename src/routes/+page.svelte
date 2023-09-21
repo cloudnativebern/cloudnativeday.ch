@@ -4,7 +4,6 @@
 	import Description from './Description.svelte';
 	import CallForSpeakers from './CallForSpeakers.svelte';
 	import Background from './Background.svelte';
-	import Tickets from './Tickets.svelte';
 	import Perks from './Perks.svelte';
 	import Workshops from './Workshops.svelte';
 	import Location from './Location.svelte';
