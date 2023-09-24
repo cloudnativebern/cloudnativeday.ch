@@ -1,11 +1,11 @@
-import { PUBLIC_SESSIONIZE_JSON_CLIENT_ID } from '$env/static/public';
+import { PUBLIC_SESSIONIZE_CLIENT_ID } from '$env/static/public';
 import { error } from '@sveltejs/kit';
 import { SessionGroupName } from '$lib/Session';
 import type { Session, SessionGroup, GroupedSessions, Event } from '$lib/Session';
 import type { Speaker, SpeakerDetails } from '$lib/Speaker';
 import type { Schedule, ScheduleDate } from '$lib/Schedule';
 
-const API_BASE_URL = `https://sessionize.com/api/v2/${PUBLIC_SESSIONIZE_JSON_CLIENT_ID}/view`;
+const API_BASE_URL = `https://sessionize.com/api/v2/${PUBLIC_SESSIONIZE_CLIENT_ID}/view`;
 
 export async function getSessions(fetchFn: typeof fetch): Promise<GroupedSessions> {
 	const url = `${API_BASE_URL}/Sessions`;

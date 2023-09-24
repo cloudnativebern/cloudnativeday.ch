@@ -18,12 +18,12 @@
 >
 	<header class="card-header flex justify-center">
 		<h4 class="h4">
-			<a href="/sessions/{room.session.id}" style="text-decoration: none;">{room.session.title}</a>
+			<a href="/sessions/{room.session.id}">{room.session.title}</a>
 		</h4>
 	</header>
 	{#each room.session.speakers as speaker (speaker.id)}
 		<section class="flex justify-center">
-			<a href="/speakers/{speaker.id}" style="text-decoration: none;">{speaker.name}</a>
+			<a href="/speakers/{speaker.id}">{speaker.name}</a>
 		</section>
 	{/each}
 	<section class="flex justify-center">

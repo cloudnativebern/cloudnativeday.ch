@@ -39,7 +39,9 @@
 		<p class="mb-4">{$_('impressions.body')}</p>
 		<p class="mb-8">
 			{$_('impressions.recordings')}
-			<a href="https://www.youtube.com/channel/UCkBYwOSHo1AbRBdQz1W5YQg">YouTube Channel</a>.
+			<a class="anchor" href="https://www.youtube.com/channel/UCkBYwOSHo1AbRBdQz1W5YQg">
+				YouTube Channel
+			</a>.
 		</p>
 
 		{#each events as event (event.year)}

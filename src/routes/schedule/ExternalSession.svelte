@@ -18,7 +18,7 @@
 >
 	<header class="card-header flex justify-center">
 		<h4 class="h4">
-			<a href="/sessions/{room.session.id}" style="text-decoration: none;">{room.session.title}</a>
+			<a href="/sessions/{room.session.id}">{room.session.title}</a>
 		</h4>
 	</header>
 	<section class="flex justify-center">

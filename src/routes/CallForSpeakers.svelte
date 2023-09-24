@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { PUBLIC_CFP_END_DATE } from '$env/static/public';
+	import { PUBLIC_CFP_END } from '$env/static/public';
 	import { _ } from 'svelte-i18n';
 
-	const cfpEndDate = new Date(PUBLIC_CFP_END_DATE);
+	const cfpEndDate = new Date(PUBLIC_CFP_END);
 	const today = new Date(new Date().toDateString());
 	const isOpen = cfpEndDate >= today;
 </script>
