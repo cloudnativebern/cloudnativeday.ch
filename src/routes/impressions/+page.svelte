@@ -18,6 +18,7 @@
 	}
 
 	let events: Event[] = [
+		{ year: '2023', videoID: 'fMY0-WQXnL0' },
 		{ year: '2022', videoID: 'YingM9M5yps' },
 		{ year: '2021', videoID: '_S2ly9dglU4' }
 	];
@@ -53,7 +54,7 @@
 						{#each event.photos as photo, i}
 							<button
 								class="card card-hover"
-								style="box-shadow:none"
+								style="box-shadow:none;background-color:transparent"
 								on:click={() => {
 									openPhoto(photo);
 								}}
