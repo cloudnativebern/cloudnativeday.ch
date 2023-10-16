@@ -3,7 +3,7 @@
 
 	interface Section {
 		keyPrefix: string;
-		articles: number
+		articles: number;
 	}
 
 	interface TermsAndConditions {
@@ -13,53 +13,56 @@
 	const termsAndConditions: TermsAndConditions = {
 		sections: [
 			{
-				keyPrefix: "terms.scope",
+				keyPrefix: 'terms.scope',
 				articles: 5
 			},
 			{
-				keyPrefix: "terms.content",
+				keyPrefix: 'terms.content',
 				articles: 6
 			},
 			{
-				keyPrefix: "terms.price",
+				keyPrefix: 'terms.price',
 				articles: 5
 			},
 			{
-				keyPrefix: "terms.shipment",
+				keyPrefix: 'terms.shipment',
 				articles: 2
 			},
 			{
-				keyPrefix: "terms.return",
+				keyPrefix: 'terms.return',
 				articles: 3
 			},
 			{
-				keyPrefix: "terms.photo",
+				keyPrefix: 'terms.photo',
 				articles: 3
 			},
 			{
-				keyPrefix: "terms.liability",
+				keyPrefix: 'terms.liability',
 				articles: 1
 			},
 			{
-				keyPrefix: "terms.provisions",
+				keyPrefix: 'terms.provisions',
 				articles: 4
 			}
 		]
-	}
+	};
 </script>
 
 <div class="w-full px-8 py-24">
 	<section class="container mx-auto max-w-5xl">
 		<h1 class="h1 mb-16 text-center">{$_('terms.title')}</h1>
-		{#each termsAndConditions.sections as section, sectionIndex }
+		{#each termsAndConditions.sections as section, sectionIndex}
 			<section class="p-2">
 				<div>
-					<h2 class="h2 mb-4">{`${sectionIndex+1}  ` + $_(`${section.keyPrefix}.title`)}</h2>
+					<h2 class="h2 mb-4">{`${sectionIndex + 1}  ` + $_(`${section.keyPrefix}.title`)}</h2>
 					<!-- ignore linter for the next line because _ cannot be used to ignore loop variable as it clashes with svelte-i18n -->
 					<!-- eslint-disable-next-line -->
 					{#each Array(section.articles) as _tmp, articleIndex}
-						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-						<p>{@html `${sectionIndex+1}.${articleIndex+1} ` + $_(`${section.keyPrefix}.article${articleIndex+1}`)}</p>
+						<p>
+							<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+							{@html `${sectionIndex + 1}.${articleIndex + 1} ` +
+								$_(`${section.keyPrefix}.article${articleIndex + 1}`)}
+						</p>
 					{/each}
 				</div>
 			</section>
