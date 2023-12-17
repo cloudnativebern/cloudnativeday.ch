@@ -16,16 +16,17 @@
 		}
 	},
 	"callForSpeakers": {
-		"title": "Call for Speakers",
-		"body": "The Call for Speakers is now closed. We are in the process of reviewing the many amazing submissions which we have received. We are looking forward to announcing the conference program as soon as possible."
+		"title": "We are Looking for You",
+		"body": "We are looking for captivating talks and interesting speakers. Do you have a topic of interest to the community? Then please get in touch and submit your proposal by <strong>April 30, 2024</strong>.",
+		"apply": "Apply as a Speaker"
 	},
 	"description": {
 		"title": "See you on the Gurten!",
-		"body": "In 2023, the local Cloud Native community will organize the third edition of the Swiss Cloud Native Day on Mount Gurten. As organizers, we are convinced that the CNCF is providing the most important answers for the future of IT. Our event will bring newcomers and experts together and be an inspirational place where different perspectives and experiences meet."
+		"body": "In 2024, the local Cloud Native community will organize the fourth edition of the Swiss Cloud Native Day on Mount Gurten. As organizers, we are convinced that the CNCF is providing the most important answers for the future of IT. Our event will bring newcomers and experts together and be an inspirational place where different perspectives and experiences meet."
 	},
 	"hero": {
 		"altLogo": "Logo",
-		"title": "September 20 - 21 | Bern, Switzerland"
+		"title": "September 19, 2024 | Bern, Switzerland"
 	},
 	"location": {
 		"altPavillon": "Gurten Pavillon",
