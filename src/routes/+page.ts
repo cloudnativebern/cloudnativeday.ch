@@ -1,9 +1,9 @@
 import * as api from '$lib/api';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = ({ fetch }) => {
+export const load: PageLoad = async ({ fetch }) => {
 	return {
-		sessions: api.getSessions(fetch),
-		speakers: api.getSpeakers(fetch)
+		sessions: await api.getSessions(fetch),
+		speakers: await api.getSpeakers(fetch)
 	};
 };

@@ -3,6 +3,6 @@ import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	return {
-		session: api.getSession(fetch, params.id)
+		session: await api.getSession(fetch, params.id)
 	};
 };

@@ -1,5 +1,6 @@
 import { PUBLIC_SESSIONIZE_CLIENT_ID } from '$env/static/public';
 import { error } from '@sveltejs/kit';
+import type { NumericRange } from '@sveltejs/kit';
 import { SessionGroupName } from '$lib/Session';
 import type { Session, SessionGroup, GroupedSessions, Event } from '$lib/Session';
 import type { Speaker, SpeakerDetails } from '$lib/Speaker';
@@ -85,8 +86,8 @@ async function get(fetchFn: typeof fetch, url: string) {
 	const res = await fetchFn(url);
 	const resBody = await res.json();
 
-	if (!res.ok) {
-		throw error(res.status, resBody.description);
+	if (!res.ok && res.status >= 400 && res.status <= 599) {
+		throw error(res.status as NumericRange<400, 599>, resBody.description);
 	}
 
 	return resBody;

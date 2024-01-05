@@ -3,6 +3,6 @@ import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	return {
-		speaker: api.getSpeaker(fetch, params.id)
+		speaker: await api.getSpeaker(fetch, params.id)
 	};
 };

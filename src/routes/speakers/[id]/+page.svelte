@@ -11,10 +11,10 @@
 		switch (linkType) {
 			case LinkType.Twitter:
 				return faTwitter;
-			case LinkType.CompanyWebsite:
-				return faGlobe;
 			case LinkType.LinkedIn:
 				return faLinkedin;
+			default:
+				return faGlobe;
 		}
 	};
 </script>
