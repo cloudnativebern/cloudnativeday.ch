@@ -5,6 +5,7 @@
 	import Background from './Background.svelte';
 	import Perks from './Perks.svelte';
 	import Location from './Location.svelte';
+	import Sponsors from './Sponsors.svelte';
 </script>
 
 <Hero />
@@ -18,3 +19,5 @@
 <Perks />
 
 <Location />
+
+<Sponsors />

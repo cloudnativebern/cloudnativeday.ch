@@ -105,7 +105,7 @@
 		"lena": {
 			"name": "Lena Fuhrimann",
 			"tagline": "Head in the Clouds",
-			"bio": "Lena is a passionate software engineer and architect. Together with Mathis Kretz she founded the company bespinian in 2019 and has since worked with many customers and interesting technologies. Her main focus lies on security, serverless technologies, public clouds and Infrastructure as Code. However, she has also worked a lot with Kubernetes and its ecosystem and has deployed many applications to those platforms using automation and GitOps.<br/><br/>She uses Arch btw."
+			"bio": "Lena is a passionate software engineer and architect. Together with Mathis Kretz she founded the company bespinian in 2019 and has since worked with many customers and interesting technologies. Her main focus lies on security, serverless technologies, public clouds and Infrastructure as Code. However, she has also worked a lot with Kubernetes and its ecosystem and has deployed many applications to those platforms using automation and GitOps.<br/><br/>She uses NixOS btw."
 		},
 		"mathias": {
 			"name": "Mathias Herzog",

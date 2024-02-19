@@ -17,6 +17,7 @@
 		navItems = [
 			{ title: $_('navigation.callForSpeakers'), href: '/#cfp' },
 			{ title: $_('navigation.location'), href: '/#location' },
+			{ title: $_('navigation.sponsors'), href: '/#sponsors' },
 			{ title: $_('navigation.team'), href: '/team' },
 			{ title: $_('navigation.impressions'), href: '/impressions' }
 		];
