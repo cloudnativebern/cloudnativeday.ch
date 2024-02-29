@@ -6,6 +6,8 @@
 	import swisscom from '$lib/images/sponsors/swisscom.svg';
 	import adfinis from '$lib/images/sponsors/adfinis.png';
 	import bespinian from '$lib/images/sponsors/bespinian.svg';
+	import peakscale from '$lib/images/sponsors/peakscale.svg';
+	import tecracer from '$lib/images/sponsors/tecracer.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -48,6 +50,18 @@
 			imgSrc: amanox,
 			link: 'https://www.amanox.ch/',
 			tier: SponsorTier.Silver
+		},
+		{
+			name: 'tecRacer',
+			imgSrc: tecracer,
+			link: 'https://www.tecracer.com/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Peak Scale',
+			imgSrc: peakscale,
+			link: 'https://peakscale.ch/',
+			tier: SponsorTier.Bronze
 		},
 		{
 			name: 'bespinian',
