@@ -8,6 +8,7 @@
 	import bespinian from '$lib/images/sponsors/bespinian.svg';
 	import peakscale from '$lib/images/sponsors/peakscale.svg';
 	import tecracer from '$lib/images/sponsors/tecracer.svg';
+	import cloudscale from '$lib/images/sponsors/cloudscale.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -73,6 +74,12 @@
 			name: 'Adfinis',
 			imgSrc: adfinis,
 			link: 'https://adfinis.com/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'cloudscale',
+			imgSrc: cloudscale,
+			link: 'https://cloudscale.ch/',
 			tier: SponsorTier.Bronze
 		}
 	];
