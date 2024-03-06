@@ -9,6 +9,8 @@
 	import peakscale from '$lib/images/sponsors/peakscale.svg';
 	import tecracer from '$lib/images/sponsors/tecracer.svg';
 	import cloudscale from '$lib/images/sponsors/cloudscale.svg';
+	import kcdzurich from '$lib/images/sponsors/kcdzurich.svg';
+	import camptocamp from '$lib/images/sponsors/camp-to-camp.png';
 
 	enum SponsorTier {
 		Gold,
@@ -80,6 +82,18 @@
 			name: 'cloudscale',
 			imgSrc: cloudscale,
 			link: 'https://cloudscale.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'KCD Zurich',
+			imgSrc: kcdzurich,
+			link: 'https://kcdzurich.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Camptocamp',
+			imgSrc: camptocamp,
+			link: 'https://www.camptocamp.com/',
 			tier: SponsorTier.Bronze
 		}
 	];
