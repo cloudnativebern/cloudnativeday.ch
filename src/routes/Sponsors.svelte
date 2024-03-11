@@ -10,6 +10,8 @@
 	import tecracer from '$lib/images/sponsors/tecracer.svg';
 	import cloudscale from '$lib/images/sponsors/cloudscale.svg';
 	import camptocamp from '$lib/images/sponsors/camp-to-camp.png';
+	import puzzle from '$lib/images/sponsors/puzzle.svg';
+	import acend from '$lib/images/sponsors/acend.webp';
 
 	enum SponsorTier {
 		Gold,
@@ -87,6 +89,18 @@
 			name: 'Camptocamp',
 			imgSrc: camptocamp,
 			link: 'https://www.camptocamp.com/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Puzzle ITC',
+			imgSrc: puzzle,
+			link: 'https://www.puzzle.ch/',
+			tier: SponsorTier.AfterParty
+		},
+		{
+			name: 'acend',
+			imgSrc: acend,
+			link: 'https://acend.ch/',
 			tier: SponsorTier.Bronze
 		}
 	];
