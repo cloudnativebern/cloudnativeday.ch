@@ -8,7 +8,7 @@
 	import bespinian from '$lib/images/sponsors/bespinian.svg';
 	import peakscale from '$lib/images/sponsors/peakscale.svg';
 	import tecracer from '$lib/images/sponsors/tecracer.svg';
-	import cloudscale from '$lib/images/sponsors/cloudscale.svg';
+	import cloudscale from '$lib/images/sponsors/cloudscale.png';
 	import camptocamp from '$lib/images/sponsors/camp-to-camp.png';
 	import puzzle from '$lib/images/sponsors/puzzle.svg';
 	import acend from '$lib/images/sponsors/acend.webp';
