@@ -12,6 +12,7 @@
 	import camptocamp from '$lib/images/sponsors/camp-to-camp.png';
 	import puzzle from '$lib/images/sponsors/puzzle.svg';
 	import acend from '$lib/images/sponsors/acend.webp';
+	import vshn from '$lib/images/sponsors/vshn.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -102,6 +103,12 @@
 			imgSrc: acend,
 			link: 'https://acend.ch/',
 			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'VSHN',
+			imgSrc: vshn,
+			link: 'https://www.vshn.ch/',
+			tier: SponsorTier.Silver
 		}
 	];
 
