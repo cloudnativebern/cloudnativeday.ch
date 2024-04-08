@@ -13,6 +13,7 @@
 	import puzzle from '$lib/images/sponsors/puzzle.svg';
 	import acend from '$lib/images/sponsors/acend.webp';
 	import vshn from '$lib/images/sponsors/vshn.svg';
+	import diepost from '$lib/images/sponsors/diepost.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -108,6 +109,12 @@
 			name: 'VSHN',
 			imgSrc: vshn,
 			link: 'https://www.vshn.ch/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Swiss Post',
+			imgSrc: diepost,
+			link: 'https://www.post.ch/',
 			tier: SponsorTier.Silver
 		}
 	];
