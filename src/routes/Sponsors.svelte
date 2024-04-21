@@ -15,6 +15,7 @@
 	import vshn from '$lib/images/sponsors/vshn.svg';
 	import diepost from '$lib/images/sponsors/diepost.svg';
 	import adnovum from '$lib/images/sponsors/adnovum.png';
+	import aws from '$lib/images/sponsors/aws.png';
 
 	enum SponsorTier {
 		Gold,
@@ -122,6 +123,12 @@
 			name: 'Adnovum',
 			imgSrc: adnovum,
 			link: 'https://www.adnovum.com/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'AWS',
+			imgSrc: aws,
+			link: 'https://aws.amazon.com/',
 			tier: SponsorTier.Silver
 		}
 	];
