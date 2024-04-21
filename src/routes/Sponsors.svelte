@@ -14,6 +14,7 @@
 	import acend from '$lib/images/sponsors/acend.webp';
 	import vshn from '$lib/images/sponsors/vshn.svg';
 	import diepost from '$lib/images/sponsors/diepost.svg';
+	import adnovum from '$lib/images/sponsors/adnovum.png';
 
 	enum SponsorTier {
 		Gold,
@@ -115,6 +116,12 @@
 			name: 'Swiss Post',
 			imgSrc: diepost,
 			link: 'https://www.post.ch/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Adnovum',
+			imgSrc: adnovum,
+			link: 'https://www.adnovum.com/',
 			tier: SponsorTier.Silver
 		}
 	];
