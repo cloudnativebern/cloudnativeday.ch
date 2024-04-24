@@ -16,6 +16,7 @@
 	import diepost from '$lib/images/sponsors/diepost.svg';
 	import adnovum from '$lib/images/sponsors/adnovum.png';
 	import aws from '$lib/images/sponsors/aws.png';
+	import cloud37 from '$lib/images/sponsors/cloud37.png';
 
 	enum SponsorTier {
 		Gold,
@@ -130,6 +131,12 @@
 			imgSrc: aws,
 			link: 'https://aws.amazon.com/',
 			tier: SponsorTier.Silver
+		},
+		{
+			name: 'cloud37',
+			imgSrc: cloud37,
+			link: 'https://cloud37.io/',
+			tier: SponsorTier.Bronze
 		}
 	];
 
