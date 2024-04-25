@@ -7,6 +7,7 @@ export enum SessionStatus {
 }
 
 export enum SessionGroupName {
+	All = 'All',
 	SessionTalk = 'Session talk',
 	Workshop = 'Workshop'
 }

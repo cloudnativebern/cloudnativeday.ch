@@ -1,10 +1,20 @@
 <script lang="ts">
+	import { beforeUpdate } from 'svelte';
 	import Fa from 'svelte-fa';
 	import { AppBar, popup } from '@skeletonlabs/skeleton';
 	import { _, locale } from 'svelte-i18n';
 	import { faBars } from '@fortawesome/free-solid-svg-icons';
+	import { PUBLIC_CFP_END, PUBLIC_EVENT_START, PUBLIC_TITO_EVENT_ID } from '$env/static/public';
 	import mountain from '$lib/images/mountain.png';
-	import { beforeUpdate } from 'svelte';
+	import type { Speaker } from '$lib/Speaker';
+	import type { Schedule } from '$lib/Schedule';
+
+	export let speakers: Speaker[];
+	export let schedule: Schedule;
+
+	const cfpEnd = new Date(PUBLIC_CFP_END);
+	const start = new Date(PUBLIC_EVENT_START);
+	const now = new Date();
 
 	interface NavItem {
 		title: string;
@@ -14,13 +24,22 @@
 	let navItems: NavItem[] = [];
 
 	beforeUpdate(() => {
-		navItems = [
-			{ title: $_('navigation.callForSpeakers'), href: '/#cfp' },
-			{ title: $_('navigation.location'), href: '/#location' },
-			{ title: $_('navigation.sponsors'), href: '/#sponsors' },
-			{ title: $_('navigation.team'), href: '/team' },
-			{ title: $_('navigation.impressions'), href: '/impressions' }
-		];
+		if (now < cfpEnd) {
+			navItems.push({ title: $_('navigation.callForSpeakers'), href: '/#cfp' });
+		}
+		if (PUBLIC_TITO_EVENT_ID && now < start) {
+			navItems.push({ title: $_('navigation.tickets'), href: '/#tickets' });
+		}
+		navItems.push({ title: $_('navigation.location'), href: '/#location' });
+		if (speakers.length > 0) {
+			navItems.push({ title: $_('navigation.speakers'), href: '/#speakers' });
+		}
+		if (schedule.dates && schedule.dates.length > 0) {
+			navItems.push({ title: $_('navigation.schedule'), href: '/schedule' });
+		}
+		navItems.push({ title: $_('navigation.sponsors'), href: '/#sponsors' });
+		navItems.push({ title: $_('navigation.team'), href: '/team' });
+		navItems.push({ title: $_('navigation.impressions'), href: '/impressions' });
 	});
 
 	function toggleLang() {

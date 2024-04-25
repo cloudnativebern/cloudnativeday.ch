@@ -1,6 +1,9 @@
 <script lang="ts">
-	import logo from '$lib/images/logo.svg';
 	import { _ } from 'svelte-i18n';
+	import { PUBLIC_EVENT_START } from '$env/static/public';
+	import logo from '$lib/images/logo.svg';
+
+	const start = new Date(PUBLIC_EVENT_START);
 </script>
 
 <div class="container h-screen mx-auto flex justify-center items-center">
@@ -9,7 +12,11 @@
 			<div class="img-bg" />
 			<img src={logo} alt={$_('hero.altLogo')} />
 		</figure>
-		<h1 class="h1 font-bold">{$_('hero.title')}</h1>
+		<h1 class="h1 font-bold">
+			{start.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })} | {$_(
+				'hero.title'
+			)}
+		</h1>
 	</div>
 </div>
 

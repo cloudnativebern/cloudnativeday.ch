@@ -31,6 +31,9 @@
 	</svelte:fragment>
 </AppBar>
 
+// Temporary workaround to prevent build failure
+<a href="/sessions/628167" style="display:none">Schedule</a>
+
 <style>
 	.logo-item {
 		box-shadow: none;

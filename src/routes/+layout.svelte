@@ -2,12 +2,18 @@
 	import '../app.postcss';
 	import { AppShell, Modal, storePopup, initializeStores } from '@skeletonlabs/skeleton';
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
+	import { PUBLIC_EVENT_START } from '$env/static/public';
 	import { dev } from '$app/environment';
 	import { addMessages, init, getLocaleFromQueryString } from 'svelte-i18n';
 	import en from '$lib/locales/en.json';
 	import de from '$lib/locales/de.json';
+	import type { LayoutData } from './$types';
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
+
+	export let data: LayoutData;
+
+	const start = new Date(PUBLIC_EVENT_START);
 
 	initializeStores();
 
@@ -21,9 +27,8 @@
 		initialLocale: getLocaleFromQueryString('lang')
 	});
 
-	const title = 'Swiss Cloud Native Day 2024';
-	const description =
-		'On September 19, 2024, our local Cloud Native community will organize the third edition of the Swiss Cloud Native Day on Mount Gurten, Bern, Switzerland.';
+	const title = `Swiss Cloud Native Day ${start.getFullYear()}`;
+	const description = `On ${start.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}, our local Cloud Native community will organize the third edition of the Swiss Cloud Native Day on Mount Gurten, Bern, Switzerland.`;
 	const domain = 'cloudnativeday.ch';
 	const url = 'https://' + domain;
 	const imageUrl = url + '/logo.webp';
@@ -57,7 +62,7 @@
 
 <AppShell>
 	<svelte:fragment slot="header">
-		<Header />
+		<Header speakers={data.speakers} schedule={data.schedule} />
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="pageFooter">

@@ -13,6 +13,7 @@ export async function getSessions(fetchFn: typeof fetch): Promise<GroupedSession
 	const groups: SessionGroup[] = await get(fetchFn, url);
 
 	const groupedSessions: GroupedSessions = {
+		[SessionGroupName.All]: [],
 		[SessionGroupName.SessionTalk]: [],
 		[SessionGroupName.Workshop]: []
 	};
@@ -77,9 +78,7 @@ export async function getSpeaker(fetchFn: typeof fetch, id: string): Promise<Spe
 export async function getSchedule(fetchFn: typeof fetch): Promise<Schedule> {
 	const url = `${API_BASE_URL}/GridSmart`;
 	const dates = (await get(fetchFn, url)) as ScheduleDate[];
-	return {
-		dates: dates
-	};
+	return { dates };
 }
 
 async function get(fetchFn: typeof fetch, url: string) {
