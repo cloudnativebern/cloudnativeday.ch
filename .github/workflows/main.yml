@@ -4,12 +4,15 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 env:
   PUBLIC_CFP_END: 2024-04-30T23:59:59
   PUBLIC_EVENT_START: 2024-09-19T08:00
   PUBLIC_EVENT_END: 2024-09-19T23:00
-  PUBLIC_SESSIONIZE_CLIENT_ID: ci31vfb4
+  PUBLIC_SESSIONIZE_CLIENT_ID: dskjmow5
+  PUBLIC_SESSIONIZE_EVENT_ID: swiss-cloud-native-day-2024
+  PUBLIC_TITO_EVENT_ID: swiss-cloud-native-day-2024
 
 jobs:
   lint:
@@ -41,6 +44,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Upload artifact
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
@@ -48,6 +52,7 @@ jobs:
   deploy:
     name: Deploy
     needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

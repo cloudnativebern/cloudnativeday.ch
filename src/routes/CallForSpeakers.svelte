@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_CFP_END } from '$env/static/public';
+	import { PUBLIC_CFP_END, PUBLIC_SESSIONIZE_EVENT_ID } from '$env/static/public';
 	import { _ } from 'svelte-i18n';
 
 	const cfpEndDate = new Date(PUBLIC_CFP_END);
@@ -13,13 +13,21 @@
 			<h2 class="h2 mb-8">{$_('callForSpeakers.title')}</h2>
 
 			<div class="text-2xl mb-16">
-				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-				<p>{@html $_('callForSpeakers.body')}</p>
+				<p>
+					{$_('callForSpeakers.body')}
+					<strong
+						>{cfpEndDate.toLocaleDateString(undefined, {
+							year: 'numeric',
+							month: 'long',
+							day: 'numeric'
+						})}</strong
+					>.
+				</p>
 			</div>
 
 			<a
 				class="btn btn-xl variant-filled-primary"
-				href="https://sessionize.com/swiss-cloud-native-day-2024"
+				href="https://sessionize.com/{PUBLIC_SESSIONIZE_EVENT_ID}"
 				target="_blank"
 				rel="noopener"
 			>

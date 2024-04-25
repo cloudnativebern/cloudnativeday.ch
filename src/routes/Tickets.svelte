@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
+	import { PUBLIC_TITO_EVENT_ID } from '$env/static/public';
 </script>
 
 <div class="bg-slate-100 w-full px-8 py-28">
@@ -8,6 +9,6 @@
 			<h2 class="h2 mb-16">{$_('tickets.title')}</h2>
 		</a>
 		<script src="https://js.tito.io/v2/with/inline" async></script>
-		<tito-widget event="berner-it-rocks/swiss-cloud-native-day-2023" />
+		<tito-widget event="berner-it-rocks/{PUBLIC_TITO_EVENT_ID}" />
 	</section>
 </div>

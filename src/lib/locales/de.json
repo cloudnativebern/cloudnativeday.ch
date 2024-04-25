@@ -17,16 +17,16 @@
 	},
 	"callForSpeakers": {
 		"title": "Wir Suchen Dich",
-		"body": "Wir suchen suchen nach spannenden Talks und interessanten Speaker:innen. Hast du ein Thema, das die Community interessiert? Melde dich bis am <strong>30. April, 2024</strong> und sende uns dein Proposal.",
+		"body": "Wir suchen suchen nach spannenden Talks und interessanten Speaker:innen. Hast du ein Thema, das die Community interessiert? Melde dich und sende uns dein Proposal bis am",
 		"apply": "Als Speaker:in bewerben"
 	},
 	"description": {
 		"title": "Chum ufe Gurte!",
-		"body": "Im 2024 wird die lokale Cloud Native Community die vierte Ausgabe des Cloud Native Day auf dem Gurten organisieren. Als Organisator:innen sind wir überzeugt, dass die CNCF die wichtigsten Antworten für die Zukunft der IT bereithält. Unser Anlass soll eine Gemeinschaft zusammenbringen, welche sich gegenseitig inspiriert, unterstützt und herausfordert, indem verschiedenste Perspektiven und Erfahrungen zusammenkommen."
+		"body": "Die lokale Cloud Native Community organisiert die nächste Ausgabe des Cloud Native Day auf dem Gurten. Als Organisator:innen sind wir überzeugt, dass die CNCF die wichtigsten Antworten für die Zukunft der IT bereithält. Unser Anlass soll eine Gemeinschaft zusammenbringen, welche sich gegenseitig inspiriert, unterstützt und herausfordert, indem verschiedenste Perspektiven und Erfahrungen zusammenkommen."
 	},
 	"hero": {
 		"altLogo": "Logo",
-		"title": "19. September, 2024 | Bern, Schweiz"
+		"title": "Bern, Schweiz"
 	},
 	"location": {
 		"altPavillon": "Gurten Pavillon",
