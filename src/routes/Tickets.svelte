@@ -10,7 +10,6 @@
 	});
 </script>
 
-// The Tito script can only be loaded once the widget has been mounted successfully
 {#if mounted}
 	<script src="https://js.tito.io/v2/with/inline" async></script>
 {/if}

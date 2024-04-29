@@ -33,7 +33,7 @@
 		"title": "Venue",
 		"body": "The Cloud Native Day takes place on Mount Gurten close to the City of Bern. Easy access via public transport.",
 		"directions": {
-			"tram": "Starting from Bern main station, take tram no. 9 (direction Wabern) until station “Wabern Gurtenbahn”. Travel time is about 15 minutes",
+			"tram": "Starting from Bern main station, take tram no. 9 (direction Wabern) until station “Wabern Gurtenbahn”. Travel time is about 15 minutes.",
 			"walk": "Walk 5 minutes to the lower terminal of the Gurtenbahn funicular railway.",
 			"ticket": "Show your conference ticket and enjoy a free ride on the funicular."
 		}
@@ -41,11 +41,11 @@
 	"perks": {
 		"community": {
 			"title": "Community",
-			"text": "From engineers, for engineers—the first Swiss Cloud Native Community Day. Organized by the Swiss nonprofit association “bernerit.rocks”."
+			"text": "From engineers, for engineers — Swiss Cloud Native Day. Organized by the Swiss nonprofit association “bernerit.rocks”."
 		},
 		"gurten": {
 			"title": "Mount Gurten",
-			"text": "One day, 250 participants, atop Bern‘s lovely Mount Gurten."
+			"text": "One day, 250 participants, atop Bern's lovely Mount Gurten."
 		}
 	},
 	"workshops": {
@@ -62,7 +62,7 @@
 	},
 	"sponsors": {
 		"title": "Sponsors",
-		"body": "The nonprofit association “bernerit.rocks” organizes this event for Cloud Native practitioners with the help of lots of voluntary work and of course sponsors. With a sponsorship, you can present yourself prominently in front of this extremely fast growing Swiss Cloud Native Community. Become a sponsor and get in contact with the Cloud Native specialists at the first Swiss Cloud Native Day! Please contact <a href=\"mailto:sponsoring@cloudnativeday.ch\">sponsoring@cloudnativeday.ch</a>.",
+		"body": "The nonprofit association “bernerit.rocks” organizes this event for Cloud Native practitioners with the help of lots of voluntary work and, of course, sponsors. With a sponsorship, you can present yourself prominently in front of this extremely fast-growing Swiss Cloud Native Community. Become a sponsor and get in contact with the Cloud Native specialists at the first Swiss Cloud Native Day! Please contact <a href=\"mailto:sponsoring@cloudnativeday.ch\">sponsoring@cloudnativeday.ch</a>.",
 		"tiers": {
 			"gold": "Gold",
 			"speakerEvent": "Speaker Event",

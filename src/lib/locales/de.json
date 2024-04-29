@@ -17,7 +17,7 @@
 	},
 	"callForSpeakers": {
 		"title": "Wir Suchen Dich",
-		"body": "Wir suchen suchen nach spannenden Talks und interessanten Speaker:innen. Hast du ein Thema, das die Community interessiert? Melde dich und sende uns dein Proposal bis am",
+		"body": "Wir suchen nach spannenden Talks und interessanten Speaker:innen. Hast du ein Thema, das die Community interessiert? Melde dich und sende uns dein Proposal bis am",
 		"apply": "Als Speaker:in bewerben"
 	},
 	"description": {
@@ -31,9 +31,9 @@
 	"location": {
 		"altPavillon": "Gurten Pavillon",
 		"title": "Location",
-		"body": "Der Cloud Native Day findet auf dem Berner Hausberg, dem Gurten statt. Am einfachsten erreichst Du die Konferenz mit den öffentlichen Verkehrsmitteln.",
+		"body": "Der Cloud Native Day findet auf dem Berner Hausberg, dem Gurten statt. Am einfachsten erreichst du die Konferenz mit den öffentlichen Verkehrsmitteln.",
 		"directions": {
-			"tram": "Vom Berner HB, mit dem 9ni-Tram (Richtung Wabern) benötigst Du ca. 15 min zur Station «Wabern Gurtenbahn»",
+			"tram": "Vom Berner HB, mit dem 9i-Tram (Richtung Wabern) benötigst du ca. 15 min zur Station «Wabern Gurtenbahn»",
 			"walk": "Von dort ist es ein 5 min Spaziergang zur Gurtenbahn.",
 			"ticket": "Das Gurtenbahn-Ticket ist im Konferenzticket enthalten."
 		}
@@ -41,7 +41,7 @@
 	"perks": {
 		"community": {
 			"title": "Community",
-			"text": "Von Engineers für Engineers, der dritte Schweizer Cloud Native Community Day. Hinter dem Anlass steht der Non-Profit Verein «bernerit.rocks»."
+			"text": "Von Engineers für Engineers, Swiss Cloud Native Day. Hinter dem Anlass steht der Non-Profit-Verein «bernerit.rocks»."
 		},
 		"gurten": {
 			"title": "Gurten",
@@ -62,7 +62,7 @@
 	},
 	"sponsors": {
 		"title": "Sponsor:innen",
-		"body": "Der Non-Profit Verein «bernerit.rocks» organisiert den Anlass für Cloud Native Praktiker:innen und setzt dabei auf Sponsor:innen. Durch Ihre Unterstützung präsentieren Sie sich an vorderster Front der extrem stark wachsenden Cloud Native Community der Schweiz. Werden Sie Sponsor:in und knüpfen Sie Kontakte mit den anwesenden Spezialist:innen am Cloud Native Day! Bitte nehmen Sie via <a href=\"mailto:sponsoring@cloudnativeday.ch\">sponsoring@cloudnativeday.ch</a> Kontakt mit uns auf.",
+		"body": "Der Non-Profit-Verein «bernerit.rocks» organisiert den Anlass für Cloud Native Praktiker:innen und setzt dabei auf Sponsor:innen. Durch Ihre Unterstützung präsentieren Sie sich an vorderster Front der extrem stark wachsenden Cloud Native Community der Schweiz. Werden Sie Sponsor:in und knüpfen Sie Kontakte mit den anwesenden Spezialist:innen am Cloud Native Day! Bitte nehmen Sie via <a href=\"mailto:sponsoring@cloudnativeday.ch\">sponsoring@cloudnativeday.ch</a> Kontakt mit uns auf.",
 		"tiers": {
 			"gold": "Gold",
 			"speakerEvent": "Speaker Event",
