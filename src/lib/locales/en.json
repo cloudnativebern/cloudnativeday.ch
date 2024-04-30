@@ -6,7 +6,6 @@
 		"location": "Location",
 		"schedule": "Schedule",
 		"speakers": "Speakers",
-		"workshops": "Workshops",
 		"sponsors": "Sponsors",
 		"team": "Team",
 		"impressions": "Impressions",
@@ -48,17 +47,13 @@
 			"text": "One day, 250 participants, atop Bern's lovely Mount Gurten."
 		}
 	},
-	"workshops": {
-		"title": "Workshops",
-		"description": "Get your hands dirty and check out our great selection of hands-on workshops this year. The trainers offer a unique perspective and highlight certain topics to allow you to get practical experience with the following topics:"
-	},
 	"speakers": {
 		"title": "Speakers"
 	},
 	"schedule": {
 		"dates": ["Wednesday, September 20", "Thursday, September 21"],
 		"title": "Schedule",
-		"description": "This year we have again prepared an exciting schedule for the Cloud Native community, jam-packed with amazing workshops and sessions!"
+		"description": "This year we have again prepared an exciting schedule for the Cloud Native community, jam-packed with amazing sessions!"
 	},
 	"sponsors": {
 		"title": "Sponsors",
@@ -69,7 +64,7 @@
 			"afterParty": "After Party",
 			"silver": "Silver",
 			"bronze": "Bronze",
-			"workshop": "Workshops",
+			"gelato": "Gelato",
 			"community": "Community"
 		}
 	},

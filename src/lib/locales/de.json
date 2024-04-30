@@ -6,7 +6,6 @@
 		"location": "Location",
 		"schedule": "Programm",
 		"speakers": "Speaker:innen",
-		"workshops": "Workshops",
 		"sponsors": "Sponsor:innen",
 		"team": "Team",
 		"impressions": "Impressionen",
@@ -54,11 +53,7 @@
 	"schedule": {
 		"dates": ["Mittwoch, 20. September", "Donnerstag, 21. September"],
 		"title": "Programm",
-		"description": "Auch dieses Jahr haben wir wieder ein spannendes Programm für die Cloud Native Community vorbereitet, randvoll mit packenden Workshops und Sessions!"
-	},
-	"workshops": {
-		"title": "Workshops",
-		"description": "Greif in die Tasten und schau dir unsere tolle Auswahl an hands-on Workshops dieses Jahr an. Die Trainer:innen geben uns einzigartige Einblicke und helfen uns dabei, praktische Erfahrung in den folgenden Themengebieten zu sammeln:"
+		"description": "Auch dieses Jahr haben wir wieder ein spannendes Programm für die Cloud Native Community vorbereitet, randvoll mit packenden Sessions!"
 	},
 	"sponsors": {
 		"title": "Sponsor:innen",
@@ -69,7 +64,7 @@
 			"afterParty": "After Party",
 			"silver": "Silver",
 			"bronze": "Bronze",
-			"workshop": "Workshops",
+			"gelato": "Gelato",
 			"community": "Community"
 		}
 	},

@@ -17,6 +17,8 @@
 	import adnovum from '$lib/images/sponsors/adnovum.png';
 	import aws from '$lib/images/sponsors/aws.png';
 	import cloud37 from '$lib/images/sponsors/cloud37.png';
+	import microsoft from '$lib/images/sponsors/microsoft.png';
+	import spoud from '$lib/images/sponsors/spoud.png';
 
 	enum SponsorTier {
 		Gold,
@@ -24,7 +26,7 @@
 		Bronze,
 		SpeakerEvent,
 		AfterParty,
-		Workshop,
+		Gelato,
 		Community
 	}
 
@@ -137,6 +139,18 @@
 			imgSrc: cloud37,
 			link: 'https://cloud37.io/',
 			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'SPOUD',
+			imgSrc: spoud,
+			link: 'https://www.spoud.io/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Microsoft',
+			imgSrc: microsoft,
+			link: 'https://www.microsoft.com/',
+			tier: SponsorTier.Gelato
 		}
 	];
 
@@ -145,7 +159,7 @@
 	const bronzeSponsors = sponsors.filter((s) => s.tier === SponsorTier.Bronze);
 	const speakerEventSponsors = sponsors.filter((s) => s.tier === SponsorTier.SpeakerEvent);
 	const afterPartySponsors = sponsors.filter((s) => s.tier === SponsorTier.AfterParty);
-	const workshopSponsors = sponsors.filter((s) => s.tier === SponsorTier.Workshop);
+	const gelatoSponsors = sponsors.filter((s) => s.tier === SponsorTier.Gelato);
 	const communitySponsors = sponsors.filter((s) => s.tier === SponsorTier.Community);
 </script>
 
@@ -197,10 +211,10 @@
 			</div>
 		{/if}
 
-		{#if workshopSponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.workshop')}</h3>
+		{#if gelatoSponsors.length > 0}
+			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.gelato')}</h3>
 			<div class="w-full grid md:grid-cols-4 items-center">
-				{#each workshopSponsors as sponsor (sponsor.name)}
+				{#each gelatoSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
