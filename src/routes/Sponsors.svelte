@@ -19,6 +19,7 @@
 	import cloud37 from '$lib/images/sponsors/cloud37.png';
 	import microsoft from '$lib/images/sponsors/microsoft.png';
 	import spoud from '$lib/images/sponsors/spoud.png';
+	import bedag from '$lib/images/sponsors/bedag.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -151,6 +152,12 @@
 			imgSrc: microsoft,
 			link: 'https://www.microsoft.com/',
 			tier: SponsorTier.Gelato
+		},
+		{
+			name: 'Bedag',
+			imgSrc: bedag,
+			link: 'https://www.bedag.ch/',
+			tier: SponsorTier.Silver
 		}
 	];
 
