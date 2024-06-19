@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { json } from 'svelte-i18n';
+	import { _ } from 'svelte-i18n';
 	import type { PageData } from './$types';
 	import ServiceSession from './ServiceSession.svelte';
 	import TrackSession from './TrackSession.svelte';
@@ -72,20 +72,14 @@
 				return 'md:grid-cols-1';
 		}
 	};
-
-	const getDateString = (
-		json: (id: string, locale?: string | undefined) => unknown,
-		index: number
-	) => {
-		let dateStrings = json('schedule.dates') as string[];
-		return dateStrings[index];
-	};
 </script>
 
 <div class="bg-slate-100 w-full px-8 py-8">
-	{#each schedule.dates as scheduleDate, index (scheduleDate.date)}
+	{#each schedule.dates as scheduleDate (scheduleDate.date)}
 		<section class="container mx-auto items-center text-center max-w-5xl">
-			<h2 class="h2 m-8">{getDateString($json, index)}</h2>
+			<h2 class="h2 m-8">
+				{$_(`schedule.weekdays.${new Date(scheduleDate.date).getDay()}`)}
+			</h2>
 			{#each scheduleDate.timeSlots as timeSlot (timeSlot.slotStart)}
 				<div class="grid {getNumberOfTracks(scheduleDate)} gap-2">
 					{#each timeSlot.rooms as room (room.id)}
