@@ -17,7 +17,7 @@
 	import adnovum from '$lib/images/sponsors/adnovum.png';
 	import aws from '$lib/images/sponsors/aws.png';
 	import cloud37 from '$lib/images/sponsors/cloud37.png';
-	import microsoft from '$lib/images/sponsors/microsoft.png';
+	import azure from '$lib/images/sponsors/azure.png';
 	import spoud from '$lib/images/sponsors/spoud.png';
 	import bedag from '$lib/images/sponsors/bedag.svg';
 
@@ -148,9 +148,9 @@
 			tier: SponsorTier.Silver
 		},
 		{
-			name: 'Microsoft',
-			imgSrc: microsoft,
-			link: 'https://www.microsoft.com/',
+			name: 'Microsoft Azure',
+			imgSrc: azure,
+			link: 'https://azure.microsoft.com/',
 			tier: SponsorTier.Gelato
 		},
 		{
@@ -220,7 +220,7 @@
 
 		{#if gelatoSponsors.length > 0}
 			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.gelato')}</h3>
-			<div class="w-full grid md:grid-cols-4 items-center">
+			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each gelatoSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full">
