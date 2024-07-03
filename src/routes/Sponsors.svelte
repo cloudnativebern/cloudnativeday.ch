@@ -20,6 +20,7 @@
 	import azure from '$lib/images/sponsors/azure.png';
 	import spoud from '$lib/images/sponsors/spoud.png';
 	import bedag from '$lib/images/sponsors/bedag.svg';
+	import isovalent from '$lib/images/sponsors/isovalent.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -157,6 +158,12 @@
 			name: 'Bedag',
 			imgSrc: bedag,
 			link: 'https://www.bedag.ch/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Isovalent',
+			imgSrc: isovalent,
+			link: 'https://isovalent.com/',
 			tier: SponsorTier.Silver
 		}
 	];
