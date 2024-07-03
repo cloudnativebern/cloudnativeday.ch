@@ -191,7 +191,7 @@
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each goldSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full">
+						<div class="block p-4 w-full flex justify-center">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
@@ -204,7 +204,7 @@
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each speakerEventSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full">
+						<div class="block p-4 w-full flex justify-center">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
@@ -217,7 +217,7 @@
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each afterPartySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full">
+						<div class="block p-4 w-full flex justify-center">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
@@ -230,7 +230,7 @@
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each gelatoSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full">
+						<div class="block p-4 w-full flex justify-center">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
@@ -243,7 +243,7 @@
 			<div class="w-full grid md:grid-cols-4 items-center">
 				{#each silverSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full">
+						<div class="block p-4 w-full flex justify-center">
 							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-24" />
 						</div>
 					</a>
@@ -256,7 +256,7 @@
 			<div class="w-full grid md:grid-cols-6 items-center">
 				{#each bronzeSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full">
+						<div class="block p-4 w-full flex justify-center">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
@@ -269,7 +269,7 @@
 			<div class="w-full grid md:grid-cols-4 items-center">
 				{#each communitySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full">
+						<div class="block p-4 w-full flex justify-center">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
