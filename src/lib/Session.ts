@@ -76,3 +76,7 @@ export function sessionLogo(session: Session) {
 export function isExternalSession(session: Session) {
 	return session.isServiceSession && session.title.indexOf('hosted by') >= 0;
 }
+
+export function formatTime(dateString: string) {
+	return new Date(dateString).toLocaleTimeString('de-CH', { hour: 'numeric', minute: 'numeric' });
+}

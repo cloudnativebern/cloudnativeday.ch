@@ -1,14 +1,14 @@
 <script lang="ts">
 	import type { TimeSlotRoom } from '$lib/Schedule';
 	import type { Session } from '$lib/Session';
+	import { formatTime } from '$lib/Session';
 
 	export let room: TimeSlotRoom;
 	export let getSessionHeight: (session: Session) => string;
 	export let getSessionWidth: (session: Session) => string;
-	const startTime = room.session.startsAt || '';
-	const endTime = room.session.endsAt || '';
-	const extractTime = (dateString: string) =>
-		new Date(dateString).toLocaleTimeString('de-CH', { hour: 'numeric', minute: 'numeric' });
+
+	const startTime = room.session.startsAt;
+	const endTime = room.session.endsAt;
 </script>
 
 <div
@@ -22,8 +22,8 @@
 		</h4>
 	</header>
 	<section class="flex justify-center">
-		{#if startTime != '' && endTime != ''}
-			{extractTime(startTime)} - {extractTime(endTime)}
+		{#if startTime && endTime}
+			{formatTime(startTime)} - {formatTime(endTime)}
 		{/if}
 	</section>
 </div>
