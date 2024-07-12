@@ -11,20 +11,17 @@
 		new Date(dateString).toLocaleTimeString('de-CH', { hour: 'numeric', minute: 'numeric' });
 </script>
 
-<div
-	class="card variant-soft-primary {getSessionWidth(room.session)} p-2 mb-2 {getSessionHeight(
+<a
+	href="/sessions/{room.session.id}"
+	class="card card-hover variant-soft-primary {getSessionWidth(
 		room.session
-	)}"
+	)} p-2 mb-2 {getSessionHeight(room.session)}"
 >
 	<header class="card-header flex justify-center">
-		<h4 class="h4">
-			<a href="/sessions/{room.session.id}">{room.session.title}</a>
-		</h4>
+		<h4 class="h4">{room.session.title}</h4>
 	</header>
 	{#each room.session.speakers as speaker (speaker.id)}
-		<section class="flex justify-center">
-			<a href="/speakers/{speaker.id}">{speaker.name}</a>
-		</section>
+		<section class="flex justify-center">{speaker.name}</section>
 	{/each}
 	<section class="flex justify-center">
 		{#if startTime != '' && endTime != ''}
@@ -32,4 +29,4 @@
 		{/if}
 		{room.name}
 	</section>
-</div>
+</a>

@@ -11,14 +11,15 @@
 	const endTime = room.session.endsAt;
 </script>
 
-<div
-	class="card variant-soft-secondary {getSessionWidth(room.session)} mb-2 {getSessionHeight(
+<a
+	href="/sessions/{room.session.id}"
+	class="card card-hover variant-soft-secondary {getSessionWidth(
 		room.session
-	)}"
+	)} mb-2 {getSessionHeight(room.session)}"
 >
 	<header class="card-header flex justify-center">
 		<h4 class="h4">
-			<a href="/sessions/{room.session.id}">{room.session.title}</a>
+			{room.session.title}
 		</h4>
 	</header>
 	<section class="flex justify-center">
@@ -26,4 +27,4 @@
 			{formatTime(startTime)} - {formatTime(endTime)}
 		{/if}
 	</section>
-</div>
+</a>

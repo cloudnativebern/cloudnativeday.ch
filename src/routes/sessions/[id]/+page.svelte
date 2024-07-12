@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 	import Fa from 'svelte-fa';
 	import { faArrowLeft, faClock, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 	import SvelteMarkdown from 'svelte-markdown';
@@ -13,8 +14,8 @@
 <div class="w-full px-8 py-16">
 	<section class="container mx-auto max-w-5xl">
 		<div class="md:col-span-2">
-			<a href="/schedule" class="mb-12 flex gap-2 items-center"
-				><Fa icon={faArrowLeft} /> Back to Schedule</a
+			<a href="/schedule" class="mb-12 flex gap-2 items-center text-blue-700 hover:text-indigo-700"
+				><Fa icon={faArrowLeft} /> {$_('session.back')}</a
 			>
 
 			{#if logo}
@@ -22,7 +23,13 @@
 			{/if}
 
 			<h1 class="h1">{data.session.title}</h1>
-			<h4 class="h4 mt-4">{data.session.speakers.map((s) => s.name).join(', ')}</h4>
+			{#each data.session.speakers as speaker (speaker.id)}
+				<h4 class="h4 mt-4">
+					<a href="/speakers/{speaker.id}" class="text-blue-700 hover:text-indigo-700"
+						>{speaker.name}</a
+					>
+				</h4>
+			{/each}
 
 			{#if data.session.startsAt && data.session.endsAt}
 				<p class="mt-8 mb-2 flex gap-2 items-center">

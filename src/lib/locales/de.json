@@ -55,6 +55,13 @@
 		"title": "Programm",
 		"description": "Auch dieses Jahr haben wir wieder ein spannendes Programm für die Cloud Native Community vorbereitet, randvoll mit packenden Sessions!"
 	},
+	"session": {
+		"back": "Zurück zum Programm"
+	},
+	"speaker": {
+		"back": "Zurück zu den Speaker:innen",
+		"sessions": "Sessions"
+	},
 	"sponsors": {
 		"title": "Sponsor:innen",
 		"body": "Der Non-Profit-Verein «bernerit.rocks» organisiert den Anlass für Cloud Native Praktiker:innen und setzt dabei auf Sponsor:innen. Durch Ihre Unterstützung präsentieren Sie sich an vorderster Front der extrem stark wachsenden Cloud Native Community der Schweiz. Werden Sie Sponsor:in und knüpfen Sie Kontakte mit den anwesenden Spezialist:innen am Cloud Native Day! Bitte nehmen Sie via <a href=\"mailto:sponsoring@cloudnativeday.ch\">sponsoring@cloudnativeday.ch</a> Kontakt mit uns auf.",
