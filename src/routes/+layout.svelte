@@ -60,8 +60,8 @@
 	{/if}
 </svelte:head>
 
-<AppShell>
-	<svelte:fragment slot="header">
+<AppShell regionPage="relative" slotPageHeader="sticky top-0 z-10">
+	<svelte:fragment slot="pageHeader">
 		<Header speakers={data.speakers} schedule={data.schedule} />
 	</svelte:fragment>
 	<slot />

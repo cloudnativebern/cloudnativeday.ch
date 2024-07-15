@@ -86,9 +86,7 @@
 					<ul>
 						{#each navItems as navigationItem (navigationItem.title)}
 							<li class="small-navigation-item">
-								<a href={navigationItem.href}>
-									{navigationItem.title}
-								</a>
+								<a href={navigationItem.href}>{navigationItem.title}</a>
 							</li>
 						{/each}
 						<li class="small-navigation-item">
