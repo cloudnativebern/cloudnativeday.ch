@@ -20,5 +20,9 @@
 			<h2 class="h2 mb-16">{$_('tickets.title')}</h2>
 		</a>
 		<tito-widget event="berner-it-rocks/{PUBLIC_TITO_EVENT_ID}" />
+		<p class="mt-8 text-2xl">
+			{$_('tickets.discounted')}
+			<a href="mailto:tickets@cloudnativeday.ch">tickets@cloudnativeday.ch</a>.
+		</p>
 	</section>
 </div>

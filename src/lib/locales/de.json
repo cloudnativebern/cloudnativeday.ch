@@ -76,7 +76,8 @@
 		}
 	},
 	"tickets": {
-		"title": "Hol Dir Jetzt Dein Ticket"
+		"title": "Hol Dir Jetzt Dein Ticket",
+		"discounted": "Wir bieten ermässigte Tickets für Personen, die zur Diversität der Konferenz beitragen oder ein geringeres Einkommen haben. Bei Interesse, schreib uns bitte eine Nachricht an"
 	},
 	"footer": {
 		"aboutUs": {
