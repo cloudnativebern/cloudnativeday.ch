@@ -29,6 +29,7 @@
 		SpeakerEvent,
 		AfterParty,
 		Gelato,
+		Barista,
 		Community
 	}
 
@@ -74,7 +75,7 @@
 			name: 'Peak Scale',
 			imgSrc: peakscale,
 			link: 'https://peakscale.ch/',
-			tier: SponsorTier.Bronze
+			tier: SponsorTier.Barista
 		},
 		{
 			name: 'bespinian',
@@ -174,6 +175,7 @@
 	const speakerEventSponsors = sponsors.filter((s) => s.tier === SponsorTier.SpeakerEvent);
 	const afterPartySponsors = sponsors.filter((s) => s.tier === SponsorTier.AfterParty);
 	const gelatoSponsors = sponsors.filter((s) => s.tier === SponsorTier.Gelato);
+	const baristaSponsors = sponsors.filter((s) => s.tier === SponsorTier.Barista);
 	const communitySponsors = sponsors.filter((s) => s.tier === SponsorTier.Community);
 </script>
 
@@ -229,6 +231,19 @@
 			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.gelato')}</h3>
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each gelatoSponsors as sponsor (sponsor.name)}
+					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
+						<div class="block p-4 w-full flex justify-center">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
+						</div>
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		{#if baristaSponsors.length > 0}
+			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.barista')}</h3>
+			<div class="w-full grid md:grid-cols-4 items-center">
+				{#each baristaSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full flex justify-center">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
