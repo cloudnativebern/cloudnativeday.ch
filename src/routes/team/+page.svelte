@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import alex from '$lib/images/team/alex.jpeg';
-	import johann from '$lib/images/team/johann.jpeg';
-	import philipp from '$lib/images/team/philipp.jpeg';
-	import lena from '$lib/images/team/lena.jpeg';
-	import mathias from '$lib/images/team/mathias.jpeg';
-	import mathis from '$lib/images/team/mathis.jpeg';
-	import marc from '$lib/images/team/marc.jpeg';
-	import luana from '$lib/images/team/luana.jpeg';
+	import alexander from '$lib/images/team/alexander.jpg';
+	import johann from '$lib/images/team/johann.jpg';
+	import philipp from '$lib/images/team/philipp.jpg';
+	import lena from '$lib/images/team/lena.jpg';
+	import mathias from '$lib/images/team/mathias.jpg';
+	import mathis from '$lib/images/team/mathis.jpg';
+	import marc from '$lib/images/team/marc.jpg';
+	import luana from '$lib/images/team/luana.jpg';
 	import { Avatar } from '@skeletonlabs/skeleton';
 
 	interface TeamMember {
@@ -19,10 +19,10 @@
 
 	const team: TeamMember[] = [
 		{
-			name: $_('team.alex.name'),
-			tagline: $_('team.alex.tagline'),
-			imgSrc: alex,
-			bio: $_('team.alex.bio')
+			name: $_('team.alexander.name'),
+			tagline: $_('team.alexander.tagline'),
+			imgSrc: alexander,
+			bio: $_('team.alexander.bio')
 		},
 		{
 			name: $_('team.johann.name'),
