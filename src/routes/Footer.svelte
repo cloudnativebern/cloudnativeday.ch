@@ -3,6 +3,7 @@
 	import { AppBar } from '@skeletonlabs/skeleton';
 	import { faXTwitter, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 	import { _ } from 'svelte-i18n';
+	import { base } from '$app/paths';
 </script>
 
 <AppBar shadow="shadow-md">
@@ -23,15 +24,13 @@
 	<svelte:fragment slot="trail">
 		<section class="w-full p-4">
 			<h5 class="h5">{$_('footer.aboutUs.title')}</h5>
-			<p><a href="/code-of-conduct">{$_('footer.aboutUs.coc')}</a></p>
-			<p><a href="/imprint">{$_('footer.aboutUs.imprint')}</a></p>
-			<p><a href="/terms-and-conditions">{$_('footer.aboutUs.terms')}</a></p>
+			<p><a href="{base}/code-of-conduct">{$_('footer.aboutUs.coc')}</a></p>
+			<p><a href="{base}/imprint">{$_('footer.aboutUs.imprint')}</a></p>
+			<p><a href="{base}/terms-and-conditions">{$_('footer.aboutUs.terms')}</a></p>
 			<p><a href="mailto:info@cloudnativeday.ch">{$_('footer.aboutUs.contact')}</a></p>
 		</section>
 	</svelte:fragment>
 </AppBar>
-
-<a href="/sessions/628167" style="display:none">Schedule</a>
 
 <style>
 	.logo-item {

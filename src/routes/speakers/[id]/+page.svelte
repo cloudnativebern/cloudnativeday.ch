@@ -3,6 +3,7 @@
 	import Fa from 'svelte-fa';
 	import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 	import { faArrowLeft, faGlobe } from '@fortawesome/free-solid-svg-icons';
+	import { base } from '$app/paths';
 	import { LinkType } from '$lib/Speaker';
 	import type { PageData } from './$types';
 
@@ -24,7 +25,9 @@
 	<section class="container mx-auto max-w-5xl grid md:grid-cols-3 gap-24">
 		<img class="rounded-lg" src={data.speaker.profilePicture} alt={data.speaker.fullName} />
 		<div class="md:col-span-2">
-			<a href="/#speakers" class="mb-12 flex gap-2 items-center text-blue-700 hover:text-indigo-700"
+			<a
+				href="{base}/#speakers"
+				class="mb-12 flex gap-2 items-center text-blue-700 hover:text-indigo-700"
 				><Fa icon={faArrowLeft} /> {$_('speaker.back')}</a
 			>
 
@@ -45,7 +48,7 @@
 
 			<h2 class="h3 mb-4">{$_('speaker.sessions')}</h2>
 			{#each data.speaker.sessions as session (session.id)}
-				<a href="/sessions/{session.id}" class="text-blue-700 hover:text-indigo-700"
+				<a href="{base}/sessions/{session.id}" class="text-blue-700 hover:text-indigo-700"
 					>{session.name}</a
 				>
 			{/each}

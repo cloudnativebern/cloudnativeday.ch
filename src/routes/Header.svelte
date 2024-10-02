@@ -5,6 +5,7 @@
 	import { _, locale } from 'svelte-i18n';
 	import { faBars } from '@fortawesome/free-solid-svg-icons';
 	import { PUBLIC_CFP_END, PUBLIC_EVENT_START, PUBLIC_TITO_EVENT_ID } from '$env/static/public';
+	import { base } from '$app/paths';
 	import mountain from '$lib/images/mountain.png';
 	import type { Speaker } from '$lib/Speaker';
 	import type { Schedule } from '$lib/Schedule';
@@ -25,21 +26,21 @@
 
 	beforeUpdate(() => {
 		if (now < cfpEnd) {
-			navItems.push({ title: $_('navigation.callForSpeakers'), href: '/#cfp' });
+			navItems.push({ title: $_('navigation.callForSpeakers'), href: `${base}/#cfp` });
 		}
 		if (PUBLIC_TITO_EVENT_ID && now < start) {
-			navItems.push({ title: $_('navigation.tickets'), href: '/#tickets' });
+			navItems.push({ title: $_('navigation.tickets'), href: `${base}/#tickets` });
 		}
-		navItems.push({ title: $_('navigation.location'), href: '/#location' });
+		navItems.push({ title: $_('navigation.location'), href: `${base}/#location` });
 		if (speakers.length > 0) {
-			navItems.push({ title: $_('navigation.speakers'), href: '/#speakers' });
+			navItems.push({ title: $_('navigation.speakers'), href: `${base}/#speakers` });
 		}
 		if (schedule.dates && schedule.dates.length > 0) {
-			navItems.push({ title: $_('navigation.schedule'), href: '/schedule' });
+			navItems.push({ title: $_('navigation.schedule'), href: `${base}/schedule` });
 		}
-		navItems.push({ title: $_('navigation.sponsors'), href: '/#sponsors' });
-		navItems.push({ title: $_('navigation.team'), href: '/team' });
-		navItems.push({ title: $_('navigation.impressions'), href: '/impressions' });
+		navItems.push({ title: $_('navigation.sponsors'), href: `${base}/#sponsors` });
+		navItems.push({ title: $_('navigation.team'), href: `${base}/team` });
+		navItems.push({ title: $_('navigation.impressions'), href: `${base}/impressions` });
 	});
 
 	function toggleLang() {
@@ -53,7 +54,7 @@
 
 <AppBar shadow="shadow-md">
 	<svelte:fragment slot="lead">
-		<a href="/" class="flex items-center">
+		<a href="{base}/" class="flex items-center">
 			<img src={mountain} alt={$_('navigation.altMountain')} height="h-12" class="h-12 mr-2" />
 		</a>
 	</svelte:fragment>
