@@ -32,10 +32,10 @@
 			navItems.push({ title: $_('navigation.tickets'), href: `${base}/#tickets` });
 		}
 		navItems.push({ title: $_('navigation.location'), href: `${base}/#location` });
-		if (speakers.length > 0) {
+		if (speakers.length > 0 && now > cfpEnd) {
 			navItems.push({ title: $_('navigation.speakers'), href: `${base}/#speakers` });
 		}
-		if (schedule.dates && schedule.dates.length > 0) {
+		if (schedule.dates && schedule.dates.length > 0 && now > cfpEnd) {
 			navItems.push({ title: $_('navigation.schedule'), href: `${base}/schedule` });
 		}
 		navItems.push({ title: $_('navigation.sponsors'), href: `${base}/#sponsors` });

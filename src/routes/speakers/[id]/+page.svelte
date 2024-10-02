@@ -25,9 +25,7 @@
 	<section class="container mx-auto max-w-5xl grid md:grid-cols-3 gap-24">
 		<img class="rounded-lg" src={data.speaker.profilePicture} alt={data.speaker.fullName} />
 		<div class="md:col-span-2">
-			<a
-				href="{base}/#speakers"
-				class="mb-12 flex gap-2 items-center text-blue-700 hover:text-indigo-700"
+			<a href="{base}/" class="mb-12 flex gap-2 items-center text-blue-700 hover:text-indigo-700"
 				><Fa icon={faArrowLeft} /> {$_('speaker.back')}</a
 			>
 

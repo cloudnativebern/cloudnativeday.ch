@@ -37,11 +37,11 @@
 
 <Location />
 
-{#if data.speakers.length > 0}
+{#if data.speakers.length > 0 && now > cfpEnd}
 	<Speakers speakers={data.speakers} />
 {/if}
 
-{#if data.schedule.dates && data.schedule.dates.length > 0}
+{#if data.schedule.dates && data.schedule.dates.length > 0 && now > cfpEnd}
 	<Schedule />
 {/if}
 
