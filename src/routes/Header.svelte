@@ -39,6 +39,7 @@
 			navItems.push({ title: $_('navigation.schedule'), href: `${base}/schedule` });
 		}
 		navItems.push({ title: $_('navigation.sponsors'), href: `${base}/#sponsors` });
+		navItems.push({ title: $_('sustainability.title'), href: `${base}/sustainability` });
 		navItems.push({ title: $_('navigation.team'), href: `${base}/team` });
 		navItems.push({ title: $_('navigation.impressions'), href: `${base}/impressions` });
 	});
