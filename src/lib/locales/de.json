@@ -78,7 +78,9 @@
 		}
 	},
 	"tickets": {
-		"title": "Hol Dir Jetzt Dein Ticket",
+		"titleInterest": "Tickets Sind Bald Verfügbar",
+		"bodyInterest": "Trage Dich in die Interessensliste ein, um benachrichtigt zu werden, sobald es los geht:",
+		"titleSales": "Hol Dir Jetzt Dein Ticket",
 		"discounted": "Wir bieten ermässigte Tickets für Personen, die zur Diversität der Konferenz beitragen oder ein geringeres Einkommen haben. Bei Interesse, schreib uns bitte eine Nachricht an"
 	},
 	"footer": {

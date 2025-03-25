@@ -78,7 +78,9 @@
 		}
 	},
 	"tickets": {
-		"title": "Get Your Ticket Now",
+		"titleInterest": "Tickets Are Available Soon",
+		"bodyInterest": "Join the interest list to get notified as soon as they are:",
+		"titleSales": "Get Your Ticket Now",
 		"discounted": "We provide discounted tickets for people who contribute to the conference's diversity or have a lower income. If you are interested, please send us a message to"
 	},
 	"footer": {
