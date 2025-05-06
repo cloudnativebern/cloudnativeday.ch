@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 	// import acend from '$lib/images/sponsors/acend.webp';
-	// import adfinis from '$lib/images/sponsors/adfinis.png';
+	import adfinis from '$lib/images/sponsors/adfinis.png';
 	// import adnovum from '$lib/images/sponsors/adnovum.png';
 	import amanox from '$lib/images/sponsors/amanox.png';
 	// import aws from '$lib/images/sponsors/aws.png';
@@ -187,6 +187,12 @@
 			name: 'Schaltstelle',
 			imgSrc: schaltstelle,
 			link: 'https://www.schaltstelle.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Adfinis',
+			imgSrc: adfinis,
+			link: 'https://adfinis.com/',
 			tier: SponsorTier.Bronze
 		}
 	];
