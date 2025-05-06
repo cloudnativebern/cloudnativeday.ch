@@ -109,7 +109,7 @@
 			name: 'Puzzle ITC',
 			imgSrc: puzzle,
 			link: 'https://www.puzzle.ch/',
-			tier: SponsorTier.AfterParty
+			tier: SponsorTier.Beer
 		},
 		// {
 		// 	name: 'acend',
