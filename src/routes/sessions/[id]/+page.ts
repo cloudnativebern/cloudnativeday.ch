@@ -6,3 +6,5 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		session: await api.getSession(fetch, params.id)
 	};
 };
+
+export const prerender = false;
