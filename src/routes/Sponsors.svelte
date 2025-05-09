@@ -24,6 +24,7 @@
 	import hidora from '$lib/images/sponsors/hidora.svg';
 	import steppingStone from '$lib/images/sponsors/stepping-stone.svg';
 	import schaltstelle from '$lib/images/sponsors/schaltstelle.svg';
+	import standortfoerderung from '$lib/images/sponsors/standortfoerderung.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -193,6 +194,12 @@
 			name: 'Adfinis',
 			imgSrc: adfinis,
 			link: 'https://adfinis.com/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Standortförderung Kanton Bern',
+			imgSrc: standortfoerderung,
+			link: 'https://www.berninvest.be.ch/',
 			tier: SponsorTier.Bronze
 		}
 	];
