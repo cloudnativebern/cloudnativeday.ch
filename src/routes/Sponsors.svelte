@@ -26,6 +26,7 @@
 	import schaltstelle from '$lib/images/sponsors/schaltstelle.svg';
 	import standortfoerderung from '$lib/images/sponsors/standortfoerderung.svg';
 	import airlock from '$lib/images/sponsors/airlock.svg';
+	import exoscale from '$lib/images/sponsors/exoscale.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -207,6 +208,12 @@
 			name: 'Ergon Airlock',
 			imgSrc: airlock,
 			link: 'https://www.airlock.com/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Exoscale',
+			imgSrc: exoscale,
+			link: 'https://www.exoscale.com/',
 			tier: SponsorTier.Silver
 		}
 	];
