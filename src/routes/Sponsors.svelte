@@ -25,6 +25,7 @@
 	import steppingStone from '$lib/images/sponsors/stepping-stone.svg';
 	import schaltstelle from '$lib/images/sponsors/schaltstelle.svg';
 	import standortfoerderung from '$lib/images/sponsors/standortfoerderung.svg';
+	import airlock from '$lib/images/sponsors/airlock.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -201,6 +202,12 @@
 			imgSrc: standortfoerderung,
 			link: 'https://www.berninvest.be.ch/',
 			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Ergon Airlock',
+			imgSrc: airlock,
+			link: 'https://www.airlock.com/',
+			tier: SponsorTier.Silver
 		}
 	];
 
