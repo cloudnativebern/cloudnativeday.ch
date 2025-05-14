@@ -27,6 +27,7 @@
 	import standortfoerderung from '$lib/images/sponsors/standortfoerderung.svg';
 	import airlock from '$lib/images/sponsors/airlock.svg';
 	import exoscale from '$lib/images/sponsors/exoscale.svg';
+	import nexplore from '$lib/images/sponsors/nexplore.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -214,6 +215,12 @@
 			name: 'Exoscale',
 			imgSrc: exoscale,
 			link: 'https://www.exoscale.com/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Nexplore',
+			imgSrc: nexplore,
+			link: 'https://www.nexplore.ch/',
 			tier: SponsorTier.Silver
 		}
 	];
