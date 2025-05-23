@@ -14,7 +14,7 @@
 	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
 	import diepost from '$lib/images/sponsors/diepost.svg';
 	// import isovalent from '$lib/images/sponsors/isovalent.png';
-	// import peakscale from '$lib/images/sponsors/peakscale.svg';
+	import peakscale from '$lib/images/sponsors/peakscale.svg';
 	import postfinance from '$lib/images/sponsors/postfinance.svg';
 	import puzzle from '$lib/images/sponsors/puzzle.svg';
 	// import spoud from '$lib/images/sponsors/spoud.png';
@@ -78,12 +78,6 @@
 		// 	imgSrc: tecracer,
 		// 	link: 'https://www.tecracer.com/',
 		// 	tier: SponsorTier.Silver
-		// },
-		// {
-		// 	name: 'Peak Scale',
-		// 	imgSrc: peakscale,
-		// 	link: 'https://peakscale.ch/',
-		// 	tier: SponsorTier.Barista
 		// },
 		// {
 		// 	name: 'bespinian',
@@ -222,6 +216,12 @@
 			imgSrc: nexplore,
 			link: 'https://www.nexplore.ch/',
 			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Peak Scale',
+			imgSrc: peakscale,
+			link: 'https://peakscale.ch/',
+			tier: SponsorTier.Bronze
 		}
 	];
 
