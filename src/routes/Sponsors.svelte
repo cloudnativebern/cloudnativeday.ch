@@ -12,9 +12,9 @@
 	// import cloud37 from '$lib/images/sponsors/cloud37.png';
 	import cloudscale from '$lib/images/sponsors/cloudscale.png';
 	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
-	import diepost from '$lib/images/sponsors/diepost.svg';
+	import diepost from '$lib/images/sponsors/diepost.webp';
 	// import isovalent from '$lib/images/sponsors/isovalent.png';
-	// import peakscale from '$lib/images/sponsors/peakscale.svg';
+	import peakscale from '$lib/images/sponsors/peakscale.svg';
 	import postfinance from '$lib/images/sponsors/postfinance.svg';
 	import puzzle from '$lib/images/sponsors/puzzle.svg';
 	// import spoud from '$lib/images/sponsors/spoud.png';
@@ -27,7 +27,7 @@
 	import standortfoerderung from '$lib/images/sponsors/standortfoerderung.svg';
 	import airlock from '$lib/images/sponsors/airlock.svg';
 	import exoscale from '$lib/images/sponsors/exoscale.svg';
-	import nexplore from '$lib/images/sponsors/nexplore.svg';
+	import nexplore from '$lib/images/sponsors/nexplore.png';
 
 	enum SponsorTier {
 		Gold,
@@ -78,12 +78,6 @@
 		// 	imgSrc: tecracer,
 		// 	link: 'https://www.tecracer.com/',
 		// 	tier: SponsorTier.Silver
-		// },
-		// {
-		// 	name: 'Peak Scale',
-		// 	imgSrc: peakscale,
-		// 	link: 'https://peakscale.ch/',
-		// 	tier: SponsorTier.Barista
 		// },
 		// {
 		// 	name: 'bespinian',
@@ -222,6 +216,12 @@
 			imgSrc: nexplore,
 			link: 'https://www.nexplore.ch/',
 			tier: SponsorTier.Silver
+		},
+		{
+			name: 'Peak Scale',
+			imgSrc: peakscale,
+			link: 'https://peakscale.ch/',
+			tier: SponsorTier.Bronze
 		}
 	];
 
@@ -277,7 +277,7 @@
 				{#each afterPartySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
+							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-36" />
 						</div>
 					</a>
 				{/each}
@@ -290,7 +290,7 @@
 				{#each gelatoSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
+							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-36" />
 						</div>
 					</a>
 				{/each}
@@ -303,7 +303,7 @@
 				{#each baristaSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
+							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-36" />
 						</div>
 					</a>
 				{/each}
@@ -316,7 +316,7 @@
 				{#each popcornSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
+							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-36" />
 						</div>
 					</a>
 				{/each}
@@ -329,7 +329,7 @@
 				{#each silverSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-24" />
+							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-30" />
 						</div>
 					</a>
 				{/each}
@@ -342,7 +342,7 @@
 				{#each bronzeSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
+							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-28" />
 						</div>
 					</a>
 				{/each}
@@ -355,7 +355,7 @@
 				{#each communitySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
 						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
+							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-28" />
 						</div>
 					</a>
 				{/each}
