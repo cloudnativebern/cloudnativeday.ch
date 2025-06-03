@@ -7,7 +7,7 @@
 	// import aws from '$lib/images/sponsors/aws.png';
 	// import azure from '$lib/images/sponsors/azure.png';
 	// import bedag from '$lib/images/sponsors/bedag.svg';
-	// import bespinian from '$lib/images/sponsors/bespinian.svg';
+	import bespinian from '$lib/images/sponsors/bespinian.svg';
 	// import camptocamp from '$lib/images/sponsors/camp-to-camp.png';
 	// import cloud37 from '$lib/images/sponsors/cloud37.png';
 	import cloudscale from '$lib/images/sponsors/cloudscale.png';
@@ -73,48 +73,18 @@
 			link: 'https://www.amanox.ch/',
 			tier: SponsorTier.Bronze
 		},
-		// {
-		// 	name: 'tecRacer',
-		// 	imgSrc: tecracer,
-		// 	link: 'https://www.tecracer.com/',
-		// 	tier: SponsorTier.Silver
-		// },
-		// {
-		// 	name: 'bespinian',
-		// 	imgSrc: bespinian,
-		// 	link: 'https://bespinian.io/',
-		// 	tier: SponsorTier.Bronze
-		// },
-		// {
-		// 	name: 'Adfinis',
-		// 	imgSrc: adfinis,
-		// 	link: 'https://adfinis.com/',
-		// 	tier: SponsorTier.Bronze
-		// },
 		{
 			name: 'cloudscale',
 			imgSrc: cloudscale,
 			link: 'https://cloudscale.ch/',
 			tier: SponsorTier.Bronze
 		},
-		// {
-		// 	name: 'Camptocamp',
-		// 	imgSrc: camptocamp,
-		// 	link: 'https://www.camptocamp.com/',
-		// 	tier: SponsorTier.Bronze
-		// },
 		{
 			name: 'Puzzle ITC',
 			imgSrc: puzzle,
 			link: 'https://www.puzzle.ch/',
 			tier: SponsorTier.Beer
 		},
-		// {
-		// 	name: 'acend',
-		// 	imgSrc: acend,
-		// 	link: 'https://acend.ch/',
-		// 	tier: SponsorTier.Bronze
-		// },
 		{
 			name: 'VSHN',
 			imgSrc: vshn,
@@ -127,48 +97,6 @@
 			link: 'https://www.post.ch/',
 			tier: SponsorTier.Popcorn
 		},
-		// {
-		// 	name: 'Adnovum',
-		// 	imgSrc: adnovum,
-		// 	link: 'https://www.adnovum.com/',
-		// 	tier: SponsorTier.Silver
-		// },
-		// {
-		// 	name: 'AWS',
-		// 	imgSrc: aws,
-		// 	link: 'https://aws.amazon.com/',
-		// 	tier: SponsorTier.Silver
-		// },
-		// {
-		// 	name: 'cloud37',
-		// 	imgSrc: cloud37,
-		// 	link: 'https://cloud37.io/',
-		// 	tier: SponsorTier.Bronze
-		// },
-		// {
-		// 	name: 'SPOUD',
-		// 	imgSrc: spoud,
-		// 	link: 'https://www.spoud.io/',
-		// 	tier: SponsorTier.Silver
-		// },
-		// {
-		// 	name: 'Microsoft Azure',
-		// 	imgSrc: azure,
-		// 	link: 'https://azure.microsoft.com/',
-		// 	tier: SponsorTier.Gelato
-		// },
-		// {
-		// 	name: 'Bedag',
-		// 	imgSrc: bedag,
-		// 	link: 'https://www.bedag.ch/',
-		// 	tier: SponsorTier.Silver
-		// },
-		// {
-		// 	name: 'Isovalent',
-		// 	imgSrc: isovalent,
-		// 	link: 'https://isovalent.com/',
-		// 	tier: SponsorTier.Silver
-		// },
 		{
 			name: 'Hidora',
 			imgSrc: hidora,
@@ -221,6 +149,12 @@
 			name: 'Peak Scale',
 			imgSrc: peakscale,
 			link: 'https://peakscale.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'bespinian',
+			imgSrc: bespinian,
+			link: 'https://bespinian.io/',
 			tier: SponsorTier.Bronze
 		}
 	];
