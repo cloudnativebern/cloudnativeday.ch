@@ -4,7 +4,7 @@
 	import adfinis from '$lib/images/sponsors/adfinis.png';
 	// import adnovum from '$lib/images/sponsors/adnovum.png';
 	import amanox from '$lib/images/sponsors/amanox.png';
-	// import aws from '$lib/images/sponsors/aws.png';
+	import aws from '$lib/images/sponsors/aws.svg';
 	// import azure from '$lib/images/sponsors/azure.png';
 	// import bedag from '$lib/images/sponsors/bedag.svg';
 	import bespinian from '$lib/images/sponsors/bespinian.svg';
@@ -12,7 +12,7 @@
 	// import cloud37 from '$lib/images/sponsors/cloud37.png';
 	import cloudscale from '$lib/images/sponsors/cloudscale.png';
 	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
-	import diepost from '$lib/images/sponsors/diepost.webp';
+	import diepost from '$lib/images/sponsors/diepost.svg';
 	// import isovalent from '$lib/images/sponsors/isovalent.png';
 	import peakscale from '$lib/images/sponsors/peakscale.svg';
 	import postfinance from '$lib/images/sponsors/postfinance.svg';
@@ -156,6 +156,12 @@
 			imgSrc: bespinian,
 			link: 'https://bespinian.io/',
 			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Amazon Web Services',
+			imgSrc: aws,
+			link: 'https://aws.amazon.com/local/switzerland/',
+			tier: SponsorTier.AfterParty
 		}
 	];
 
@@ -184,7 +190,7 @@
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each goldSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center">
+						<div class="block p-4 w-full flex justify-center max-h-36">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
@@ -197,7 +203,7 @@
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each beerSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center">
+						<div class="block p-4 w-full flex justify-center max-h-32">
 							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
@@ -210,8 +216,8 @@
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each afterPartySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-36" />
+						<div class="block p-4 w-full flex justify-center max-h-28">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
 				{/each}
@@ -223,8 +229,8 @@
 			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each gelatoSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-36" />
+						<div class="block p-4 w-full flex justify-center max-h-28">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
 				{/each}
@@ -233,11 +239,11 @@
 
 		{#if baristaSponsors.length > 0}
 			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.barista')}</h3>
-			<div class="w-full grid md:grid-cols-4 items-center">
+			<div class="w-full grid md:grid-cols-3 items-center">
 				{#each baristaSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-36" />
+						<div class="block p-4 w-full flex justify-center max-h-28">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
 				{/each}
@@ -249,8 +255,8 @@
 			<div class="w-full grid md:grid-cols-4 items-center">
 				{#each popcornSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-36" />
+						<div class="block p-4 w-full flex justify-center max-h-36">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
 				{/each}
@@ -262,8 +268,8 @@
 			<div class="w-full grid md:grid-cols-4 items-center">
 				{#each silverSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-30" />
+						<div class="block p-4 w-full flex justify-center max-h-30">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
 				{/each}
@@ -275,8 +281,8 @@
 			<div class="w-full grid md:grid-cols-6 items-center">
 				{#each bronzeSponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-28" />
+						<div class="block p-4 w-full flex justify-center max-h-28">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
 				{/each}
@@ -288,8 +294,8 @@
 			<div class="w-full grid md:grid-cols-4 items-center">
 				{#each communitySponsors as sponsor (sponsor.name)}
 					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center">
-							<img src={sponsor.imgSrc} alt={sponsor.name} class="max-h-28" />
+						<div class="block p-4 w-full flex justify-center max-h-30">
+							<img src={sponsor.imgSrc} alt={sponsor.name} />
 						</div>
 					</a>
 				{/each}
