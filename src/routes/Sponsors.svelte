@@ -28,6 +28,8 @@
 	import airlock from '$lib/images/sponsors/airlock.svg';
 	import exoscale from '$lib/images/sponsors/exoscale.svg';
 	import nexplore from '$lib/images/sponsors/nexplore.png';
+	import innoq from '$lib/images/sponsors/innoq.svg';
+	import redguard from '$lib/images/sponsors/redguard.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -162,6 +164,18 @@
 			imgSrc: aws,
 			link: 'https://aws.amazon.com/local/switzerland/',
 			tier: SponsorTier.AfterParty
+		},
+		{
+			name: 'innoQ',
+			imgSrc: innoq,
+			link: 'https://www.innoq.com/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Redguard',
+			imgSrc: redguard,
+			link: 'https://www.redguard.ch/',
+			tier: SponsorTier.Bronze
 		}
 	];
 
