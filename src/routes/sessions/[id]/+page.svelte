@@ -41,10 +41,12 @@
 				</p>
 			{/if}
 
-			<p class="flex gap-3 items-center" style="padding-left:2px">
-				<Fa icon={faLocationDot} />
-				{data.session.room}
-			</p>
+			{#if data.session.room}
+				<p class="flex gap-3 items-center" style="padding-left:2px">
+					<Fa icon={faLocationDot} />
+					{data.session.room}
+				</p>
+			{/if}
 
 			{#if isExternalSession(data.session)}
 				<p class="my-12 whitespace-pre-wrap">
