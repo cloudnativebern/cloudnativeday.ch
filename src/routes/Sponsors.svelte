@@ -6,7 +6,7 @@
 	import amanox from '$lib/images/sponsors/amanox.png';
 	import aws from '$lib/images/sponsors/aws.svg';
 	// import azure from '$lib/images/sponsors/azure.png';
-	// import bedag from '$lib/images/sponsors/bedag.svg';
+	import bedag from '$lib/images/sponsors/bedag.svg';
 	import bespinian from '$lib/images/sponsors/bespinian.svg';
 	// import camptocamp from '$lib/images/sponsors/camp-to-camp.png';
 	// import cloud37 from '$lib/images/sponsors/cloud37.png';
@@ -176,6 +176,12 @@
 			imgSrc: redguard,
 			link: 'https://www.redguard.ch/',
 			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Bedag',
+			imgSrc: bedag,
+			link: 'https://www.bedag.ch/',
+			tier: SponsorTier.Gelato
 		}
 	];
 
