@@ -6,5 +6,3 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		speaker: await api.getSpeaker(fetch, params.id)
 	};
 };
-
-export const prerender = false;
