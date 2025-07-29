@@ -4,6 +4,7 @@
 	import ServiceSession from './ServiceSession.svelte';
 	import TrackSession from './TrackSession.svelte';
 	import ExternalSession from './ExternalSession.svelte';
+	import { PUBLIC_SESSIONIZE_EVENT_ID } from '$env/static/public';
 	import type { Session } from '$lib/Session';
 	import { isExternalSession } from '$lib/Session';
 	import type { ScheduleDate } from '$lib/Schedule';
@@ -75,24 +76,34 @@
 </script>
 
 <div class="bg-slate-100 w-full px-8 py-8">
-	{#each schedule.dates as scheduleDate (scheduleDate.date)}
-		<section class="container mx-auto items-center text-center max-w-5xl">
-			<h2 class="h2 m-8">
-				{$_(`schedule.weekdays.${new Date(scheduleDate.date).getDay()}`)}
-			</h2>
-			{#each scheduleDate.timeSlots as timeSlot (timeSlot.slotStart)}
-				<div class="grid {getNumberOfTracks(scheduleDate)} gap-2">
-					{#each timeSlot.rooms as room (room.id)}
-						{#if isExternalSession(room.session)}
-							<ExternalSession {room} {getSessionWidth} {getSessionHeight} />
-						{:else if room.session.isServiceSession}
-							<ServiceSession {room} {getSessionWidth} {getSessionHeight} />
-						{:else}
-							<TrackSession {room} {getSessionWidth} {getSessionHeight} />
-						{/if}
-					{/each}
-				</div>
-			{/each}
-		</section>
-	{/each}
+	<div class="container mx-auto items-center text-center max-w-5xl">
+		{#each schedule.dates as scheduleDate (scheduleDate.date)}
+			<section>
+				<h2 class="h2 m-8">
+					{$_(`schedule.weekdays.${new Date(scheduleDate.date).getDay()}`)}
+				</h2>
+				{#each scheduleDate.timeSlots as timeSlot (timeSlot.slotStart)}
+					<div class="grid {getNumberOfTracks(scheduleDate)} gap-2">
+						{#each timeSlot.rooms as room (room.id)}
+							{#if isExternalSession(room.session)}
+								<ExternalSession {room} {getSessionWidth} {getSessionHeight} />
+							{:else if room.session.isServiceSession}
+								<ServiceSession {room} {getSessionWidth} {getSessionHeight} />
+							{:else}
+								<TrackSession {room} {getSessionWidth} {getSessionHeight} />
+							{/if}
+						{/each}
+					</div>
+				{/each}
+			</section>
+		{/each}
+		<h2 class="h2 mt-16">{$_('app.title')}</h2>
+		<p class="m-8">{$_('app.description')}</p>
+		<a
+			class="btn btn-xl variant-ghost-primary"
+			href="https://{PUBLIC_SESSIONIZE_EVENT_ID}.sessionize.com/schedule"
+		>
+			{$_('app.cta')}
+		</a>
+	</div>
 </div>
