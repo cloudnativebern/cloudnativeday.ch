@@ -30,6 +30,8 @@
 	import nexplore from '$lib/images/sponsors/nexplore.png';
 	import innoq from '$lib/images/sponsors/innoq.svg';
 	import redguard from '$lib/images/sponsors/redguard.svg';
+	// import itpoint from '$lib/images/sponsors/itpoint.svg';
+	import oria from '$lib/images/sponsors/oria.png';
 
 	enum SponsorTier {
 		Gold,
@@ -182,6 +184,12 @@
 			imgSrc: bedag,
 			link: 'https://www.bedag.ch/',
 			tier: SponsorTier.Gelato
+		},
+		{
+			name: 'ORIA',
+			imgSrc: oria,
+			link: 'https://www.itpoint.ch/it-cloud-and-managed-services/',
+			tier: SponsorTier.Bronze
 		}
 	];
 
