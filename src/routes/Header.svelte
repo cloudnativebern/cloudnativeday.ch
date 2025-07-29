@@ -5,7 +5,7 @@
 	import { _, locale } from 'svelte-i18n';
 	import { faBars } from '@fortawesome/free-solid-svg-icons';
 	import { PUBLIC_CFP_END, PUBLIC_EVENT_START, PUBLIC_TITO_EVENT_ID } from '$env/static/public';
-	import { base } from '$app/paths';
+	import { resolve, base } from '$app/paths';
 	import mountain from '$lib/images/mountain.png';
 	import type { Speaker } from '$lib/Speaker';
 	import type { Schedule } from '$lib/Schedule';
@@ -36,12 +36,11 @@
 			navItems.push({ title: $_('navigation.speakers'), href: `${base}/#speakers` });
 		}
 		if (schedule.dates && schedule.dates.length > 0 && now > cfpEnd) {
-			navItems.push({ title: $_('navigation.schedule'), href: `${base}/schedule` });
+			navItems.push({ title: $_('navigation.schedule'), href: resolve('/schedule') });
 		}
 		navItems.push({ title: $_('navigation.sponsors'), href: `${base}/#sponsors` });
-		navItems.push({ title: $_('sustainability.title'), href: `${base}/sustainability` });
-		navItems.push({ title: $_('navigation.team'), href: `${base}/team` });
-		navItems.push({ title: $_('navigation.impressions'), href: `${base}/impressions` });
+		navItems.push({ title: $_('navigation.team'), href: resolve('/team') });
+		navItems.push({ title: $_('navigation.impressions'), href: resolve('/impressions') });
 	});
 
 	function toggleLang() {
@@ -55,7 +54,7 @@
 
 <AppBar shadow="shadow-md">
 	<svelte:fragment slot="lead">
-		<a href="{base}/" class="flex items-center">
+		<a href={resolve('/')} class="flex items-center">
 			<img src={mountain} alt={$_('navigation.altMountain')} height="h-12" class="h-12 mr-2" />
 		</a>
 	</svelte:fragment>

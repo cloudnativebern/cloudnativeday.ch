@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import type { TimeSlotRoom } from '$lib/Schedule';
 	import type { Session } from '$lib/Session';
 
@@ -13,7 +13,7 @@
 </script>
 
 <a
-	href="{base}/sessions/{room.session.id}"
+	href={resolve(`/sessions/${room.session.id}`)}
 	class="card card-hover variant-soft-primary {getSessionWidth(
 		room.session
 	)} p-2 mb-2 {getSessionHeight(room.session)}"

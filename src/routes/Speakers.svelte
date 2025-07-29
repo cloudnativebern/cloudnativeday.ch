@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import { _ } from 'svelte-i18n';
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import type { Speaker } from '$lib/Speaker';
 
 	export let speakers: Speaker[];
@@ -13,7 +13,7 @@
 		<div class="grid md:grid-cols-3 lg:grid-cols-4 gap-16">
 			{#each speakers as speaker (speaker.id)}
 				<div class="flex flex-col items-center">
-					<a href="{base}/speakers/{speaker.id}">
+					<a href={resolve(`/speakers/${speaker.id}`)}>
 						<Avatar src={speaker.profilePicture} width="w-48" height="h-48" class="mb-4" />
 					</a>
 					<h4 class="h4">{speaker.fullName}</h4>
