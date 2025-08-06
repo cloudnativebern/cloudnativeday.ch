@@ -159,7 +159,7 @@
 			name: 'bespinian',
 			imgSrc: bespinian,
 			link: 'https://bespinian.io/',
-			tier: SponsorTier.Bronze
+			tier: SponsorTier.Barista
 		},
 		{
 			name: 'Amazon Web Services',
