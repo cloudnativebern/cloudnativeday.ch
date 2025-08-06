@@ -214,117 +214,144 @@
 		</div>
 
 		{#if goldSponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.gold')}</h3>
-			<div class="w-full grid md:grid-cols-3 items-center">
+			<h3 class="h3 mt-24 text-left">{$_('sponsors.tiers.gold')}</h3>
+			<div class="w-full grid md:grid-cols-3 items-center gap-8">
 				{#each goldSponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center max-h-36">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
+					<a
+						href={sponsor.link}
+						target="_blank"
+						rel="noopener"
+						class="block p-4 max-w-full flex justify-center max-h-36"
+					>
+						<img src={sponsor.imgSrc} alt={sponsor.name} />
 					</a>
 				{/each}
 			</div>
 		{/if}
 
 		{#if beerSponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.beer')}</h3>
-			<div class="w-full grid md:grid-cols-3 items-center">
+			<h3 class="h3 mt-24 text-left">{$_('sponsors.tiers.beer')}</h3>
+			<div class="w-full grid md:grid-cols-3 items-center gap-8">
 				{#each beerSponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center max-h-32">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
+					<a
+						href={sponsor.link}
+						target="_blank"
+						rel="noopener"
+						class="block p-4 max-w-full flex justify-center max-h-32"
+					>
+						<img src={sponsor.imgSrc} alt={sponsor.name} />
 					</a>
 				{/each}
 			</div>
 		{/if}
 
 		{#if afterPartySponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.afterParty')}</h3>
-			<div class="w-full grid md:grid-cols-3 items-center">
+			<h3 class="h3 mt-24 text-left">{$_('sponsors.tiers.afterParty')}</h3>
+			<div class="w-full grid md:grid-cols-3 items-center gap-8">
 				{#each afterPartySponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center max-h-28">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
+					<a
+						href={sponsor.link}
+						target="_blank"
+						rel="noopener"
+						class="block p-4 max-w-full flex justify-center max-h-28"
+					>
+						<img src={sponsor.imgSrc} alt={sponsor.name} />
 					</a>
 				{/each}
 			</div>
 		{/if}
 
 		{#if gelatoSponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.gelato')}</h3>
-			<div class="w-full grid md:grid-cols-3 items-center">
+			<h3 class="h3 mt-24 text-left">{$_('sponsors.tiers.gelato')}</h3>
+			<div class="w-full grid md:grid-cols-3 items-center gap-8">
 				{#each gelatoSponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center max-h-28">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
+					<a
+						href={sponsor.link}
+						target="_blank"
+						rel="noopener"
+						class="block p-4 max-w-full flex justify-center max-h-28"
+					>
+						<img src={sponsor.imgSrc} alt={sponsor.name} />
 					</a>
 				{/each}
 			</div>
 		{/if}
 
 		{#if baristaSponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.barista')}</h3>
-			<div class="w-full grid md:grid-cols-3 items-center">
+			<h3 class="h3 mt-24 text-left">{$_('sponsors.tiers.barista')}</h3>
+			<div class="w-full grid md:grid-cols-3 items-center gap-8">
 				{#each baristaSponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center max-h-28">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
+					<a
+						href={sponsor.link}
+						target="_blank"
+						rel="noopener"
+						class="block p-4 max-w-full flex justify-center max-h-28"
+					>
+						<img src={sponsor.imgSrc} alt={sponsor.name} />
 					</a>
 				{/each}
 			</div>
 		{/if}
 
 		{#if popcornSponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.popcorn')}</h3>
-			<div class="w-full grid md:grid-cols-4 items-center">
+			<h3 class="h3 mt-24 text-left">{$_('sponsors.tiers.popcorn')}</h3>
+			<div class="w-full grid md:grid-cols-4 items-center gap-8">
 				{#each popcornSponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center max-h-36">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
+					<a
+						href={sponsor.link}
+						target="_blank"
+						rel="noopener"
+						class="block p-4 max-w-full flex justify-center max-h-36"
+					>
+						<img src={sponsor.imgSrc} alt={sponsor.name} />
 					</a>
 				{/each}
 			</div>
 		{/if}
 
 		{#if silverSponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.silver')}</h3>
-			<div class="w-full grid md:grid-cols-4 items-center">
+			<h3 class="h3 mt-24 text-left">{$_('sponsors.tiers.silver')}</h3>
+			<div class="w-full grid md:grid-cols-4 items-center gap-8">
 				{#each silverSponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center max-h-30">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
+					<a
+						href={sponsor.link}
+						target="_blank"
+						rel="noopener"
+						class="block p-4 max-w-full flex justify-center max-h-30"
+					>
+						<img src={sponsor.imgSrc} alt={sponsor.name} />
 					</a>
 				{/each}
 			</div>
 		{/if}
 
 		{#if bronzeSponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.bronze')}</h3>
-			<div class="w-full grid md:grid-cols-6 items-center">
+			<h3 class="h3 mt-24 tex-left">{$_('sponsors.tiers.bronze')}</h3>
+			<div class="w-full grid md:grid-cols-6 items-center gap-8">
 				{#each bronzeSponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center max-h-28">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
+					<a
+						href={sponsor.link}
+						target="_blank"
+						rel="noopener"
+						class="block p-4 max-w-full flex justify-center max-h-28"
+					>
+						<img src={sponsor.imgSrc} alt={sponsor.name} />
 					</a>
 				{/each}
 			</div>
 		{/if}
 
 		{#if communitySponsors.length > 0}
-			<h3 class="h3 mt-24 w-full text-left">{$_('sponsors.tiers.community')}</h3>
-			<div class="w-full grid md:grid-cols-4 items-center">
+			<h3 class="h3 mt-24 text-left">{$_('sponsors.tiers.community')}</h3>
+			<div class="w-full grid md:grid-cols-4 items-center gap-8">
 				{#each communitySponsors as sponsor (sponsor.name)}
-					<a href={sponsor.link} target="_blank" rel="noopener" class="m-4">
-						<div class="block p-4 w-full flex justify-center max-h-30">
-							<img src={sponsor.imgSrc} alt={sponsor.name} />
-						</div>
+					<a
+						href={sponsor.link}
+						target="_blank"
+						rel="noopener"
+						class="block p-4 max-w-full flex justify-center max-h-30"
+					>
+						<img src={sponsor.imgSrc} alt={sponsor.name} />
 					</a>
 				{/each}
 			</div>
