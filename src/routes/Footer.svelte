@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Fa from 'svelte-fa';
 	import { AppBar } from '@skeletonlabs/skeleton';
-	import { faXTwitter, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+	import { faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 	import { _ } from 'svelte-i18n';
 	import { resolve } from '$app/paths';
 </script>
@@ -9,9 +9,6 @@
 <AppBar shadow="shadow-md">
 	<svelte:fragment slot="lead">
 		<div class="logo-cloud grid-cols-3 gap-2 p-6 [&>.logo-item]:bg-transparent">
-			<a class="logo-item" href="https://twitter.com/cloudnativebern">
-				<Fa icon={faXTwitter} size="2x" />
-			</a>
 			<a class="logo-item" href="https://www.linkedin.com/company/cloudnativebern">
 				<Fa icon={faLinkedin} size="2x" />
 			</a>
