@@ -10,7 +10,10 @@ const config = {
 
 	kit: {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			handleUnseenRoutes: 'warn' // Without this, the website doesn't build until the schedule is published on Sessionize
+		}
 	}
 };
 export default config;

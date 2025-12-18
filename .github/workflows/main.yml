@@ -7,13 +7,13 @@ on:
   pull_request:
 
 env:
-  PUBLIC_CFP_END: 2025-04-30T23:59:59
-  PUBLIC_TICKET_SALES_START: 2025-05-05T08:00:00
-  PUBLIC_EVENT_START: 2025-09-18T08:00
-  PUBLIC_EVENT_END: 2025-09-18T23:00
-  PUBLIC_SESSIONIZE_CLIENT_ID: du0o6y5t # 2025
-  PUBLIC_SESSIONIZE_EVENT_ID: swiss-cloud-native-day-2025
-  PUBLIC_TITO_EVENT_ID: swiss-cloud-native-day-2025
+  PUBLIC_EVENT_START: 2026-09-17T08:00
+  PUBLIC_EVENT_END: 2026-09-17T23:00
+  PUBLIC_CFP_END: 2026-04-30T23:59:59
+  PUBLIC_TICKET_SALES_START: 2026-05-05T08:00:00
+  PUBLIC_SESSIONIZE_CLIENT_ID: f3uupna0 # 2026
+  PUBLIC_SESSIONIZE_EVENT_ID: swiss-cloud-native-day-2026
+  PUBLIC_TITO_EVENT_ID: swiss-cloud-native-day-2026
 
 jobs:
   lint:
@@ -21,9 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Install dependencies
         run: npm ci
       - name: Check
@@ -37,16 +37,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Install dependencies
         run: npm ci
       - name: Build
         run: npm run build
       - name: Upload artifact
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./build
 
