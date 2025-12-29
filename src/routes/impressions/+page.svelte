@@ -18,6 +18,7 @@
 	}
 
 	let events: Event[] = [
+		{ year: '2025', videoID: 'kb6yPxvv9XA' },
 		{ year: '2024', videoID: 'VicQ4E3oq8o' },
 		{ year: '2023', videoID: 'fMY0-WQXnL0' },
 		{ year: '2022', videoID: 'YingM9M5yps' },
