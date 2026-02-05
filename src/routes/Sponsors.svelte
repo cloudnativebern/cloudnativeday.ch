@@ -11,11 +11,11 @@
 	// import camptocamp from '$lib/images/sponsors/camp-to-camp.png';
 	// import cloud37 from '$lib/images/sponsors/cloud37.png';
 	// import cloudscale from '$lib/images/sponsors/cloudscale.png';
-	// import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
+	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
 	// import diepost from '$lib/images/sponsors/diepost.svg';
 	// import isovalent from '$lib/images/sponsors/isovalent.png';
 	// import peakscale from '$lib/images/sponsors/peakscale.svg';
-	// import postfinance from '$lib/images/sponsors/postfinance.svg';
+	import postfinance from '$lib/images/sponsors/postfinance.svg';
 	// import puzzle from '$lib/images/sponsors/puzzle.svg';
 	// import spoud from '$lib/images/sponsors/spoud.png';
 	// import swisscom from '$lib/images/sponsors/swisscom.svg';
@@ -32,6 +32,7 @@
 	// import redguard from '$lib/images/sponsors/redguard.svg';
 	// import itpoint from '$lib/images/sponsors/itpoint.svg';
 	// import oria from '$lib/images/sponsors/oria.png';
+	import xelon from '$lib/images/sponsors/xelon.png';
 
 	enum SponsorTier {
 		Gold,
@@ -59,18 +60,18 @@
 		// 	link: 'https://www.swisscom.ch/',
 		// 	tier: SponsorTier.Gold
 		// },
-		// {
-		// 	name: 'PostFinance',
-		// 	imgSrc: postfinance,
-		// 	link: 'https://www.postfinance.ch/',
-		// 	tier: SponsorTier.Gold
-		// },
-		// {
-		// 	name: 'Die Mobiliar',
-		// 	imgSrc: dieMobiliar,
-		// 	link: 'https://www.mobiliar.ch/',
-		// 	tier: SponsorTier.Gold
-		// },
+		{
+			name: 'PostFinance',
+			imgSrc: postfinance,
+			link: 'https://www.postfinance.ch/',
+			tier: SponsorTier.Gold
+		},
+		{
+			name: 'Die Mobiliar',
+			imgSrc: dieMobiliar,
+			link: 'https://www.mobiliar.ch/',
+			tier: SponsorTier.Gold
+		},
 		// {
 		// 	name: 'Axians Amanox',
 		// 	imgSrc: amanox,
@@ -190,7 +191,13 @@
 		// 	imgSrc: oria,
 		// 	link: 'https://www.itpoint.ch/it-cloud-and-managed-services/',
 		// 	tier: SponsorTier.Bronze
-		// }
+		// },
+		{
+			name: 'Xelon',
+			imgSrc: xelon,
+			link: 'https://www.xelon.ch/',
+			tier: SponsorTier.Silver
+		}
 	];
 
 	const goldSponsors = sponsors.filter((s) => s.tier === SponsorTier.Gold);
