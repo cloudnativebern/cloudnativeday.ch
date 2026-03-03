@@ -33,6 +33,7 @@
 	// import itpoint from '$lib/images/sponsors/itpoint.svg';
 	// import oria from '$lib/images/sponsors/oria.png';
 	import xelon from '$lib/images/sponsors/xelon.png';
+	import linbit from '$lib/images/sponsors/linbit.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -196,6 +197,12 @@
 			name: 'Xelon',
 			imgSrc: xelon,
 			link: 'https://www.xelon.ch/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'LINBIT',
+			imgSrc: linbit,
+			link: 'https://linbit.com/',
 			tier: SponsorTier.Silver
 		}
 	];
