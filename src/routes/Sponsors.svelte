@@ -3,14 +3,14 @@
 	// import acend from '$lib/images/sponsors/acend.webp';
 	// import adfinis from '$lib/images/sponsors/adfinis.png';
 	// import adnovum from '$lib/images/sponsors/adnovum.png';
-	// import amanox from '$lib/images/sponsors/amanox.png';
+	import axians from '$lib/images/sponsors/axians.svg';
 	// import aws from '$lib/images/sponsors/aws.svg';
 	// import azure from '$lib/images/sponsors/azure.png';
 	// import bedag from '$lib/images/sponsors/bedag.svg';
 	// import bespinian from '$lib/images/sponsors/bespinian.svg';
 	// import camptocamp from '$lib/images/sponsors/camp-to-camp.png';
 	// import cloud37 from '$lib/images/sponsors/cloud37.png';
-	// import cloudscale from '$lib/images/sponsors/cloudscale.png';
+	import cloudscale from '$lib/images/sponsors/cloudscale.png';
 	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
 	// import diepost from '$lib/images/sponsors/diepost.svg';
 	// import isovalent from '$lib/images/sponsors/isovalent.png';
@@ -24,7 +24,7 @@
 	// import hidora from '$lib/images/sponsors/hidora.svg';
 	// import steppingStone from '$lib/images/sponsors/stepping-stone.svg';
 	// import schaltstelle from '$lib/images/sponsors/schaltstelle.svg';
-	// import standortfoerderung from '$lib/images/sponsors/standortfoerderung.svg';
+	import standortfoerderung from '$lib/images/sponsors/standortfoerderung.svg';
 	// import airlock from '$lib/images/sponsors/airlock.svg';
 	// import exoscale from '$lib/images/sponsors/exoscale.svg';
 	// import nexplore from '$lib/images/sponsors/nexplore.png';
@@ -73,18 +73,18 @@
 			link: 'https://www.mobiliar.ch/',
 			tier: SponsorTier.Gold
 		},
-		// {
-		// 	name: 'Axians Amanox',
-		// 	imgSrc: amanox,
-		// 	link: 'https://www.amanox.ch/',
-		// 	tier: SponsorTier.Bronze
-		// },
-		// {
-		// 	name: 'cloudscale',
-		// 	imgSrc: cloudscale,
-		// 	link: 'https://cloudscale.ch/',
-		// 	tier: SponsorTier.Bronze
-		// },
+		{
+			name: 'Axians Amanox',
+			imgSrc: axians,
+			link: 'https://www.axians.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'cloudscale',
+			imgSrc: cloudscale,
+			link: 'https://cloudscale.ch/',
+			tier: SponsorTier.Bronze
+		},
 		// {
 		// 	name: 'Puzzle ITC',
 		// 	imgSrc: puzzle,
@@ -127,12 +127,12 @@
 		// 	link: 'https://adfinis.com/',
 		// 	tier: SponsorTier.Bronze
 		// },
-		// {
-		// 	name: 'Standortförderung Kanton Bern',
-		// 	imgSrc: standortfoerderung,
-		// 	link: 'https://www.berninvest.be.ch/',
-		// 	tier: SponsorTier.Bronze
-		// },
+		{
+			name: 'Standortförderung Kanton Bern',
+			imgSrc: standortfoerderung,
+			link: 'https://www.berninvest.be.ch/',
+			tier: SponsorTier.Bronze
+		},
 		// {
 		// 	name: 'Ergon Airlock',
 		// 	imgSrc: airlock,
@@ -340,7 +340,7 @@
 		{/if}
 
 		{#if bronzeSponsors.length > 0}
-			<h3 class="h3 mt-24 tex-left">{$_('sponsors.tiers.bronze')}</h3>
+			<h3 class="h3 mt-24 text-left">{$_('sponsors.tiers.bronze')}</h3>
 			<div class="w-full grid md:grid-cols-6 items-center gap-8">
 				{#each bronzeSponsors as sponsor (sponsor.name)}
 					<a
