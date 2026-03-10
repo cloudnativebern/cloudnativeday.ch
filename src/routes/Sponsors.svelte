@@ -12,7 +12,7 @@
 	// import cloud37 from '$lib/images/sponsors/cloud37.png';
 	import cloudscale from '$lib/images/sponsors/cloudscale.png';
 	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
-	// import diepost from '$lib/images/sponsors/diepost.svg';
+	import diepost from '$lib/images/sponsors/diepost.svg';
 	// import isovalent from '$lib/images/sponsors/isovalent.png';
 	// import peakscale from '$lib/images/sponsors/peakscale.svg';
 	import postfinance from '$lib/images/sponsors/postfinance.svg';
@@ -97,12 +97,12 @@
 		// 	link: 'https://www.vshn.ch/',
 		// 	tier: SponsorTier.Silver
 		// },
-		// {
-		// 	name: 'Swiss Post',
-		// 	imgSrc: diepost,
-		// 	link: 'https://www.post.ch/',
-		// 	tier: SponsorTier.Popcorn
-		// },
+		{
+			name: 'Swiss Post',
+			imgSrc: diepost,
+			link: 'https://www.post.ch/',
+			tier: SponsorTier.Popcorn
+		},
 		// {
 		// 	name: 'Hidora',
 		// 	imgSrc: hidora,
