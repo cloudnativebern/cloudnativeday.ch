@@ -34,6 +34,7 @@
 	// import oria from '$lib/images/sponsors/oria.png';
 	import xelon from '$lib/images/sponsors/xelon.png';
 	import linbit from '$lib/images/sponsors/linbit.svg';
+	import ipt from '$lib/images/sponsors/ipt.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -204,6 +205,12 @@
 			imgSrc: linbit,
 			link: 'https://linbit.com/',
 			tier: SponsorTier.Silver
+		},
+		{
+			name: 'IPT',
+			imgSrc: ipt,
+			link: 'https://ipt.ch/',
+			tier: SponsorTier.Gold
 		}
 	];
 
