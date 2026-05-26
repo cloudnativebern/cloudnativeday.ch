@@ -23,7 +23,7 @@
 	import vshn from '$lib/images/sponsors/vshn.svg';
 	// import hidora from '$lib/images/sponsors/hidora.svg';
 	// import steppingStone from '$lib/images/sponsors/stepping-stone.svg';
-	// import schaltstelle from '$lib/images/sponsors/schaltstelle.svg';
+	import schaltstelle from '$lib/images/sponsors/schaltstelle.svg';
 	import standortfoerderung from '$lib/images/sponsors/standortfoerderung.svg';
 	import airlock from '$lib/images/sponsors/airlock.svg';
 	// import exoscale from '$lib/images/sponsors/exoscale.svg';
@@ -35,6 +35,7 @@
 	import xelon from '$lib/images/sponsors/xelon.png';
 	import linbit from '$lib/images/sponsors/linbit.svg';
 	import ipt from '$lib/images/sponsors/ipt.svg';
+	import loopholeLabs from '$lib/images/sponsors/loophole-labs.png';
 
 	enum SponsorTier {
 		Gold,
@@ -116,12 +117,12 @@
 		// 	link: 'https://stepping-stone.ch/',
 		// 	tier: SponsorTier.Silver
 		// },
-		// {
-		// 	name: 'Schaltstelle',
-		// 	imgSrc: schaltstelle,
-		// 	link: 'https://www.schaltstelle.ch/',
-		// 	tier: SponsorTier.Bronze
-		// },
+		{
+			name: 'Schaltstelle',
+			imgSrc: schaltstelle,
+			link: 'https://www.schaltstelle.ch/',
+			tier: SponsorTier.Bronze
+		},
 		{
 			name: 'Adfinis',
 			imgSrc: adfinis,
@@ -211,6 +212,12 @@
 			imgSrc: ipt,
 			link: 'https://ipt.ch/',
 			tier: SponsorTier.Gold
+		},
+		{
+			name: 'Loophole Labs',
+			imgSrc: loopholeLabs,
+			link: 'https://loopholelabs.io/',
+			tier: SponsorTier.Bronze
 		}
 	];
 
