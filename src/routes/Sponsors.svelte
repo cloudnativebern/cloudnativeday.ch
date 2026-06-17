@@ -7,14 +7,14 @@
 	// import aws from '$lib/images/sponsors/aws.svg';
 	// import azure from '$lib/images/sponsors/azure.png';
 	import bedag from '$lib/images/sponsors/bedag.svg';
-	// import bespinian from '$lib/images/sponsors/bespinian.svg';
+	import bespinian from '$lib/images/sponsors/bespinian.svg';
 	// import camptocamp from '$lib/images/sponsors/camp-to-camp.png';
 	// import cloud37 from '$lib/images/sponsors/cloud37.png';
 	import cloudscale from '$lib/images/sponsors/cloudscale.png';
 	import dieMobiliar from '$lib/images/sponsors/diemobiliar.svg';
 	import diepost from '$lib/images/sponsors/diepost.svg';
 	// import isovalent from '$lib/images/sponsors/isovalent.png';
-	// import peakscale from '$lib/images/sponsors/peakscale.svg';
+	import peakscale from '$lib/images/sponsors/peakscale.svg';
 	import postfinance from '$lib/images/sponsors/postfinance.svg';
 	// import puzzle from '$lib/images/sponsors/puzzle.svg';
 	// import spoud from '$lib/images/sponsors/spoud.png';
@@ -153,18 +153,18 @@
 		// 	link: 'https://www.nexplore.ch/',
 		// 	tier: SponsorTier.Silver
 		// },
-		// {
-		// 	name: 'Peak Scale',
-		// 	imgSrc: peakscale,
-		// 	link: 'https://peakscale.ch/',
-		// 	tier: SponsorTier.Bronze
-		// },
-		// {
-		// 	name: 'bespinian',
-		// 	imgSrc: bespinian,
-		// 	link: 'https://bespinian.io/',
-		// 	tier: SponsorTier.Barista
-		// },
+		{
+			name: 'Peak Scale',
+			imgSrc: peakscale,
+			link: 'https://peakscale.ch/',
+			tier: SponsorTier.Silver
+		},
+		{
+			name: 'bespinian',
+			imgSrc: bespinian,
+			link: 'https://bespinian.io/',
+			tier: SponsorTier.Bronze
+		},
 		// {
 		// 	name: 'Amazon Web Services',
 		// 	imgSrc: aws,
