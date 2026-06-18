@@ -22,7 +22,7 @@
 	// import tecracer from '$lib/images/sponsors/tecracer.svg';
 	import vshn from '$lib/images/sponsors/vshn.svg';
 	// import hidora from '$lib/images/sponsors/hidora.svg';
-	// import steppingStone from '$lib/images/sponsors/stepping-stone.svg';
+	import steppingStone from '$lib/images/sponsors/stepping-stone.svg';
 	import schaltstelle from '$lib/images/sponsors/schaltstelle.svg';
 	import standortfoerderung from '$lib/images/sponsors/standortfoerderung.svg';
 	import airlock from '$lib/images/sponsors/airlock.svg';
@@ -36,6 +36,7 @@
 	import linbit from '$lib/images/sponsors/linbit.svg';
 	import ipt from '$lib/images/sponsors/ipt.svg';
 	import loopholeLabs from '$lib/images/sponsors/loophole-labs.png';
+	import natronTech from '$lib/images/sponsors/natron-tech.svg';
 
 	enum SponsorTier {
 		Gold,
@@ -111,12 +112,12 @@
 		// 	link: 'https://hidora.io/',
 		// 	tier: SponsorTier.Silver
 		// },
-		// {
-		// 	name: 'stepping stone',
-		// 	imgSrc: steppingStone,
-		// 	link: 'https://stepping-stone.ch/',
-		// 	tier: SponsorTier.Silver
-		// },
+		{
+			name: 'stepping stone',
+			imgSrc: steppingStone,
+			link: 'https://stepping-stone.ch/',
+			tier: SponsorTier.Silver
+		},
 		{
 			name: 'Schaltstelle',
 			imgSrc: schaltstelle,
@@ -217,6 +218,12 @@
 			name: 'Loophole Labs',
 			imgSrc: loopholeLabs,
 			link: 'https://loopholelabs.io/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Natron Tech',
+			imgSrc: natronTech,
+			link: 'https://natron.io/',
 			tier: SponsorTier.Bronze
 		}
 	];
