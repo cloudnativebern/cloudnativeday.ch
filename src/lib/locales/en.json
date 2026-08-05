@@ -133,6 +133,11 @@
 			"name": "Luana Cusseddu",
 			"tagline": "Cloud Native System Engineer",
 			"bio": "Luana is a System Engineer who has built up her skills in different infrastructure environments and is working with PostFinance as the Product Owner of the Kubernetes Team. She believes that inclusiveness is the key to developing an excellent product and she embraces diverse perspectives with open ears and a judgment-free mindest. <br/><br/> Her personal quest: never to get stuck in the comfort zone."
+		},
+		"christoph": {
+			"name": "Christoph Schnyder",
+			"tagline": "Cloud Native Engineer",
+			"bio": "Christoph is a software engineer at heart who transitioned into engineering management a while ago. Having worked at Swisscom for almost a lifetime, he is currently responsible for several cloud native platforms, running the core IT infrastructure of Swisscom and its enterprise customers."
 		}
 	},
 	"coc": {

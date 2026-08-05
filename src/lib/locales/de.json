@@ -97,42 +97,47 @@
 		"alexander": {
 			"name": "Alexander Striffeler",
 			"tagline": "Clean Code Wizard",
-			"bio": "Alex is open to everything but boredom. Be it in challenging software projects as an engineer or architect, when organizing IT conferences or on thrilling mountaineering trips: The sky ain’t the limit -- and friends are what makes things exciting."
+			"bio": "Alex ist offen für alles – nur nicht für Langeweile. Sei es in anspruchsvollen Softwareprojekten als Engineer oder Architekt, beim Organisieren von IT-Konferenzen oder auf packenden Bergtouren: Der Himmel ist nicht die Grenze – und es sind die Freundschaften, die das Ganze spannend machen."
 		},
 		"johann": {
 			"name": "Johann Gyger",
 			"tagline": "Software Artist & Cloud Native Ambassador",
-			"bio": "Johann is a passionate software engineer living in Switzerland. He has over 20 years of industry experience working as a developer, architect, trainer, and consultant in various domains and for different customers and employers.<br/><br/>Johann is enthusiastic about the cloud native movement and organizes the Swiss Cloud Native Day and the Cloud Native Bern Meetup. He strongly believes in open source software and vendor-neutral standards."
+			"bio": "Johann ist ein leidenschaftlicher Software Engineer und lebt in der Schweiz. Er bringt über 20 Jahre Branchenerfahrung als Entwickler, Architekt, Trainer und Berater in unterschiedlichsten Bereichen und für verschiedene Kunden und Arbeitgeber mit.<br/><br/>Johann begeistert sich für die Cloud-native-Bewegung und organisiert den Swiss Cloud Native Day sowie das Cloud Native Bern Meetup. Er ist ein überzeugter Verfechter von Open-Source-Software und herstellerneutralen Standards."
 		},
 		"philipp": {
 			"name": "Philipp Grossenbacher",
 			"tagline": "Cloud-Native Enthusiast",
-			"bio": "Philipp has been working in large IT environments of various insurance and banking service providers for several years. He works as a PO at Mobiliar and has been fully committed to CNCF components with his team for several years.<br/><br/>Philipp loves to build new things together with good people, like products, meetups, startups or great events like the #swisscnd."
+			"bio": "Philipp ist seit mehreren Jahren in grossen IT-Umgebungen verschiedener Versicherungs- und Bankdienstleister tätig. Er arbeitet als PO bei der Mobiliar und setzt mit seinem Team seit Jahren voll auf CNCF-Komponenten.<br/><br/>Philipp liebt es, gemeinsam mit guten Leuten Neues aufzubauen – seien es Produkte, Meetups, Startups oder grossartige Events wie den #swisscnd."
 		},
 		"lena": {
 			"name": "Lena Fuhrimann",
 			"tagline": "Head in the Clouds",
-			"bio": "Lena is a passionate software engineer and architect. Together with Mathis Kretz she founded the company bespinian in 2019 and has since worked with many customers and interesting technologies. Her main focus lies on security, serverless technologies, public clouds and Infrastructure as Code. However, she has also worked a lot with Kubernetes and its ecosystem and has deployed many applications to those platforms using automation and GitOps.<br/><br/>She uses NixOS btw."
+			"bio": "Lena ist eine leidenschaftliche Software Engineer und Architektin. Gemeinsam mit Mathis Kretz hat sie 2019 die Firma bespinian gegründet und seither mit vielen Kunden und interessanten Technologien gearbeitet. Ihr Fokus liegt auf Security, Serverless-Technologien, Public Clouds und Infrastructure as Code. Sie hat aber auch viel mit Kubernetes und dessen Ökosystem gearbeitet und zahlreiche Anwendungen mittels Automatisierung und GitOps auf solchen Plattformen deployt.<br/><br/>She uses NixOS btw."
 		},
 		"mathias": {
 			"name": "Mathias Herzog",
 			"tagline": "IT Architect",
-			"bio": "Mathias is an enthusiastic IT architect. As co-founder of Peak Scale and keen technician with management background, he loves the role of bridge builder between various technical and organizational domains. With a solid background in highly scalable infrastructure and big data technologies, he continuously made his way towards modern, cloud native based architecture and software development topics. CI/CD, GitOps, infrastructure as code and Go are (currently) part of his toolbox.<br/><br/>Everything in IT should be built with constant change in mind to succeed in the infinite game. Mathias is always looking for new ways of doing things differently. He loves bringing interesting people together, and organizing community events is just one of his passions."
+			"bio": "Mathias ist ein begeisterter IT-Architekt. Als Mitgründer von Peak Scale und passionierter Techniker mit Management-Hintergrund übernimmt er gerne die Rolle des Brückenbauers zwischen verschiedenen technischen und organisatorischen Bereichen. Mit einem fundierten Hintergrund in hochskalierbarer Infrastruktur und Big-Data-Technologien hat er sich kontinuierlich in Richtung moderner, Cloud-native-basierter Architektur- und Softwareentwicklungsthemen weiterentwickelt. CI/CD, GitOps, Infrastructure as Code und Go gehören (derzeit) zu seinem Werkzeugkasten.<br/><br/>Alles in der IT sollte im Bewusstsein ständiger Veränderung gebaut werden, um im unendlichen Spiel erfolgreich zu sein. Mathias sucht immer nach neuen Wegen, Dinge anders zu machen. Er liebt es, interessante Menschen zusammenzubringen – und das Organisieren von Community-Events ist nur eine seiner Leidenschaften."
 		},
 		"mathis": {
 			"name": "Mathis Kretz",
 			"tagline": "Keeper of Simple",
-			"bio": "Mathis is a cloud native software architect and engineer. Together with Lena Fuhrimann he founded bespinian in 2019 where he is helping customers become successful in building new applications in public and private clouds or in migrating existing ones into such environments. His main focus is on microservices, Infrastructure as Code and DevOps. Mathis has experience in implementing these principles in serverless as well as Kubernetes- or even classical VM-based platforms.<br/><br/>He is also frequently trying to keep two kids amused."
+			"bio": "Mathis ist Cloud-native-Softwarearchitekt und -Engineer. Gemeinsam mit Lena Fuhrimann hat er 2019 bespinian gegründet, wo er Kunden dabei hilft, erfolgreich neue Anwendungen in Public und Private Clouds zu bauen oder bestehende in solche Umgebungen zu migrieren. Sein Fokus liegt auf Microservices, Infrastructure as Code und DevOps. Mathis hat Erfahrung darin, diese Prinzipien sowohl auf Serverless- als auch auf Kubernetes- oder gar klassischen VM-basierten Plattformen umzusetzen.<br/><br/>Ausserdem versucht er regelmässig, zwei Kinder zu unterhalten."
 		},
 		"marc": {
 			"name": "Marc Merzinger",
 			"tagline": "Cloud Native Travel Guide",
-			"bio": "Marc is an architect at the City of Zurich, OIZ. He helps with the introduction of cloud-native and AI technology, whether by building architectures or implementing them. For him, it is important to share knowledge within teams to create sustainable solutions. Technology is a vehicle to create solutions for humans. <br/><br/> In his spare time, he enjoys exploring open source projects - and sometimes real life things like how to make good coffee."
+			"bio": "Marc ist Architekt bei der Stadt Zürich, OIZ. Er unterstützt die Einführung von Cloud-native- und KI-Technologien, sei es beim Entwerfen von Architekturen oder bei deren Umsetzung. Für ihn ist es wichtig, Wissen innerhalb der Teams zu teilen, um nachhaltige Lösungen zu schaffen. Technologie ist ein Mittel, um Lösungen für Menschen zu schaffen. <br/><br/> In seiner Freizeit erkundet er gerne Open-Source-Projekte – und manchmal auch Dinge aus dem echten Leben, etwa wie man guten Kaffee zubereitet."
 		},
 		"luana": {
 			"name": "Luana Cusseddu",
 			"tagline": "Cloud Native System Engineer",
-			"bio": "Luana is a System Engineer who has built up her skills in different infrastructure environments and is working with PostFinance as the Product Owner of the Kubernetes Team. She believes that inclusiveness is the key to developing an excellent product and she embraces diverse perspectives with open ears and a judgment-free mindest. <br/><br/> Her personal quest: never to get stuck in the comfort zone."
+			"bio": "Luana ist System Engineer und hat ihre Fähigkeiten in unterschiedlichen Infrastrukturumgebungen aufgebaut. Bei PostFinance ist sie Product Owner des Kubernetes-Teams. Sie ist überzeugt, dass Inklusion der Schlüssel zu einem ausgezeichneten Produkt ist, und begegnet vielfältigen Perspektiven mit offenen Ohren und ohne Vorurteile. <br/><br/> Ihr persönliches Ziel: nie in der Komfortzone hängen zu bleiben."
+		},
+		"christoph": {
+			"name": "Christoph Schnyder",
+			"tagline": "Cloud Native Engineer",
+			"bio": "Christoph ist im Herzen Softwareentwickler, hat sich aber vor einiger Zeit dem Engineering-Management zugewandt. Er ist schon fast sein ganzes Berufsleben lang bei Swisscom tätig und verantwortlich für mehrere Cloud-native Plattformen, die die zentrale IT-Infrastruktur von Swisscom und deren Unternehmenskunden betreiben."
 		}
 	},
 	"coc": {
