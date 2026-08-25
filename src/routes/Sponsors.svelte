@@ -37,6 +37,7 @@
 	import ipt from '$lib/images/sponsors/ipt.svg';
 	import loopholeLabs from '$lib/images/sponsors/loophole-labs.png';
 	import natronTech from '$lib/images/sponsors/natron-tech.svg';
+	import sharp from '$lib/images/sponsors/sharp.png';
 
 	enum SponsorTier {
 		Gold,
@@ -224,6 +225,12 @@
 			name: 'Natron Tech',
 			imgSrc: natronTech,
 			link: 'https://natron.io/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'Sharp',
+			imgSrc: sharp,
+			link: 'http://oria.ch/',
 			tier: SponsorTier.Bronze
 		}
 	];
