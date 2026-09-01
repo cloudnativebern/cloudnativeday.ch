@@ -38,6 +38,7 @@
 	import loopholeLabs from '$lib/images/sponsors/loophole-labs.png';
 	import natronTech from '$lib/images/sponsors/natron-tech.svg';
 	import sharp from '$lib/images/sponsors/sharp.png';
+	import meltcloud from '$lib/images/sponsors/meltcloud.png';
 
 	enum SponsorTier {
 		Gold,
@@ -231,6 +232,12 @@
 			name: 'Sharp',
 			imgSrc: sharp,
 			link: 'http://oria.ch/',
+			tier: SponsorTier.Bronze
+		},
+		{
+			name: 'meltcloud',
+			imgSrc: meltcloud,
+			link: 'https://meltcloud.io/',
 			tier: SponsorTier.Bronze
 		}
 	];
