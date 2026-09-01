@@ -60,7 +60,10 @@ export async function getSession(fetchFn: typeof fetch, id: string): Promise<Ses
 
 export async function getSpeakers(fetchFn: typeof fetch): Promise<Speaker[]> {
 	const url = `${API_BASE_URL}/SpeakerWall`;
-	return get(fetchFn, url);
+	const speakers = (await get(fetchFn, url)) as Speaker[];
+
+	// list top speakers first, keeping the original order within each group
+	return speakers.sort((a, b) => Number(b.isTopSpeaker) - Number(a.isTopSpeaker));
 }
 
 export async function getSpeaker(fetchFn: typeof fetch, id: string): Promise<SpeakerDetails> {
